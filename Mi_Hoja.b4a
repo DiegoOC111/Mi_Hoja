@@ -1,0 +1,185 @@
+﻿Build1=Default,b4a.example
+File1=camila_herrera.png
+File10=valentina_rios.png
+File11=VistaElegirHora.bal
+File12=VistaGesionar.bal
+File13=VistaLIstaDoctores.bal
+File14=VistaMod.bal
+File2=CrearUsuario.bal
+File3=default.png
+File4=ignacio_fernandez.png
+File5=Layout.bal
+File6=logo1.png
+File7=logo1-2.PNG
+File8=MenuVista.bal
+File9=sebastian_torres.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+Library1=b4xcollections
+Library2=b4xdrawer
+Library3=b4xformatter
+Library4=core
+Library5=ime
+Library6=json
+Library7=xui
+Library8=xui views
+Library9=dateutils
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~
+Module1=Menu
+Module2=Modulo_Seleccion
+Module3=ModuloGestion
+Module4=Registrar
+Module5=Starter
+NumberOfFiles=14
+NumberOfLibraries=9
+NumberOfModules=5
+Version=13.3
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: MiHoja
+	#VersionCode: 1
+	#VersionName: 1.0.0
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+
+		
+#End Region	
+
+
+
+#Region  Activity Attributes 
+	#FullScreen: True
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Private xui As XUI
+	Type Usuario(Rut As String, Contrasena As String)
+	Public UsuarioActivo As Usuario
+	
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	Private Txt_Rut As AutoCompleteEditText
+	Private Txt_password As AutoCompleteEditText
+End Sub
+Sub CargarUsuarios() As List
+	Dim Lista As List
+	Lista.Initialize
+    
+	If File.Exists(File.DirInternal, "usuarios.json") Then
+		Dim json As String = File.ReadString(File.DirInternal, "usuarios.json")
+		Dim jp As JSONParser
+		jp.Initialize(json)
+		Lista = jp.NextArray
+	End If
+    
+	Return Lista
+End Sub
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("Layout")
+	CrearArchivoDoctores
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub Button1_Click
+	xui.MsgboxAsync("Hello world!", "B4X")
+End Sub
+
+Private Sub Btn_Crear_Click
+	StartActivity(Registrar)
+End Sub
+
+Private Sub Btn_iniciar_Click
+	Dim rut As String = Txt_Rut.Text
+	Dim clave As String = Txt_password.Text
+
+	' Validaciones básicas
+	If rut = "" Or clave = "" Then
+		xui.MsgboxAsync("Debes ingresar RUT y contraseña", "Error")
+		Return
+	End If
+	' Limpiar y estandarizar el RUT (sin puntos ni guion, mayúsculas)
+	rut = rut.ToUpperCase.Replace(".", "")
+    
+	' Cargar lista de usuarios
+	Dim usuarios As List = CargarUsuarios
+    
+	' Buscar si el usuario existe
+	For Each u As Map In usuarios
+		If u.Get("Rut") = rut And u.Get("Contrasena") = clave Then
+			UsuarioActivo.Contrasena = clave
+			UsuarioActivo.Rut = rut
+			xui.MsgboxAsync("Inicio de sesión exitoso", "Bienvenido")
+			' Aquí puedes redirigir a otra Activity si quieres
+			StartActivity(Menu)
+			Return
+		End If
+	Next
+    
+	' Si llega aquí, no encontró el usuario
+	xui.MsgboxAsync("RUT o contraseña incorrectos", "Error")
+End Sub
+Sub CrearArchivoDoctores
+	Dim nombreArchivo As String = "doctores.json"
+	Dim ruta As String = File.DirInternal
+
+	' Si el archivo ya existe, no hacer nada
+'	If File.Exists(ruta, nombreArchivo) Then
+'		Log("El archivo ya existe, no se creó.")
+'		Return
+'	End If
+
+	' Contenido JSON
+	Dim contenido As String = $"{
+  "doctores": [
+    {
+      "nombre_completo": "Dra. Valentina Ríos Martínez",
+      "especialidad": "Cardiología Pediátrica",
+      "foto_perfil": "valentina_rios.png"
+    },
+    {
+      "nombre_completo": "Dr. Sebastián Torres Guzmán",
+      "especialidad": "Pediatría General",
+      "foto_perfil": "sebastian_torres.png"
+    },
+    {
+      "nombre_completo": "Dra. Camila Herrera Soto",
+      "especialidad": "Dermatología Pediátrica",
+      "foto_perfil": "camila_herrera.png"
+    },
+    {
+      "nombre_completo": "Dr. Ignacio Fernández Vidal",
+      "especialidad": "Neurología Pediátrica",
+      "foto_perfil": "ignacio_fernandez.png"
+    }
+  ]
+}"$
+
+	' Guardar archivo
+	File.WriteString(ruta, nombreArchivo, contenido)
+	Log("Archivo creado correctamente en: " & ruta)
+End Sub
