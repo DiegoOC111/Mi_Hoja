@@ -8,7 +8,7 @@ public class b4ximageview_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,40);
+		Debug.PushSubsStack("Base_Resize (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,40);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4ximageview","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -56,7 +56,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _clear(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Clear (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,119);
+		Debug.PushSubsStack("Clear (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,119);
 if (RapidSub.canDelegate("clear")) { return __ref.runUserSub(false, "b4ximageview","clear", __ref);}
  BA.debugLineNum = 119;BA.debugLine="Public Sub Clear";
 Debug.JustUpdateDeviceLine();
@@ -78,7 +78,7 @@ finally {
 		}}
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,25);
+		Debug.PushSubsStack("DesignerCreateView (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,25);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4ximageview","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _iiv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ImageViewWrapper");
 Debug.locals.put("Base", _base);
@@ -134,7 +134,7 @@ finally {
 		}}
 public static RemoteObject  _getbitmap(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getBitmap (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,130);
+		Debug.PushSubsStack("getBitmap (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,130);
 if (RapidSub.canDelegate("getbitmap")) { return __ref.runUserSub(false, "b4ximageview","getbitmap", __ref);}
  BA.debugLineNum = 130;BA.debugLine="Public Sub getBitmap As B4XBitmap";
 Debug.JustUpdateDeviceLine();
@@ -153,7 +153,7 @@ finally {
 		}}
 public static RemoteObject  _getcornersradius(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getCornersRadius (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,56);
+		Debug.PushSubsStack("getCornersRadius (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,56);
 if (RapidSub.canDelegate("getcornersradius")) { return __ref.runUserSub(false, "b4ximageview","getcornersradius", __ref);}
  BA.debugLineNum = 56;BA.debugLine="Public Sub getCornersRadius As Int";
 Debug.JustUpdateDeviceLine();
@@ -172,7 +172,7 @@ finally {
 		}}
 public static RemoteObject  _getresizemode(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getResizeMode (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,67);
+		Debug.PushSubsStack("getResizeMode (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,67);
 if (RapidSub.canDelegate("getresizemode")) { return __ref.runUserSub(false, "b4ximageview","getresizemode", __ref);}
  BA.debugLineNum = 67;BA.debugLine="Public Sub getResizeMode As String";
 Debug.JustUpdateDeviceLine();
@@ -191,7 +191,7 @@ finally {
 		}}
 public static RemoteObject  _getroundedimage(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getRoundedImage (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,45);
+		Debug.PushSubsStack("getRoundedImage (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,45);
 if (RapidSub.canDelegate("getroundedimage")) { return __ref.runUserSub(false, "b4ximageview","getroundedimage", __ref);}
  BA.debugLineNum = 45;BA.debugLine="Public Sub getRoundedImage As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -210,7 +210,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,19);
+		Debug.PushSubsStack("Initialize (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,19);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4ximageview","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -236,7 +236,7 @@ finally {
 		}}
 public static RemoteObject  _load(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename) throws Exception{
 try {
-		Debug.PushSubsStack("Load (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,110);
+		Debug.PushSubsStack("Load (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,110);
 if (RapidSub.canDelegate("load")) { return __ref.runUserSub(false, "b4ximageview","load", __ref, _dir, _filename);}
 Debug.locals.put("Dir", _dir);
 Debug.locals.put("FileName", _filename);
@@ -257,7 +257,7 @@ finally {
 		}}
 public static RemoteObject  _setbitmap(RemoteObject __ref,RemoteObject _bmp) throws Exception{
 try {
-		Debug.PushSubsStack("setBitmap (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,124);
+		Debug.PushSubsStack("setBitmap (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,124);
 if (RapidSub.canDelegate("setbitmap")) { return __ref.runUserSub(false, "b4ximageview","setbitmap", __ref, _bmp);}
 Debug.locals.put("Bmp", _bmp);
  BA.debugLineNum = 124;BA.debugLine="Public Sub setBitmap(Bmp As B4XBitmap)";
@@ -283,7 +283,7 @@ finally {
 		}}
 public static RemoteObject  _setcornersradius(RemoteObject __ref,RemoteObject _i) throws Exception{
 try {
-		Debug.PushSubsStack("setCornersRadius (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,60);
+		Debug.PushSubsStack("setCornersRadius (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,60);
 if (RapidSub.canDelegate("setcornersradius")) { return __ref.runUserSub(false, "b4ximageview","setcornersradius", __ref, _i);}
 Debug.locals.put("i", _i);
  BA.debugLineNum = 60;BA.debugLine="Public Sub setCornersRadius (i As Int)";
@@ -306,7 +306,7 @@ finally {
 		}}
 public static RemoteObject  _setresizemode(RemoteObject __ref,RemoteObject _s) throws Exception{
 try {
-		Debug.PushSubsStack("setResizeMode (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,71);
+		Debug.PushSubsStack("setResizeMode (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,71);
 if (RapidSub.canDelegate("setresizemode")) { return __ref.runUserSub(false, "b4ximageview","setresizemode", __ref, _s);}
 Debug.locals.put("s", _s);
  BA.debugLineNum = 71;BA.debugLine="Public Sub setResizeMode(s As String)";
@@ -333,7 +333,7 @@ finally {
 		}}
 public static RemoteObject  _setroundedimage(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setRoundedImage (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,49);
+		Debug.PushSubsStack("setRoundedImage (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,49);
 if (RapidSub.canDelegate("setroundedimage")) { return __ref.runUserSub(false, "b4ximageview","setroundedimage", __ref, _b);}
 Debug.locals.put("b", _b);
  BA.debugLineNum = 49;BA.debugLine="Public Sub setRoundedImage (b As Boolean)";
@@ -360,7 +360,7 @@ finally {
 		}}
 public static RemoteObject  _update(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Update (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,77);
+		Debug.PushSubsStack("Update (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,77);
 if (RapidSub.canDelegate("update")) { return __ref.runUserSub(false, "b4ximageview","update", __ref);}
 RemoteObject _imageviewwidth = RemoteObject.createImmutable(0f);
 RemoteObject _imageviewheight = RemoteObject.createImmutable(0f);
@@ -442,7 +442,7 @@ _imageviewheight = BA.numberCast(float.class, __ref.getField(false,"_mbitmap" /*
 default: {
  BA.debugLineNum = 104;BA.debugLine="Log(\"Invalid resize mode: \"  & mResizeMode)";
 Debug.JustUpdateDeviceLine();
-b4ximageview.__c.runVoidMethod ("LogImpl","921364763",RemoteObject.concat(RemoteObject.createImmutable("Invalid resize mode: "),__ref.getField(true,"_mresizemode" /*RemoteObject*/ )),0);
+b4ximageview.__c.runVoidMethod ("LogImpl","922347803",RemoteObject.concat(RemoteObject.createImmutable("Invalid resize mode: "),__ref.getField(true,"_mresizemode" /*RemoteObject*/ )),0);
  break; }
 }
 ;
@@ -461,7 +461,7 @@ finally {
 		}}
 public static RemoteObject  _updateclip(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("UpdateClip (b4ximageview) ","b4ximageview",25,__ref.getField(false, "ba"),__ref,135);
+		Debug.PushSubsStack("UpdateClip (b4ximageview) ","b4ximageview",26,__ref.getField(false, "ba"),__ref,135);
 if (RapidSub.canDelegate("updateclip")) { return __ref.runUserSub(false, "b4ximageview","updateclip", __ref);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
  BA.debugLineNum = 135;BA.debugLine="Private Sub UpdateClip";

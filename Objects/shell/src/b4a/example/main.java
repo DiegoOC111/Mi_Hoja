@@ -63,11 +63,12 @@ public static RemoteObject _dateutils = RemoteObject.declareNull("b4a.example.da
 public static b4a.example.menu _menu = null;
 public static b4a.example.registrar _registrar = null;
 public static b4a.example.modulo_seleccion _modulo_seleccion = null;
-public static b4a.example.starter _starter = null;
 public static b4a.example.modulogestion _modulogestion = null;
+public static b4a.example.starter _starter = null;
+public static b4a.example.calendario _calendario = null;
 public static b4a.example.b4xcollections _b4xcollections = null;
 public static b4a.example.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",main.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"DateUtils",main.mostCurrent._dateutils,"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"Txt_password",main.mostCurrent._txt_password,"Txt_Rut",main.mostCurrent._txt_rut,"UsuarioActivo",main._usuarioactivo,"xui",main._xui,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
+		return new Object[] {"Activity",main.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"Calendario",Debug.moduleToString(b4a.example.calendario.class),"DateUtils",main.mostCurrent._dateutils,"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"Txt_password",main.mostCurrent._txt_password,"Txt_Rut",main.mostCurrent._txt_rut,"UsuarioActivo",main._usuarioactivo,"xui",main._xui,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
 }
 }

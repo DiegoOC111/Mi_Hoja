@@ -356,6 +356,7 @@ vis = vis | (menu.mostCurrent != null);
 vis = vis | (registrar.mostCurrent != null);
 vis = vis | (modulo_seleccion.mostCurrent != null);
 vis = vis | (modulogestion.mostCurrent != null);
+vis = vis | (calendario.mostCurrent != null);
 return vis;}
 
 private static BA killProgramHelper(BA ba) {
@@ -415,7 +416,6 @@ public static void killProgram() {
             if (__a != null)
 				__a.finish();}
 
-BA.applicationContext.stopService(new android.content.Intent(BA.applicationContext, starter.class));
  {
             Activity __a = null;
             if (modulogestion.previousOne != null) {
@@ -423,6 +423,19 @@ BA.applicationContext.stopService(new android.content.Intent(BA.applicationConte
 			}
             else {
                 BA ba = killProgramHelper(modulogestion.mostCurrent == null ? null : modulogestion.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+BA.applicationContext.stopService(new android.content.Intent(BA.applicationContext, starter.class));
+ {
+            Activity __a = null;
+            if (calendario.previousOne != null) {
+				__a = calendario.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(calendario.mostCurrent == null ? null : calendario.mostCurrent.processBA);
                 if (ba != null) __a = ba.activity;
             }
             if (__a != null)
@@ -451,8 +464,9 @@ public b4a.example.dateutils _dateutils = null;
 public b4a.example.menu _menu = null;
 public b4a.example.registrar _registrar = null;
 public b4a.example.modulo_seleccion _modulo_seleccion = null;
-public b4a.example.starter _starter = null;
 public b4a.example.modulogestion _modulogestion = null;
+public b4a.example.starter _starter = null;
+public b4a.example.calendario _calendario = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
@@ -494,7 +508,7 @@ RDebugUtils.currentLine=589861;
 anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_nombrearchivo,_contenido);
 RDebugUtils.currentLine=589862;
  //BA.debugLineNum = 589862;BA.debugLine="Log(\"Archivo creado correctamente en: \" & ruta)";
-anywheresoftware.b4a.keywords.Common.LogImpl("4589862","Archivo creado correctamente en: "+_ruta,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2589862","Archivo creado correctamente en: "+_ruta,0);
 RDebugUtils.currentLine=589863;
  //BA.debugLineNum = 589863;BA.debugLine="End Sub";
 return "";

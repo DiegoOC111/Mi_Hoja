@@ -8,7 +8,7 @@ public class b4xswitch_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width1,RemoteObject _height1) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,148);
+		Debug.PushSubsStack("Base_Resize (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,148);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xswitch","base_resize", __ref, _width1, _height1);}
 Debug.locals.put("Width1", _width1);
 Debug.locals.put("Height1", _height1);
@@ -66,7 +66,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,33);
+		Debug.PushSubsStack("DesignerCreateView (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,33);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xswitch","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _pnl = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 Debug.locals.put("Base", _base);
@@ -147,7 +147,7 @@ finally {
 		}}
 public static RemoteObject  _draw(RemoteObject __ref,RemoteObject _state) throws Exception{
 try {
-		Debug.PushSubsStack("Draw (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,126);
+		Debug.PushSubsStack("Draw (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,126);
 if (RapidSub.canDelegate("draw")) { return __ref.runUserSub(false, "b4xswitch","draw", __ref, _state);}
 RemoteObject _r = RemoteObject.createImmutable(0f);
 RemoteObject _cx = RemoteObject.createImmutable(0f);
@@ -227,7 +227,7 @@ finally {
 		}}
 public static RemoteObject  _getenabled(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getEnabled (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,122);
+		Debug.PushSubsStack("getEnabled (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,122);
 if (RapidSub.canDelegate("getenabled")) { return __ref.runUserSub(false, "b4xswitch","getenabled", __ref);}
  BA.debugLineNum = 122;BA.debugLine="Public Sub getEnabled As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -246,7 +246,7 @@ finally {
 		}}
 public static RemoteObject  _getvalue(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getValue (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,113);
+		Debug.PushSubsStack("getValue (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,113);
 if (RapidSub.canDelegate("getvalue")) { return __ref.runUserSub(false, "b4xswitch","getvalue", __ref);}
  BA.debugLineNum = 113;BA.debugLine="Public Sub getValue As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -265,7 +265,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,27);
+		Debug.PushSubsStack("Initialize (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,27);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xswitch","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -291,7 +291,7 @@ finally {
 		}}
 public static RemoteObject  _pnl_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("pnl_Click (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,70);
+		Debug.PushSubsStack("pnl_Click (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,70);
 if (RapidSub.canDelegate("pnl_click")) { return __ref.runUserSub(false, "b4xswitch","pnl_click", __ref);}
  BA.debugLineNum = 70;BA.debugLine="Private Sub pnl_Click";
 Debug.JustUpdateDeviceLine();
@@ -325,7 +325,7 @@ finally {
 		}}
 public static RemoteObject  _setenabled(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setEnabled (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,117);
+		Debug.PushSubsStack("setEnabled (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,117);
 if (RapidSub.canDelegate("setenabled")) { return __ref.runUserSub(false, "b4xswitch","setenabled", __ref, _b);}
 Debug.locals.put("b", _b);
  BA.debugLineNum = 117;BA.debugLine="Public Sub setEnabled (b As Boolean)";
@@ -348,7 +348,7 @@ finally {
 		}}
 public static RemoteObject  _setvalue(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setValue (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,108);
+		Debug.PushSubsStack("setValue (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,108);
 if (RapidSub.canDelegate("setvalue")) { return __ref.runUserSub(false, "b4xswitch","setvalue", __ref, _b);}
 Debug.locals.put("b", _b);
  BA.debugLineNum = 108;BA.debugLine="Public Sub setValue(b As Boolean)";
@@ -372,7 +372,7 @@ finally {
 		}}
 public static void  _setvalueimpl(RemoteObject __ref,RemoteObject _b,RemoteObject _immediate) throws Exception{
 try {
-		Debug.PushSubsStack("SetValueImpl (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,81);
+		Debug.PushSubsStack("SetValueImpl (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,81);
 if (RapidSub.canDelegate("setvalueimpl")) { __ref.runUserSub(false, "b4xswitch","setvalueimpl", __ref, _b, _immediate); return;}
 ResumableSub_SetValueImpl rsub = new ResumableSub_SetValueImpl(null,__ref,_b,_immediate);
 rsub.resume(null, null);
@@ -403,7 +403,7 @@ RemoteObject _state1 = RemoteObject.createImmutable(0f);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SetValueImpl (b4xswitch) ","b4xswitch",36,__ref.getField(false, "ba"),__ref,81);
+		Debug.PushSubsStack("SetValueImpl (b4xswitch) ","b4xswitch",37,__ref.getField(false, "ba"),__ref,81);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

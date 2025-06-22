@@ -8,7 +8,7 @@ public class b4xplusminus_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,83);
+		Debug.PushSubsStack("Base_Resize (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,83);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xplusminus","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -122,7 +122,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createlabel(RemoteObject __ref,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("CreateLabel (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,247);
+		Debug.PushSubsStack("CreateLabel (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,247);
 if (RapidSub.canDelegate("createlabel")) { return __ref.runUserSub(false, "b4xplusminus","createlabel", __ref, _text);}
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 RemoteObject _xlbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -163,7 +163,7 @@ finally {
 		}}
 public static RemoteObject  _decrement(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Decrement (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,182);
+		Debug.PushSubsStack("Decrement (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,182);
 if (RapidSub.canDelegate("decrement")) { return __ref.runUserSub(false, "b4xplusminus","decrement", __ref);}
  BA.debugLineNum = 182;BA.debugLine="Public Sub Decrement";
 Debug.JustUpdateDeviceLine();
@@ -203,7 +203,7 @@ finally {
 		}}
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,38);
+		Debug.PushSubsStack("DesignerCreateView (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,38);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xplusminus","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _pnl = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 Debug.locals.put("Base", _base);
@@ -319,7 +319,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedvalue(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedValue (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,117);
+		Debug.PushSubsStack("getSelectedValue (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,117);
 if (RapidSub.canDelegate("getselectedvalue")) { return __ref.runUserSub(false, "b4xplusminus","getselectedvalue", __ref);}
  BA.debugLineNum = 117;BA.debugLine="Public Sub getSelectedValue As Object";
 Debug.JustUpdateDeviceLine();
@@ -338,7 +338,7 @@ finally {
 		}}
 public static RemoteObject  _getvalueimpl(RemoteObject __ref,RemoteObject _index) throws Exception{
 try {
-		Debug.PushSubsStack("GetValueImpl (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,130);
+		Debug.PushSubsStack("GetValueImpl (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,130);
 if (RapidSub.canDelegate("getvalueimpl")) { return __ref.runUserSub(false, "b4xplusminus","getvalueimpl", __ref, _index);}
 Debug.locals.put("Index", _index);
  BA.debugLineNum = 130;BA.debugLine="Private Sub GetValueImpl (Index As Int) As Object";
@@ -374,7 +374,7 @@ finally {
 		}}
 public static RemoteObject  _increment(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Increment (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,162);
+		Debug.PushSubsStack("Increment (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,162);
 if (RapidSub.canDelegate("increment")) { return __ref.runUserSub(false, "b4xplusminus","increment", __ref);}
 RemoteObject _v1 = RemoteObject.createImmutable(0);
 RemoteObject _v2 = RemoteObject.createImmutable(0);
@@ -433,7 +433,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,31);
+		Debug.PushSubsStack("Initialize (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,31);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xplusminus","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -462,7 +462,7 @@ finally {
 		}}
 public static RemoteObject  _internalsettextorcsbuildertolabel(RemoteObject __ref,RemoteObject _xlbl,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("InternalSetTextOrCSBuilderToLabel (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,257);
+		Debug.PushSubsStack("InternalSetTextOrCSBuilderToLabel (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,257);
 if (RapidSub.canDelegate("internalsettextorcsbuildertolabel")) { return __ref.runUserSub(false, "b4xplusminus","internalsettextorcsbuildertolabel", __ref, _xlbl, _text);}
 Debug.locals.put("xlbl", _xlbl);
 Debug.locals.put("Text", _text);
@@ -483,7 +483,7 @@ finally {
 		}}
 public static RemoteObject  _pnlarrow_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("pnlArrow_Touch (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,195);
+		Debug.PushSubsStack("pnlArrow_Touch (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,195);
 if (RapidSub.canDelegate("pnlarrow_touch")) { return __ref.runUserSub(false, "b4xplusminus","pnlarrow_touch", __ref, _action, _x, _y);}
 Debug.locals.put("Action", _action);
 Debug.locals.put("X", _x);
@@ -505,7 +505,7 @@ finally {
 		}}
 public static RemoteObject  _setindex(RemoteObject __ref,RemoteObject _i,RemoteObject _raiseevent) throws Exception{
 try {
-		Debug.PushSubsStack("SetIndex (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,142);
+		Debug.PushSubsStack("SetIndex (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,142);
 if (RapidSub.canDelegate("setindex")) { return __ref.runUserSub(false, "b4xplusminus","setindex", __ref, _i, _raiseevent);}
 RemoteObject _value = RemoteObject.declareNull("Object");
 Debug.locals.put("i", _i);
@@ -566,7 +566,7 @@ finally {
 		}}
 public static RemoteObject  _setnumericrange(RemoteObject __ref,RemoteObject _startrange,RemoteObject _endrange,RemoteObject _interval) throws Exception{
 try {
-		Debug.PushSubsStack("SetNumericRange (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,108);
+		Debug.PushSubsStack("SetNumericRange (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,108);
 if (RapidSub.canDelegate("setnumericrange")) { return __ref.runUserSub(false, "b4xplusminus","setnumericrange", __ref, _startrange, _endrange, _interval);}
 Debug.locals.put("StartRange", _startrange);
 Debug.locals.put("EndRange", _endrange);
@@ -603,7 +603,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedvalue(RemoteObject __ref,RemoteObject _v) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedValue (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,121);
+		Debug.PushSubsStack("setSelectedValue (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,121);
 if (RapidSub.canDelegate("setselectedvalue")) { return __ref.runUserSub(false, "b4xplusminus","setselectedvalue", __ref, _v);}
 RemoteObject _n = RemoteObject.createImmutable(0);
 Debug.locals.put("v", _v);
@@ -635,7 +635,7 @@ finally {
 		}}
 public static RemoteObject  _setstringitems(RemoteObject __ref,RemoteObject _list) throws Exception{
 try {
-		Debug.PushSubsStack("SetStringItems (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,101);
+		Debug.PushSubsStack("SetStringItems (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,101);
 if (RapidSub.canDelegate("setstringitems")) { return __ref.runUserSub(false, "b4xplusminus","setstringitems", __ref, _list);}
 Debug.locals.put("list", _list);
  BA.debugLineNum = 101;BA.debugLine="Public Sub SetStringItems (list As List)";
@@ -664,7 +664,7 @@ finally {
 		}}
 public static void  _startdownloop(RemoteObject __ref,RemoteObject _up) throws Exception{
 try {
-		Debug.PushSubsStack("StartDownLoop (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,234);
+		Debug.PushSubsStack("StartDownLoop (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,234);
 if (RapidSub.canDelegate("startdownloop")) { __ref.runUserSub(false, "b4xplusminus","startdownloop", __ref, _up); return;}
 ResumableSub_StartDownLoop rsub = new ResumableSub_StartDownLoop(null,__ref,_up);
 rsub.resume(null, null);
@@ -690,7 +690,7 @@ RemoteObject _myindex = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("StartDownLoop (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,234);
+		Debug.PushSubsStack("StartDownLoop (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,234);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -816,7 +816,7 @@ finally {
 }
 public static RemoteObject  _touch(RemoteObject __ref,RemoteObject _start,RemoteObject _stop,RemoteObject _pnl) throws Exception{
 try {
-		Debug.PushSubsStack("Touch (b4xplusminus) ","b4xplusminus",30,__ref.getField(false, "ba"),__ref,199);
+		Debug.PushSubsStack("Touch (b4xplusminus) ","b4xplusminus",31,__ref.getField(false, "ba"),__ref,199);
 if (RapidSub.canDelegate("touch")) { return __ref.runUserSub(false, "b4xplusminus","touch", __ref, _start, _stop, _pnl);}
 Debug.locals.put("Start", _start);
 Debug.locals.put("Stop", _stop);

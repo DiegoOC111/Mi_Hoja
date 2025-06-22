@@ -8,7 +8,7 @@ public class animatedcounter_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,70);
+		Debug.PushSubsStack("Base_Resize (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,70);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "animatedcounter","base_resize", __ref, _width, _height);}
 RemoteObject _columns = RemoteObject.createImmutable(0);
 RemoteObject _bmp = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper");
@@ -112,7 +112,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createbitmap(RemoteObject __ref,RemoteObject _lbl) throws Exception{
 try {
-		Debug.PushSubsStack("CreateBitmap (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,93);
+		Debug.PushSubsStack("CreateBitmap (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,93);
 if (RapidSub.canDelegate("createbitmap")) { return __ref.runUserSub(false, "animatedcounter","createbitmap", __ref, _lbl);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 RemoteObject _cvs = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas");
@@ -181,7 +181,7 @@ finally {
 		}}
 public static RemoteObject  _createfadebitmap(RemoteObject __ref,RemoteObject _clr) throws Exception{
 try {
-		Debug.PushSubsStack("CreateFadeBitmap (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,56);
+		Debug.PushSubsStack("CreateFadeBitmap (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,56);
 if (RapidSub.canDelegate("createfadebitmap")) { return __ref.runUserSub(false, "animatedcounter","createfadebitmap", __ref, _clr);}
 RemoteObject _bc = RemoteObject.declareNull("b4a.example.bitmapcreator");
 RemoteObject _r = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XRect");
@@ -231,7 +231,7 @@ finally {
 		}}
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,30);
+		Debug.PushSubsStack("DesignerCreateView (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,30);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "animatedcounter","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _pnl = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 int _i = 0;
@@ -330,7 +330,7 @@ finally {
 		}}
 public static RemoteObject  _getvalue(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getValue (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,120);
+		Debug.PushSubsStack("getValue (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,120);
 if (RapidSub.canDelegate("getvalue")) { return __ref.runUserSub(false, "animatedcounter","getvalue", __ref);}
 RemoteObject _res = RemoteObject.createImmutable(0);
 int _i = 0;
@@ -368,7 +368,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,22);
+		Debug.PushSubsStack("Initialize (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,22);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "animatedcounter","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -400,7 +400,7 @@ finally {
 		}}
 public static RemoteObject  _setvalue(RemoteObject __ref,RemoteObject _v) throws Exception{
 try {
-		Debug.PushSubsStack("setValue (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,109);
+		Debug.PushSubsStack("setValue (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,109);
 if (RapidSub.canDelegate("setvalue")) { return __ref.runUserSub(false, "animatedcounter","setvalue", __ref, _v);}
 int _i = 0;
 RemoteObject _iv = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -446,7 +446,7 @@ finally {
 		}}
 public static RemoteObject  _topfromvalue(RemoteObject __ref,RemoteObject _digit) throws Exception{
 try {
-		Debug.PushSubsStack("TopFromValue (animatedcounter) ","animatedcounter",17,__ref.getField(false, "ba"),__ref,88);
+		Debug.PushSubsStack("TopFromValue (animatedcounter) ","animatedcounter",18,__ref.getField(false, "ba"),__ref,88);
 if (RapidSub.canDelegate("topfromvalue")) { return __ref.runUserSub(false, "animatedcounter","topfromvalue", __ref, _digit);}
 RemoteObject _d = RemoteObject.createImmutable(0);
 Debug.locals.put("Digit", _digit);

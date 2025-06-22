@@ -118,7 +118,7 @@ menu,activity_create,1,0,19,23
 main,usuarioactivo,,xui
 
 ,verificarproximaatencion,,mostrarmensajeshock
-menu,verificarproximaatencion,0,1,44,75
+menu,verificarproximaatencion,0,0,44,75
 main,usuarioactivo,,xui
 
 ,mostrarmensajeshock
@@ -127,6 +127,10 @@ menu,activity_pause,0,0,32,34
 
 
 menu,activity_resume,0,0,25,27
+
+
+
+menu,btn_calendario_click,0,0,78,80
 
 
 
@@ -258,30 +262,6 @@ modulo_seleccion,spiner_especialidad_itemclick,1,0,63,65
 ,listadoctores,,doctoreslist,,xui,,img_doc,,lbl_especialidad,,lbl_nombre
 ,img_doc,,lbl_especialidad,,lbl_nombre
 ,mostrardoctoresporespecialidad,,createdoctoritem,,addclickeventtopanel
-starter,application_error,0,0,27,29
-
-
-
-starter,process_globals,0,1,6,10
-
-
-
-starter,service_create,0,0,12,16
-
-
-
-starter,service_destroy,0,0,31,33
-
-
-
-starter,service_start,0,0,18,20
-
-
-
-starter,service_taskremoved,0,0,22,24
-
-
-
 modulogestion,activity_create,1,0,25,29
 ,listadoctores,main,usuarioactivo,,xui,,btn_cancelar,,btn_modificar,,lbl_fecha,,lbl_medico
 ,listadoctores,,btn_cancelar,,btn_modificar,,lbl_fecha,,lbl_medico
@@ -330,6 +310,74 @@ modulogestion,recibirfechamodificada,1,0,92,109
 ,listadoctores,main,usuarioactivo,,xui,,btn_cancelar,,btn_modificar,,lbl_fecha,,lbl_medico
 ,btn_cancelar,,btn_modificar,,lbl_fecha,,lbl_medico
 ,mostraratenciones
+starter,application_error,0,0,27,29
+
+
+
+starter,process_globals,0,1,6,10
+
+
+
+starter,service_create,0,0,12,16
+
+
+
+starter,service_destroy,0,0,31,33
+
+
+
+starter,service_start,0,0,18,20
+
+
+
+starter,service_taskremoved,0,0,22,24
+
+
+
+calendario,activity_create,1,1,23,32
+,clv_calendario,,listaatenciones,,fechasconatencion,main,usuarioactivo,,xui,,lbl_dia,,paneldia
+,clv_calendario,,listaatenciones,,lbl_dia,,paneldia
+,cargarfechaspaciente,,generarcalendariomes,,crearfiladiassemana,,crearfilacalendario,,asignardiaapanel
+calendario,cargarfechaspaciente,0,0,87,101
+,listaatenciones,,fechasconatencion
+,listaatenciones
+
+calendario,generarcalendariomes,1,1,37,72
+,clv_calendario,,xui,,lbl_dia,,paneldia,,fechasconatencion
+,lbl_dia,,paneldia
+,crearfiladiassemana,,crearfilacalendario,,asignardiaapanel
+calendario,activity_pause,0,0,161,163
+
+
+
+calendario,activity_resume,0,0,34,36
+
+
+
+calendario,asignardiaapanel,0,1,103,123
+,fechasconatencion
+
+
+calendario,crearfilacalendario,1,0,74,85
+,xui,,lbl_dia,,paneldia
+,lbl_dia,,paneldia
+
+calendario,crearfiladiassemana,0,1,142,159
+
+
+
+calendario,globals,0,1,12,21
+
+
+
+calendario,paneldia_click,1,1,125,140
+,listaatenciones,main,usuarioactivo
+
+
+calendario,process_globals,0,1,6,10
+
+
+
 b4xbitset,class_globals,0,0,1,8
 
 

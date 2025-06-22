@@ -8,7 +8,7 @@ public class modulogestion_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,25);
+		Debug.PushSubsStack("Activity_Create (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,25);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 25;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -31,7 +31,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,35);
+		Debug.PushSubsStack("Activity_Pause (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,35);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 35;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -48,7 +48,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,31);
+		Debug.PushSubsStack("Activity_Resume (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,31);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","activity_resume");}
  BA.debugLineNum = 31;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(1073741824);
@@ -64,7 +64,7 @@ finally {
 		}}
 public static RemoteObject  _btn_cancelar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Cancelar_Click (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,49);
+		Debug.PushSubsStack("Btn_Cancelar_Click (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,49);
 if (RapidSub.canDelegate("btn_cancelar_click")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","btn_cancelar_click");}
 RemoteObject _btn = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
 RemoteObject _indice = RemoteObject.createImmutable(0);
@@ -100,7 +100,7 @@ finally {
 		}}
 public static RemoteObject  _btn_modificar_click() throws Exception{
 try {
-		Debug.PushSubsStack("Btn_Modificar_Click (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,38);
+		Debug.PushSubsStack("Btn_Modificar_Click (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,38);
 if (RapidSub.canDelegate("btn_modificar_click")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","btn_modificar_click");}
 RemoteObject _btn = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
 RemoteObject _indice = RemoteObject.createImmutable(0);
@@ -128,7 +128,7 @@ finally {
 		}}
 public static RemoteObject  _eliminaratencion(RemoteObject _indice) throws Exception{
 try {
-		Debug.PushSubsStack("EliminarAtencion (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,58);
+		Debug.PushSubsStack("EliminarAtencion (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,58);
 if (RapidSub.canDelegate("eliminaratencion")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","eliminaratencion", _indice);}
 RemoteObject _ruta = RemoteObject.createImmutable("");
 RemoteObject _archivo = RemoteObject.createImmutable("");
@@ -205,7 +205,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _listacitas_itemclick(RemoteObject _index,RemoteObject _value) throws Exception{
 try {
-		Debug.PushSubsStack("ListaCitas_ItemClick (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,143);
+		Debug.PushSubsStack("ListaCitas_ItemClick (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,143);
 if (RapidSub.canDelegate("listacitas_itemclick")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","listacitas_itemclick", _index, _value);}
 Debug.locals.put("Index", _index);
 Debug.locals.put("Value", _value);
@@ -223,7 +223,7 @@ finally {
 		}}
 public static RemoteObject  _mostraratenciones() throws Exception{
 try {
-		Debug.PushSubsStack("MostrarAtenciones (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,110);
+		Debug.PushSubsStack("MostrarAtenciones (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,110);
 if (RapidSub.canDelegate("mostraratenciones")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","mostraratenciones");}
 RemoteObject _ruta = RemoteObject.createImmutable("");
 RemoteObject _archivo = RemoteObject.createImmutable("");
@@ -324,7 +324,7 @@ finally {
 		}}
 public static RemoteObject  _mostrardatepickerparamodificar(RemoteObject _indice) throws Exception{
 try {
-		Debug.PushSubsStack("MostrarDatePickerParaModificar (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,44);
+		Debug.PushSubsStack("MostrarDatePickerParaModificar (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,44);
 if (RapidSub.canDelegate("mostrardatepickerparamodificar")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","mostrardatepickerparamodificar", _indice);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 Debug.locals.put("indice", _indice);
@@ -356,7 +356,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _recibirfechamodificada(RemoteObject _fecha,RemoteObject _indice) throws Exception{
 try {
-		Debug.PushSubsStack("RecibirFechaModificada (modulogestion) ","modulogestion",5,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,92);
+		Debug.PushSubsStack("RecibirFechaModificada (modulogestion) ","modulogestion",4,modulogestion.mostCurrent.activityBA,modulogestion.mostCurrent,92);
 if (RapidSub.canDelegate("recibirfechamodificada")) { return b4a.example.modulogestion.remoteMe.runUserSub(false, "modulogestion","recibirfechamodificada", _fecha, _indice);}
 RemoteObject _ruta = RemoteObject.createImmutable("");
 RemoteObject _archivo = RemoteObject.createImmutable("");

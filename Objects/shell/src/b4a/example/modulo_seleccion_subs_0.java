@@ -489,7 +489,7 @@ Debug.ShouldStop(2097152);
 modulo_seleccion.mostCurrent._fechaseleccionada = _fecha;
  BA.debugLineNum = 87;BA.debugLine="Log(\"Fecha: \" & FechaSeleccionada)";
 Debug.ShouldStop(4194304);
-modulo_seleccion.mostCurrent.__c.runVoidMethod ("LogImpl","42490370",RemoteObject.concat(RemoteObject.createImmutable("Fecha: "),modulo_seleccion.mostCurrent._fechaseleccionada),0);
+modulo_seleccion.mostCurrent.__c.runVoidMethod ("LogImpl","22686978",RemoteObject.concat(RemoteObject.createImmutable("Fecha: "),modulo_seleccion.mostCurrent._fechaseleccionada),0);
  BA.debugLineNum = 88;BA.debugLine="End Sub";
 Debug.ShouldStop(8388608);
 return RemoteObject.createImmutable("");

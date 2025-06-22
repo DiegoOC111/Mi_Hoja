@@ -52,10 +52,11 @@ public static b4a.example.main _main = null;
 public static b4a.example.menu _menu = null;
 public static b4a.example.registrar _registrar = null;
 public static b4a.example.modulo_seleccion _modulo_seleccion = null;
-public static b4a.example.starter _starter = null;
 public static b4a.example.modulogestion _modulogestion = null;
+public static b4a.example.starter _starter = null;
+public static b4a.example.calendario _calendario = null;
 public static b4a.example.b4xcollections _b4xcollections = null;
   public Object[] GetGlobals() {
-		return new Object[] {"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"DateUtils",xuiviewsutils.mostCurrent._dateutils,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"UtilsInitialized",xuiviewsutils._utilsinitialized,"xui",xuiviewsutils._xui};
+		return new Object[] {"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"Calendario",Debug.moduleToString(b4a.example.calendario.class),"DateUtils",xuiviewsutils.mostCurrent._dateutils,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"UtilsInitialized",xuiviewsutils._utilsinitialized,"xui",xuiviewsutils._xui};
 }
 }

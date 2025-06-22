@@ -25,7 +25,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _dialogclosed(RemoteObject __ref,RemoteObject _result) throws Exception{
 try {
-		Debug.PushSubsStack("DialogClosed (b4xtimedtemplate) ","b4xtimedtemplate",37,__ref.getField(false, "ba"),__ref,41);
+		Debug.PushSubsStack("DialogClosed (b4xtimedtemplate) ","b4xtimedtemplate",38,__ref.getField(false, "ba"),__ref,41);
 if (RapidSub.canDelegate("dialogclosed")) { return __ref.runUserSub(false, "b4xtimedtemplate","dialogclosed", __ref, _result);}
 Debug.locals.put("Result", _result);
  BA.debugLineNum = 41;BA.debugLine="Private Sub DialogClosed(Result As Int)";
@@ -48,7 +48,7 @@ finally {
 		}}
 public static RemoteObject  _getpanel(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("GetPanel (b4xtimedtemplate) ","b4xtimedtemplate",37,__ref.getField(false, "ba"),__ref,16);
+		Debug.PushSubsStack("GetPanel (b4xtimedtemplate) ","b4xtimedtemplate",38,__ref.getField(false, "ba"),__ref,16);
 if (RapidSub.canDelegate("getpanel")) { return __ref.runUserSub(false, "b4xtimedtemplate","getpanel", __ref, _dialog);}
 RemoteObject _innerpanel = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 Debug.locals.put("Dialog", _dialog);
@@ -93,7 +93,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _innertemplate) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xtimedtemplate) ","b4xtimedtemplate",37,__ref.getField(false, "ba"),__ref,10);
+		Debug.PushSubsStack("Initialize (b4xtimedtemplate) ","b4xtimedtemplate",38,__ref.getField(false, "ba"),__ref,10);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xtimedtemplate","initialize", __ref, _ba, _innertemplate);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -118,7 +118,7 @@ finally {
 		}}
 public static void  _show(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xtimedtemplate) ","b4xtimedtemplate",37,__ref.getField(false, "ba"),__ref,28);
+		Debug.PushSubsStack("Show (b4xtimedtemplate) ","b4xtimedtemplate",38,__ref.getField(false, "ba"),__ref,28);
 if (RapidSub.canDelegate("show")) { __ref.runUserSub(false, "b4xtimedtemplate","show", __ref, _dialog); return;}
 ResumableSub_Show rsub = new ResumableSub_Show(null,__ref,_dialog);
 rsub.resume(null, null);
@@ -144,7 +144,7 @@ RemoteObject _myindex = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xtimedtemplate) ","b4xtimedtemplate",37,__ref.getField(false, "ba"),__ref,28);
+		Debug.PushSubsStack("Show (b4xtimedtemplate) ","b4xtimedtemplate",38,__ref.getField(false, "ba"),__ref,28);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

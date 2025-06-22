@@ -354,92 +354,93 @@ public b4a.example.dateutils _dateutils = null;
 public b4a.example.main _main = null;
 public b4a.example.menu _menu = null;
 public b4a.example.modulo_seleccion _modulo_seleccion = null;
-public b4a.example.starter _starter = null;
 public b4a.example.modulogestion _modulogestion = null;
+public b4a.example.starter _starter = null;
+public b4a.example.calendario _calendario = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=1179648;
- //BA.debugLineNum = 1179648;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=1179650;
- //BA.debugLineNum = 1179650;BA.debugLine="Activity.LoadLayout(\"CrearUsuario\")";
+RDebugUtils.currentLine=1376256;
+ //BA.debugLineNum = 1376256;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=1376258;
+ //BA.debugLineNum = 1376258;BA.debugLine="Activity.LoadLayout(\"CrearUsuario\")";
 mostCurrent._activity.LoadLayout("CrearUsuario",mostCurrent.activityBA);
-RDebugUtils.currentLine=1179652;
- //BA.debugLineNum = 1179652;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1376260;
+ //BA.debugLineNum = 1376260;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="registrar";
-RDebugUtils.currentLine=1310720;
- //BA.debugLineNum = 1310720;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=1310722;
- //BA.debugLineNum = 1310722;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1507328;
+ //BA.debugLineNum = 1507328;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=1507330;
+ //BA.debugLineNum = 1507330;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=1245184;
- //BA.debugLineNum = 1245184;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=1245186;
- //BA.debugLineNum = 1245186;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1441792;
+ //BA.debugLineNum = 1441792;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=1441794;
+ //BA.debugLineNum = 1441794;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_limpiarpass_click() throws Exception{
 RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_limpiarpass_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_limpiarpass_click", null));}
-RDebugUtils.currentLine=1703936;
- //BA.debugLineNum = 1703936;BA.debugLine="Private Sub Btn_limpiarPass_Click";
-RDebugUtils.currentLine=1703938;
- //BA.debugLineNum = 1703938;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1900544;
+ //BA.debugLineNum = 1900544;BA.debugLine="Private Sub Btn_limpiarPass_Click";
+RDebugUtils.currentLine=1900546;
+ //BA.debugLineNum = 1900546;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_limpiarrut_click() throws Exception{
 RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_limpiarrut_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_limpiarrut_click", null));}
-RDebugUtils.currentLine=1769472;
- //BA.debugLineNum = 1769472;BA.debugLine="Private Sub Btn_limpiarRut_Click";
-RDebugUtils.currentLine=1769474;
- //BA.debugLineNum = 1769474;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1966080;
+ //BA.debugLineNum = 1966080;BA.debugLine="Private Sub Btn_limpiarRut_Click";
+RDebugUtils.currentLine=1966082;
+ //BA.debugLineNum = 1966082;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_regisdtrar_click() throws Exception{
 RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_regisdtrar_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_regisdtrar_click", null));}
-RDebugUtils.currentLine=1376256;
- //BA.debugLineNum = 1376256;BA.debugLine="Private Sub Btn_Regisdtrar_Click";
-RDebugUtils.currentLine=1376257;
- //BA.debugLineNum = 1376257;BA.debugLine="If ValidarRUT(Txt_Rut.Text) = False Then";
+RDebugUtils.currentLine=1572864;
+ //BA.debugLineNum = 1572864;BA.debugLine="Private Sub Btn_Regisdtrar_Click";
+RDebugUtils.currentLine=1572865;
+ //BA.debugLineNum = 1572865;BA.debugLine="If ValidarRUT(Txt_Rut.Text) = False Then";
 if (_validarrut(mostCurrent._txt_rut.getText())==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=1376258;
- //BA.debugLineNum = 1376258;BA.debugLine="Label3.Visible = True";
+RDebugUtils.currentLine=1572866;
+ //BA.debugLineNum = 1572866;BA.debugLine="Label3.Visible = True";
 mostCurrent._label3.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=1376259;
- //BA.debugLineNum = 1376259;BA.debugLine="Return";
+RDebugUtils.currentLine=1572867;
+ //BA.debugLineNum = 1572867;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=1376261;
- //BA.debugLineNum = 1376261;BA.debugLine="If Txt_password2.Text <> Txt_password.text Then";
+RDebugUtils.currentLine=1572869;
+ //BA.debugLineNum = 1572869;BA.debugLine="If Txt_password2.Text <> Txt_password.text Then";
 if ((mostCurrent._txt_password2.getText()).equals(mostCurrent._txt_password.getText()) == false) { 
-RDebugUtils.currentLine=1376262;
- //BA.debugLineNum = 1376262;BA.debugLine="Label4.Visible = True";
+RDebugUtils.currentLine=1572870;
+ //BA.debugLineNum = 1572870;BA.debugLine="Label4.Visible = True";
 mostCurrent._label4.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=1376263;
- //BA.debugLineNum = 1376263;BA.debugLine="Return";
+RDebugUtils.currentLine=1572871;
+ //BA.debugLineNum = 1572871;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=1376265;
- //BA.debugLineNum = 1376265;BA.debugLine="RegistrarNuevoUsuario(Txt_Rut.Text,Txt_password.T";
+RDebugUtils.currentLine=1572873;
+ //BA.debugLineNum = 1572873;BA.debugLine="RegistrarNuevoUsuario(Txt_Rut.Text,Txt_password.T";
 _registrarnuevousuario(mostCurrent._txt_rut.getText(),mostCurrent._txt_password.getText());
-RDebugUtils.currentLine=1376268;
- //BA.debugLineNum = 1376268;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1572876;
+ //BA.debugLineNum = 1572876;BA.debugLine="End Sub";
 return "";
 }
 public static boolean  _validarrut(String _ruttexto) throws Exception{
@@ -455,91 +456,91 @@ int _i = 0;
 int _digito = 0;
 int _resto = 0;
 String _dvcalculado = "";
-RDebugUtils.currentLine=1835008;
- //BA.debugLineNum = 1835008;BA.debugLine="Sub ValidarRUT(RutTexto As String) As Boolean";
-RDebugUtils.currentLine=1835009;
- //BA.debugLineNum = 1835009;BA.debugLine="Dim rut As String = RutTexto.Trim.ToUpperCase";
+RDebugUtils.currentLine=2031616;
+ //BA.debugLineNum = 2031616;BA.debugLine="Sub ValidarRUT(RutTexto As String) As Boolean";
+RDebugUtils.currentLine=2031617;
+ //BA.debugLineNum = 2031617;BA.debugLine="Dim rut As String = RutTexto.Trim.ToUpperCase";
 _rut = _ruttexto.trim().toUpperCase();
-RDebugUtils.currentLine=1835012;
- //BA.debugLineNum = 1835012;BA.debugLine="If Regex.IsMatch(\"[^0-9Kk\\.\\-]\", rut) Then Return";
+RDebugUtils.currentLine=2031620;
+ //BA.debugLineNum = 2031620;BA.debugLine="If Regex.IsMatch(\"[^0-9Kk\\.\\-]\", rut) Then Return";
 if (anywheresoftware.b4a.keywords.Common.Regex.IsMatch("[^0-9Kk\\.\\-]",_rut)) { 
 if (true) return anywheresoftware.b4a.keywords.Common.False;};
-RDebugUtils.currentLine=1835015;
- //BA.debugLineNum = 1835015;BA.debugLine="rut = rut.Replace(\".\", \"\").Replace(\"-\", \"\")";
+RDebugUtils.currentLine=2031623;
+ //BA.debugLineNum = 2031623;BA.debugLine="rut = rut.Replace(\".\", \"\").Replace(\"-\", \"\")";
 _rut = _rut.replace(".","").replace("-","");
-RDebugUtils.currentLine=1835018;
- //BA.debugLineNum = 1835018;BA.debugLine="If rut.Length < 2 Then Return False";
+RDebugUtils.currentLine=2031626;
+ //BA.debugLineNum = 2031626;BA.debugLine="If rut.Length < 2 Then Return False";
 if (_rut.length()<2) { 
 if (true) return anywheresoftware.b4a.keywords.Common.False;};
-RDebugUtils.currentLine=1835021;
- //BA.debugLineNum = 1835021;BA.debugLine="Dim cuerpo As String = rut.SubString2(0, rut.Leng";
+RDebugUtils.currentLine=2031629;
+ //BA.debugLineNum = 2031629;BA.debugLine="Dim cuerpo As String = rut.SubString2(0, rut.Leng";
 _cuerpo = _rut.substring((int) (0),(int) (_rut.length()-1));
-RDebugUtils.currentLine=1835022;
- //BA.debugLineNum = 1835022;BA.debugLine="Dim dvIngresado As String = rut.SubString(rut.Len";
+RDebugUtils.currentLine=2031630;
+ //BA.debugLineNum = 2031630;BA.debugLine="Dim dvIngresado As String = rut.SubString(rut.Len";
 _dvingresado = _rut.substring((int) (_rut.length()-1));
-RDebugUtils.currentLine=1835025;
- //BA.debugLineNum = 1835025;BA.debugLine="If Regex.IsMatch(\"[^0-9]\", cuerpo) Then Return Fa";
+RDebugUtils.currentLine=2031633;
+ //BA.debugLineNum = 2031633;BA.debugLine="If Regex.IsMatch(\"[^0-9]\", cuerpo) Then Return Fa";
 if (anywheresoftware.b4a.keywords.Common.Regex.IsMatch("[^0-9]",_cuerpo)) { 
 if (true) return anywheresoftware.b4a.keywords.Common.False;};
-RDebugUtils.currentLine=1835028;
- //BA.debugLineNum = 1835028;BA.debugLine="Dim suma As Int = 0";
+RDebugUtils.currentLine=2031636;
+ //BA.debugLineNum = 2031636;BA.debugLine="Dim suma As Int = 0";
 _suma = (int) (0);
-RDebugUtils.currentLine=1835029;
- //BA.debugLineNum = 1835029;BA.debugLine="Dim multiplicador As Int = 2";
+RDebugUtils.currentLine=2031637;
+ //BA.debugLineNum = 2031637;BA.debugLine="Dim multiplicador As Int = 2";
 _multiplicador = (int) (2);
-RDebugUtils.currentLine=1835031;
- //BA.debugLineNum = 1835031;BA.debugLine="For i = cuerpo.Length - 1 To 0 Step -1";
+RDebugUtils.currentLine=2031639;
+ //BA.debugLineNum = 2031639;BA.debugLine="For i = cuerpo.Length - 1 To 0 Step -1";
 {
 final int step10 = -1;
 final int limit10 = (int) (0);
 _i = (int) (_cuerpo.length()-1) ;
 for (;_i >= limit10 ;_i = _i + step10 ) {
-RDebugUtils.currentLine=1835032;
- //BA.debugLineNum = 1835032;BA.debugLine="Dim digito As Int = Bit.ParseInt(\"\" & cuerpo.Cha";
+RDebugUtils.currentLine=2031640;
+ //BA.debugLineNum = 2031640;BA.debugLine="Dim digito As Int = Bit.ParseInt(\"\" & cuerpo.Cha";
 _digito = anywheresoftware.b4a.keywords.Common.Bit.ParseInt(""+BA.ObjectToString(_cuerpo.charAt(_i)),(int) (10));
-RDebugUtils.currentLine=1835033;
- //BA.debugLineNum = 1835033;BA.debugLine="suma = suma + digito * multiplicador";
+RDebugUtils.currentLine=2031641;
+ //BA.debugLineNum = 2031641;BA.debugLine="suma = suma + digito * multiplicador";
 _suma = (int) (_suma+_digito*_multiplicador);
-RDebugUtils.currentLine=1835034;
- //BA.debugLineNum = 1835034;BA.debugLine="multiplicador = multiplicador + 1";
+RDebugUtils.currentLine=2031642;
+ //BA.debugLineNum = 2031642;BA.debugLine="multiplicador = multiplicador + 1";
 _multiplicador = (int) (_multiplicador+1);
-RDebugUtils.currentLine=1835035;
- //BA.debugLineNum = 1835035;BA.debugLine="If multiplicador > 7 Then multiplicador = 2";
+RDebugUtils.currentLine=2031643;
+ //BA.debugLineNum = 2031643;BA.debugLine="If multiplicador > 7 Then multiplicador = 2";
 if (_multiplicador>7) { 
 _multiplicador = (int) (2);};
  }
 };
-RDebugUtils.currentLine=1835038;
- //BA.debugLineNum = 1835038;BA.debugLine="Dim resto As Int = suma Mod 11";
+RDebugUtils.currentLine=2031646;
+ //BA.debugLineNum = 2031646;BA.debugLine="Dim resto As Int = suma Mod 11";
 _resto = (int) (_suma%11);
-RDebugUtils.currentLine=1835039;
- //BA.debugLineNum = 1835039;BA.debugLine="Dim dvCalculado As String";
+RDebugUtils.currentLine=2031647;
+ //BA.debugLineNum = 2031647;BA.debugLine="Dim dvCalculado As String";
 _dvcalculado = "";
-RDebugUtils.currentLine=1835040;
- //BA.debugLineNum = 1835040;BA.debugLine="Select Case 11 - resto";
+RDebugUtils.currentLine=2031648;
+ //BA.debugLineNum = 2031648;BA.debugLine="Select Case 11 - resto";
 switch (BA.switchObjectToInt(11-_resto,11,10)) {
 case 0: {
-RDebugUtils.currentLine=1835042;
- //BA.debugLineNum = 1835042;BA.debugLine="dvCalculado = \"0\"";
+RDebugUtils.currentLine=2031650;
+ //BA.debugLineNum = 2031650;BA.debugLine="dvCalculado = \"0\"";
 _dvcalculado = "0";
  break; }
 case 1: {
-RDebugUtils.currentLine=1835044;
- //BA.debugLineNum = 1835044;BA.debugLine="dvCalculado = \"K\"";
+RDebugUtils.currentLine=2031652;
+ //BA.debugLineNum = 2031652;BA.debugLine="dvCalculado = \"K\"";
 _dvcalculado = "K";
  break; }
 default: {
-RDebugUtils.currentLine=1835046;
- //BA.debugLineNum = 1835046;BA.debugLine="dvCalculado = (11 - resto)";
+RDebugUtils.currentLine=2031654;
+ //BA.debugLineNum = 2031654;BA.debugLine="dvCalculado = (11 - resto)";
 _dvcalculado = BA.NumberToString((11-_resto));
  break; }
 }
 ;
-RDebugUtils.currentLine=1835050;
- //BA.debugLineNum = 1835050;BA.debugLine="Return dvCalculado = dvIngresado";
+RDebugUtils.currentLine=2031658;
+ //BA.debugLineNum = 2031658;BA.debugLine="Return dvCalculado = dvIngresado";
 if (true) return (_dvcalculado).equals(_dvingresado);
-RDebugUtils.currentLine=1835051;
- //BA.debugLineNum = 1835051;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2031659;
+ //BA.debugLineNum = 2031659;BA.debugLine="End Sub";
 return false;
 }
 public static String  _registrarnuevousuario(String _rut,String _contrasena) throws Exception{
@@ -549,22 +550,22 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "registrarnuevousuario", false)
 anywheresoftware.b4a.objects.collections.List _usuarios = null;
 anywheresoftware.b4a.objects.collections.Map _u = null;
 anywheresoftware.b4a.objects.collections.Map _nuevo = null;
-RDebugUtils.currentLine=1507328;
- //BA.debugLineNum = 1507328;BA.debugLine="Sub RegistrarNuevoUsuario(Rut As String, Contrasen";
-RDebugUtils.currentLine=1507329;
- //BA.debugLineNum = 1507329;BA.debugLine="Dim usuarios As List";
+RDebugUtils.currentLine=1703936;
+ //BA.debugLineNum = 1703936;BA.debugLine="Sub RegistrarNuevoUsuario(Rut As String, Contrasen";
+RDebugUtils.currentLine=1703937;
+ //BA.debugLineNum = 1703937;BA.debugLine="Dim usuarios As List";
 _usuarios = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=1507330;
- //BA.debugLineNum = 1507330;BA.debugLine="usuarios.Initialize";
+RDebugUtils.currentLine=1703938;
+ //BA.debugLineNum = 1703938;BA.debugLine="usuarios.Initialize";
 _usuarios.Initialize();
-RDebugUtils.currentLine=1507331;
- //BA.debugLineNum = 1507331;BA.debugLine="Rut = Rut.ToUpperCase.Replace(\".\", \"\")";
+RDebugUtils.currentLine=1703939;
+ //BA.debugLineNum = 1703939;BA.debugLine="Rut = Rut.ToUpperCase.Replace(\".\", \"\")";
 _rut = _rut.toUpperCase().replace(".","");
-RDebugUtils.currentLine=1507333;
- //BA.debugLineNum = 1507333;BA.debugLine="usuarios = CargarUsuarios";
+RDebugUtils.currentLine=1703941;
+ //BA.debugLineNum = 1703941;BA.debugLine="usuarios = CargarUsuarios";
 _usuarios = _cargarusuarios();
-RDebugUtils.currentLine=1507336;
- //BA.debugLineNum = 1507336;BA.debugLine="For Each u As Map In usuarios";
+RDebugUtils.currentLine=1703944;
+ //BA.debugLineNum = 1703944;BA.debugLine="For Each u As Map In usuarios";
 _u = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group5 = _usuarios;
@@ -573,54 +574,54 @@ final int groupLen5 = group5.getSize()
 ;
 for (; index5 < groupLen5;index5++){
 _u = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group5.Get(index5)));
-RDebugUtils.currentLine=1507337;
- //BA.debugLineNum = 1507337;BA.debugLine="If u.Get(\"Rut\") = Rut Then";
+RDebugUtils.currentLine=1703945;
+ //BA.debugLineNum = 1703945;BA.debugLine="If u.Get(\"Rut\") = Rut Then";
 if ((_u.Get((Object)("Rut"))).equals((Object)(_rut))) { 
-RDebugUtils.currentLine=1507338;
- //BA.debugLineNum = 1507338;BA.debugLine="ToastMessageShow(\"El RUT ya está registrado\", T";
+RDebugUtils.currentLine=1703946;
+ //BA.debugLineNum = 1703946;BA.debugLine="ToastMessageShow(\"El RUT ya está registrado\", T";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("El RUT ya está registrado"),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=1507339;
- //BA.debugLineNum = 1507339;BA.debugLine="Return";
+RDebugUtils.currentLine=1703947;
+ //BA.debugLineNum = 1703947;BA.debugLine="Return";
 if (true) return "";
  };
  }
 };
-RDebugUtils.currentLine=1507344;
- //BA.debugLineNum = 1507344;BA.debugLine="Dim nuevo As Map";
+RDebugUtils.currentLine=1703952;
+ //BA.debugLineNum = 1703952;BA.debugLine="Dim nuevo As Map";
 _nuevo = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=1507345;
- //BA.debugLineNum = 1507345;BA.debugLine="nuevo.Initialize";
+RDebugUtils.currentLine=1703953;
+ //BA.debugLineNum = 1703953;BA.debugLine="nuevo.Initialize";
 _nuevo.Initialize();
-RDebugUtils.currentLine=1507346;
- //BA.debugLineNum = 1507346;BA.debugLine="nuevo.Put(\"Rut\", Rut)";
+RDebugUtils.currentLine=1703954;
+ //BA.debugLineNum = 1703954;BA.debugLine="nuevo.Put(\"Rut\", Rut)";
 _nuevo.Put((Object)("Rut"),(Object)(_rut));
-RDebugUtils.currentLine=1507347;
- //BA.debugLineNum = 1507347;BA.debugLine="nuevo.Put(\"Contrasena\", Contrasena)";
+RDebugUtils.currentLine=1703955;
+ //BA.debugLineNum = 1703955;BA.debugLine="nuevo.Put(\"Contrasena\", Contrasena)";
 _nuevo.Put((Object)("Contrasena"),(Object)(_contrasena));
-RDebugUtils.currentLine=1507349;
- //BA.debugLineNum = 1507349;BA.debugLine="usuarios.Add(nuevo)";
+RDebugUtils.currentLine=1703957;
+ //BA.debugLineNum = 1703957;BA.debugLine="usuarios.Add(nuevo)";
 _usuarios.Add((Object)(_nuevo.getObject()));
-RDebugUtils.currentLine=1507350;
- //BA.debugLineNum = 1507350;BA.debugLine="GuardarUsuarios(usuarios)";
+RDebugUtils.currentLine=1703958;
+ //BA.debugLineNum = 1703958;BA.debugLine="GuardarUsuarios(usuarios)";
 _guardarusuarios(_usuarios);
-RDebugUtils.currentLine=1507352;
- //BA.debugLineNum = 1507352;BA.debugLine="ToastMessageShow(\"Usuario registrado\", False)";
+RDebugUtils.currentLine=1703960;
+ //BA.debugLineNum = 1703960;BA.debugLine="ToastMessageShow(\"Usuario registrado\", False)";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Usuario registrado"),anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=1507353;
- //BA.debugLineNum = 1507353;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=1703961;
+ //BA.debugLineNum = 1703961;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=1507354;
- //BA.debugLineNum = 1507354;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1703962;
+ //BA.debugLineNum = 1703962;BA.debugLine="End Sub";
 return "";
 }
 public static String  _button2_click() throws Exception{
 RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "button2_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "button2_click", null));}
-RDebugUtils.currentLine=1638400;
- //BA.debugLineNum = 1638400;BA.debugLine="Private Sub Button2_Click";
-RDebugUtils.currentLine=1638402;
- //BA.debugLineNum = 1638402;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1835008;
+ //BA.debugLineNum = 1835008;BA.debugLine="Private Sub Button2_Click";
+RDebugUtils.currentLine=1835010;
+ //BA.debugLineNum = 1835010;BA.debugLine="End Sub";
 return "";
 }
 public static anywheresoftware.b4a.objects.collections.List  _cargarusuarios() throws Exception{
@@ -630,35 +631,35 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "cargarusuarios", false))
 anywheresoftware.b4a.objects.collections.List _lista = null;
 String _json = "";
 anywheresoftware.b4a.objects.collections.JSONParser _jp = null;
-RDebugUtils.currentLine=1572864;
- //BA.debugLineNum = 1572864;BA.debugLine="Sub CargarUsuarios() As List";
-RDebugUtils.currentLine=1572865;
- //BA.debugLineNum = 1572865;BA.debugLine="Dim Lista As List";
+RDebugUtils.currentLine=1769472;
+ //BA.debugLineNum = 1769472;BA.debugLine="Sub CargarUsuarios() As List";
+RDebugUtils.currentLine=1769473;
+ //BA.debugLineNum = 1769473;BA.debugLine="Dim Lista As List";
 _lista = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=1572866;
- //BA.debugLineNum = 1572866;BA.debugLine="Lista.Initialize";
+RDebugUtils.currentLine=1769474;
+ //BA.debugLineNum = 1769474;BA.debugLine="Lista.Initialize";
 _lista.Initialize();
-RDebugUtils.currentLine=1572868;
- //BA.debugLineNum = 1572868;BA.debugLine="If File.Exists(File.DirInternal, \"usuarios.json\")";
+RDebugUtils.currentLine=1769476;
+ //BA.debugLineNum = 1769476;BA.debugLine="If File.Exists(File.DirInternal, \"usuarios.json\")";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"usuarios.json")) { 
-RDebugUtils.currentLine=1572869;
- //BA.debugLineNum = 1572869;BA.debugLine="Dim json As String = File.ReadString(File.DirInt";
+RDebugUtils.currentLine=1769477;
+ //BA.debugLineNum = 1769477;BA.debugLine="Dim json As String = File.ReadString(File.DirInt";
 _json = anywheresoftware.b4a.keywords.Common.File.ReadString(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"usuarios.json");
-RDebugUtils.currentLine=1572870;
- //BA.debugLineNum = 1572870;BA.debugLine="Dim jp As JSONParser";
+RDebugUtils.currentLine=1769478;
+ //BA.debugLineNum = 1769478;BA.debugLine="Dim jp As JSONParser";
 _jp = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=1572871;
- //BA.debugLineNum = 1572871;BA.debugLine="jp.Initialize(json)";
+RDebugUtils.currentLine=1769479;
+ //BA.debugLineNum = 1769479;BA.debugLine="jp.Initialize(json)";
 _jp.Initialize(_json);
-RDebugUtils.currentLine=1572872;
- //BA.debugLineNum = 1572872;BA.debugLine="Lista = jp.NextArray";
+RDebugUtils.currentLine=1769480;
+ //BA.debugLineNum = 1769480;BA.debugLine="Lista = jp.NextArray";
 _lista = _jp.NextArray();
  };
-RDebugUtils.currentLine=1572875;
- //BA.debugLineNum = 1572875;BA.debugLine="Return Lista";
+RDebugUtils.currentLine=1769483;
+ //BA.debugLineNum = 1769483;BA.debugLine="Return Lista";
 if (true) return _lista;
-RDebugUtils.currentLine=1572876;
- //BA.debugLineNum = 1572876;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1769484;
+ //BA.debugLineNum = 1769484;BA.debugLine="End Sub";
 return null;
 }
 public static String  _guardarusuarios(anywheresoftware.b4a.objects.collections.List _listausuarios) throws Exception{
@@ -666,19 +667,19 @@ RDebugUtils.currentModule="registrar";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "guardarusuarios", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "guardarusuarios", new Object[] {_listausuarios}));}
 anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator _jgen = null;
-RDebugUtils.currentLine=1441792;
- //BA.debugLineNum = 1441792;BA.debugLine="Sub GuardarUsuarios(ListaUsuarios As List)";
-RDebugUtils.currentLine=1441793;
- //BA.debugLineNum = 1441793;BA.debugLine="Dim jgen As JSONGenerator";
+RDebugUtils.currentLine=1638400;
+ //BA.debugLineNum = 1638400;BA.debugLine="Sub GuardarUsuarios(ListaUsuarios As List)";
+RDebugUtils.currentLine=1638401;
+ //BA.debugLineNum = 1638401;BA.debugLine="Dim jgen As JSONGenerator";
 _jgen = new anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator();
-RDebugUtils.currentLine=1441794;
- //BA.debugLineNum = 1441794;BA.debugLine="jgen.Initialize2(ListaUsuarios)";
+RDebugUtils.currentLine=1638402;
+ //BA.debugLineNum = 1638402;BA.debugLine="jgen.Initialize2(ListaUsuarios)";
 _jgen.Initialize2(_listausuarios);
-RDebugUtils.currentLine=1441795;
- //BA.debugLineNum = 1441795;BA.debugLine="File.WriteString(File.DirInternal, \"usuarios.json";
+RDebugUtils.currentLine=1638403;
+ //BA.debugLineNum = 1638403;BA.debugLine="File.WriteString(File.DirInternal, \"usuarios.json";
 anywheresoftware.b4a.keywords.Common.File.WriteString(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"usuarios.json",_jgen.ToString());
-RDebugUtils.currentLine=1441796;
- //BA.debugLineNum = 1441796;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1638404;
+ //BA.debugLineNum = 1638404;BA.debugLine="End Sub";
 return "";
 }
 }

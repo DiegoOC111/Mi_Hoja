@@ -64,11 +64,12 @@ public static RemoteObject _dateutils = RemoteObject.declareNull("b4a.example.da
 public static b4a.example.main _main = null;
 public static b4a.example.menu _menu = null;
 public static b4a.example.modulo_seleccion _modulo_seleccion = null;
-public static b4a.example.starter _starter = null;
 public static b4a.example.modulogestion _modulogestion = null;
+public static b4a.example.starter _starter = null;
+public static b4a.example.calendario _calendario = null;
 public static b4a.example.b4xcollections _b4xcollections = null;
 public static b4a.example.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",registrar.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"DateUtils",registrar.mostCurrent._dateutils,"Label3",registrar.mostCurrent._label3,"Label4",registrar.mostCurrent._label4,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"Txt_password",registrar.mostCurrent._txt_password,"Txt_password2",registrar.mostCurrent._txt_password2,"Txt_Rut",registrar.mostCurrent._txt_rut,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
+		return new Object[] {"Activity",registrar.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"Calendario",Debug.moduleToString(b4a.example.calendario.class),"DateUtils",registrar.mostCurrent._dateutils,"Label3",registrar.mostCurrent._label3,"Label4",registrar.mostCurrent._label4,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"Txt_password",registrar.mostCurrent._txt_password,"Txt_password2",registrar.mostCurrent._txt_password2,"Txt_Rut",registrar.mostCurrent._txt_rut,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
 }
 }

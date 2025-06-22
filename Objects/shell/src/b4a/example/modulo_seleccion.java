@@ -68,11 +68,12 @@ public static RemoteObject _dateutils = RemoteObject.declareNull("b4a.example.da
 public static b4a.example.main _main = null;
 public static b4a.example.menu _menu = null;
 public static b4a.example.registrar _registrar = null;
-public static b4a.example.starter _starter = null;
 public static b4a.example.modulogestion _modulogestion = null;
+public static b4a.example.starter _starter = null;
+public static b4a.example.calendario _calendario = null;
 public static b4a.example.b4xcollections _b4xcollections = null;
 public static b4a.example.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",modulo_seleccion.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"DateUtils",modulo_seleccion.mostCurrent._dateutils,"doctoresList",modulo_seleccion.mostCurrent._doctoreslist,"DoctorSeleccionado",modulo_seleccion.mostCurrent._doctorseleccionado,"FechaSeleccionada",modulo_seleccion.mostCurrent._fechaseleccionada,"IMG_Doc",modulo_seleccion.mostCurrent._img_doc,"Lbl_especialidad",modulo_seleccion.mostCurrent._lbl_especialidad,"Lbl_nombre",modulo_seleccion.mostCurrent._lbl_nombre,"ListaDoctores",modulo_seleccion.mostCurrent._listadoctores,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Spiner_especialidad",modulo_seleccion.mostCurrent._spiner_especialidad,"Starter",Debug.moduleToString(b4a.example.starter.class),"xui",modulo_seleccion.mostCurrent._xui,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
+		return new Object[] {"Activity",modulo_seleccion.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"Calendario",Debug.moduleToString(b4a.example.calendario.class),"DateUtils",modulo_seleccion.mostCurrent._dateutils,"doctoresList",modulo_seleccion.mostCurrent._doctoreslist,"DoctorSeleccionado",modulo_seleccion.mostCurrent._doctorseleccionado,"FechaSeleccionada",modulo_seleccion.mostCurrent._fechaseleccionada,"IMG_Doc",modulo_seleccion.mostCurrent._img_doc,"Lbl_especialidad",modulo_seleccion.mostCurrent._lbl_especialidad,"Lbl_nombre",modulo_seleccion.mostCurrent._lbl_nombre,"ListaDoctores",modulo_seleccion.mostCurrent._listadoctores,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"ModuloGestion",Debug.moduleToString(b4a.example.modulogestion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Spiner_especialidad",modulo_seleccion.mostCurrent._spiner_especialidad,"Starter",Debug.moduleToString(b4a.example.starter.class),"xui",modulo_seleccion.mostCurrent._xui,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
 }
 }

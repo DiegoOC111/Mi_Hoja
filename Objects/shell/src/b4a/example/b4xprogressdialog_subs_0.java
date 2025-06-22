@@ -25,7 +25,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _dialogclosed(RemoteObject __ref,RemoteObject _result) throws Exception{
 try {
-		Debug.PushSubsStack("DialogClosed (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,55);
+		Debug.PushSubsStack("DialogClosed (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,55);
 if (RapidSub.canDelegate("dialogclosed")) { return __ref.runUserSub(false, "b4xprogressdialog","dialogclosed", __ref, _result);}
 Debug.locals.put("Result", _result);
  BA.debugLineNum = 55;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
@@ -45,7 +45,7 @@ finally {
 		}}
 public static RemoteObject  _getpanel(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("GetPanel (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,33);
+		Debug.PushSubsStack("GetPanel (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,33);
 if (RapidSub.canDelegate("getpanel")) { return __ref.runUserSub(false, "b4xprogressdialog","getpanel", __ref, _dialog);}
 Debug.locals.put("Dialog", _dialog);
  BA.debugLineNum = 33;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
@@ -65,7 +65,7 @@ finally {
 		}}
 public static RemoteObject  _gettext(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getText (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,28);
+		Debug.PushSubsStack("getText (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,28);
 if (RapidSub.canDelegate("gettext")) { return __ref.runUserSub(false, "b4xprogressdialog","gettext", __ref);}
  BA.debugLineNum = 28;BA.debugLine="Public Sub getText As Object";
 Debug.JustUpdateDeviceLine();
@@ -84,7 +84,7 @@ finally {
 		}}
 public static RemoteObject  _hide(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Hide (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,47);
+		Debug.PushSubsStack("Hide (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,47);
 if (RapidSub.canDelegate("hide")) { return __ref.runUserSub(false, "b4xprogressdialog","hide", __ref);}
  BA.debugLineNum = 47;BA.debugLine="Public Sub Hide";
 Debug.JustUpdateDeviceLine();
@@ -103,7 +103,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _parent) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,11);
+		Debug.PushSubsStack("Initialize (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,11);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xprogressdialog","initialize", __ref, _ba, _parent);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -149,7 +149,7 @@ finally {
 		}}
 public static RemoteObject  _settext(RemoteObject __ref,RemoteObject _t) throws Exception{
 try {
-		Debug.PushSubsStack("setText (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,24);
+		Debug.PushSubsStack("setText (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,24);
 if (RapidSub.canDelegate("settext")) { return __ref.runUserSub(false, "b4xprogressdialog","settext", __ref, _t);}
 Debug.locals.put("t", _t);
  BA.debugLineNum = 24;BA.debugLine="Public Sub setText(t As Object)";
@@ -169,7 +169,7 @@ finally {
 		}}
 public static RemoteObject  _show(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,51);
+		Debug.PushSubsStack("Show (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,51);
 if (RapidSub.canDelegate("show")) { return __ref.runUserSub(false, "b4xprogressdialog","show", __ref, _dialog);}
 Debug.locals.put("Dialog", _dialog);
  BA.debugLineNum = 51;BA.debugLine="Private Sub Show (Dialog As B4XDialog) 'ignore";
@@ -189,7 +189,7 @@ finally {
 		}}
 public static RemoteObject  _showdialog(RemoteObject __ref,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("ShowDialog (b4xprogressdialog) ","b4xprogressdialog",31,__ref.getField(false, "ba"),__ref,39);
+		Debug.PushSubsStack("ShowDialog (b4xprogressdialog) ","b4xprogressdialog",32,__ref.getField(false, "ba"),__ref,39);
 if (RapidSub.canDelegate("showdialog")) { return __ref.runUserSub(false, "b4xprogressdialog","showdialog", __ref, _text);}
 Debug.locals.put("Text", _text);
  BA.debugLineNum = 39;BA.debugLine="Public Sub ShowDialog (Text As Object)";

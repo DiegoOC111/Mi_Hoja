@@ -79,3 +79,8 @@ Sub VerificarProximaAtencion
 		End If
 	Next
 End Sub
+
+
+Private Sub Btn_calendario_Click
+	StartActivity(Calendario)
+End Sub

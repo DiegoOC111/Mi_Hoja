@@ -351,8 +351,9 @@ public b4a.example.dateutils _dateutils = null;
 public b4a.example.main _main = null;
 public b4a.example.registrar _registrar = null;
 public b4a.example.modulo_seleccion _modulo_seleccion = null;
-public b4a.example.starter _starter = null;
 public b4a.example.modulogestion _modulogestion = null;
+public b4a.example.starter _starter = null;
+public b4a.example.calendario _calendario = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
@@ -385,42 +386,42 @@ long _mañana = 0L;
 anywheresoftware.b4a.objects.collections.Map _atencion = null;
 String _fechatexto = "";
 long _fechaticks = 0L;
-RDebugUtils.currentLine=34209792;
- //BA.debugLineNum = 34209792;BA.debugLine="Sub VerificarProximaAtencion";
-RDebugUtils.currentLine=34209793;
- //BA.debugLineNum = 34209793;BA.debugLine="Dim ruta As String = File.DirInternal";
+RDebugUtils.currentLine=1179648;
+ //BA.debugLineNum = 1179648;BA.debugLine="Sub VerificarProximaAtencion";
+RDebugUtils.currentLine=1179649;
+ //BA.debugLineNum = 1179649;BA.debugLine="Dim ruta As String = File.DirInternal";
 _ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
-RDebugUtils.currentLine=34209794;
- //BA.debugLineNum = 34209794;BA.debugLine="Dim archivo As String = \"atenciones.json\"";
+RDebugUtils.currentLine=1179650;
+ //BA.debugLineNum = 1179650;BA.debugLine="Dim archivo As String = \"atenciones.json\"";
 _archivo = "atenciones.json";
-RDebugUtils.currentLine=34209795;
- //BA.debugLineNum = 34209795;BA.debugLine="If File.Exists(ruta, archivo) = False Then Return";
+RDebugUtils.currentLine=1179651;
+ //BA.debugLineNum = 1179651;BA.debugLine="If File.Exists(ruta, archivo) = False Then Return";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_archivo)==anywheresoftware.b4a.keywords.Common.False) { 
 if (true) return "";};
-RDebugUtils.currentLine=34209797;
- //BA.debugLineNum = 34209797;BA.debugLine="Dim parser As JSONParser";
+RDebugUtils.currentLine=1179653;
+ //BA.debugLineNum = 1179653;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=34209798;
- //BA.debugLineNum = 34209798;BA.debugLine="parser.Initialize(File.ReadString(ruta, archivo))";
+RDebugUtils.currentLine=1179654;
+ //BA.debugLineNum = 1179654;BA.debugLine="parser.Initialize(File.ReadString(ruta, archivo))";
 _parser.Initialize(anywheresoftware.b4a.keywords.Common.File.ReadString(_ruta,_archivo));
-RDebugUtils.currentLine=34209799;
- //BA.debugLineNum = 34209799;BA.debugLine="Dim lista As List = parser.NextArray";
+RDebugUtils.currentLine=1179655;
+ //BA.debugLineNum = 1179655;BA.debugLine="Dim lista As List = parser.NextArray";
 _lista = new anywheresoftware.b4a.objects.collections.List();
 _lista = _parser.NextArray();
-RDebugUtils.currentLine=34209800;
- //BA.debugLineNum = 34209800;BA.debugLine="DateTime.DateFormat = \"dd/MM/yyyy\"";
+RDebugUtils.currentLine=1179656;
+ //BA.debugLineNum = 1179656;BA.debugLine="DateTime.DateFormat = \"dd/MM/yyyy\"";
 anywheresoftware.b4a.keywords.Common.DateTime.setDateFormat("dd/MM/yyyy");
-RDebugUtils.currentLine=34209801;
- //BA.debugLineNum = 34209801;BA.debugLine="Dim rutActual As String = Main.UsuarioActivo.Rut";
+RDebugUtils.currentLine=1179657;
+ //BA.debugLineNum = 1179657;BA.debugLine="Dim rutActual As String = Main.UsuarioActivo.Rut";
 _rutactual = mostCurrent._main._usuarioactivo /*b4a.example.main._usuario*/ .Rut /*String*/ ;
-RDebugUtils.currentLine=34209803;
- //BA.debugLineNum = 34209803;BA.debugLine="Dim hoy As Long = DateTime.Now";
+RDebugUtils.currentLine=1179659;
+ //BA.debugLineNum = 1179659;BA.debugLine="Dim hoy As Long = DateTime.Now";
 _hoy = anywheresoftware.b4a.keywords.Common.DateTime.getNow();
-RDebugUtils.currentLine=34209804;
- //BA.debugLineNum = 34209804;BA.debugLine="Dim mañana As Long = hoy + DateTime.TicksPerDay";
+RDebugUtils.currentLine=1179660;
+ //BA.debugLineNum = 1179660;BA.debugLine="Dim mañana As Long = hoy + DateTime.TicksPerDay";
 _mañana = (long) (_hoy+anywheresoftware.b4a.keywords.Common.DateTime.TicksPerDay);
-RDebugUtils.currentLine=34209806;
- //BA.debugLineNum = 34209806;BA.debugLine="For Each atencion As Map In lista";
+RDebugUtils.currentLine=1179662;
+ //BA.debugLineNum = 1179662;BA.debugLine="For Each atencion As Map In lista";
 _atencion = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group11 = _lista;
@@ -429,57 +430,57 @@ final int groupLen11 = group11.getSize()
 ;
 for (; index11 < groupLen11;index11++){
 _atencion = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group11.Get(index11)));
-RDebugUtils.currentLine=34209807;
- //BA.debugLineNum = 34209807;BA.debugLine="If atencion.Get(\"rut_paciente\") = rutActual Then";
+RDebugUtils.currentLine=1179663;
+ //BA.debugLineNum = 1179663;BA.debugLine="If atencion.Get(\"rut_paciente\") = rutActual Then";
 if ((_atencion.Get((Object)("rut_paciente"))).equals((Object)(_rutactual))) { 
-RDebugUtils.currentLine=34209808;
- //BA.debugLineNum = 34209808;BA.debugLine="Dim fechaTexto As String = atencion.Get(\"fecha_";
+RDebugUtils.currentLine=1179664;
+ //BA.debugLineNum = 1179664;BA.debugLine="Dim fechaTexto As String = atencion.Get(\"fecha_";
 _fechatexto = BA.ObjectToString(_atencion.Get((Object)("fecha_atencion")));
-RDebugUtils.currentLine=34209809;
- //BA.debugLineNum = 34209809;BA.debugLine="Try";
-try {RDebugUtils.currentLine=34209810;
- //BA.debugLineNum = 34209810;BA.debugLine="Dim fechaTicks As Long = DateTime.DateParse(fe";
+RDebugUtils.currentLine=1179665;
+ //BA.debugLineNum = 1179665;BA.debugLine="Try";
+try {RDebugUtils.currentLine=1179666;
+ //BA.debugLineNum = 1179666;BA.debugLine="Dim fechaTicks As Long = DateTime.DateParse(fe";
 _fechaticks = anywheresoftware.b4a.keywords.Common.DateTime.DateParse(_fechatexto);
-RDebugUtils.currentLine=34209811;
- //BA.debugLineNum = 34209811;BA.debugLine="If DateUtils.IsSameDay(fechaTicks, hoy) Then";
+RDebugUtils.currentLine=1179667;
+ //BA.debugLineNum = 1179667;BA.debugLine="If DateUtils.IsSameDay(fechaTicks, hoy) Then";
 if (mostCurrent._dateutils._issameday(mostCurrent.activityBA,_fechaticks,_hoy)) { 
-RDebugUtils.currentLine=34209812;
- //BA.debugLineNum = 34209812;BA.debugLine="MostrarMensajeShock(\"¡Tienes una atención méd";
+RDebugUtils.currentLine=1179668;
+ //BA.debugLineNum = 1179668;BA.debugLine="MostrarMensajeShock(\"¡Tienes una atención méd";
 _mostrarmensajeshock("¡Tienes una atención médica hoy!","Tienes una hora agendada para el dia: "+_fechatexto);
-RDebugUtils.currentLine=34209813;
- //BA.debugLineNum = 34209813;BA.debugLine="Return";
+RDebugUtils.currentLine=1179669;
+ //BA.debugLineNum = 1179669;BA.debugLine="Return";
 if (true) return "";
  }else 
-{RDebugUtils.currentLine=34209814;
- //BA.debugLineNum = 34209814;BA.debugLine="Else If DateUtils.IsSameDay(fechaTicks, mañana";
+{RDebugUtils.currentLine=1179670;
+ //BA.debugLineNum = 1179670;BA.debugLine="Else If DateUtils.IsSameDay(fechaTicks, mañana";
 if (mostCurrent._dateutils._issameday(mostCurrent.activityBA,_fechaticks,_mañana)) { 
-RDebugUtils.currentLine=34209815;
- //BA.debugLineNum = 34209815;BA.debugLine="MostrarMensajeShock(\"¡Tienes una atención méd";
+RDebugUtils.currentLine=1179671;
+ //BA.debugLineNum = 1179671;BA.debugLine="MostrarMensajeShock(\"¡Tienes una atención méd";
 _mostrarmensajeshock("¡Tienes una atención médica mañana!","Tienes una hora agendada para el dia: "+_fechatexto);
-RDebugUtils.currentLine=34209816;
- //BA.debugLineNum = 34209816;BA.debugLine="Return";
+RDebugUtils.currentLine=1179672;
+ //BA.debugLineNum = 1179672;BA.debugLine="Return";
 if (true) return "";
  }}
 ;
  } 
        catch (Exception e24) {
-			processBA.setLastException(e24);RDebugUtils.currentLine=34209819;
- //BA.debugLineNum = 34209819;BA.debugLine="Log(\"Error al interpretar fecha: \" & fechaText";
-anywheresoftware.b4a.keywords.Common.LogImpl("434209819","Error al interpretar fecha: "+_fechatexto,0);
+			processBA.setLastException(e24);RDebugUtils.currentLine=1179675;
+ //BA.debugLineNum = 1179675;BA.debugLine="Log(\"Error al interpretar fecha: \" & fechaText";
+anywheresoftware.b4a.keywords.Common.LogImpl("21179675","Error al interpretar fecha: "+_fechatexto,0);
  };
  };
  }
 };
-RDebugUtils.currentLine=34209823;
- //BA.debugLineNum = 34209823;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1179679;
+ //BA.debugLineNum = 1179679;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="menu";
-RDebugUtils.currentLine=917504;
- //BA.debugLineNum = 917504;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=917506;
- //BA.debugLineNum = 917506;BA.debugLine="End Sub";
+RDebugUtils.currentLine=983040;
+ //BA.debugLineNum = 983040;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=983042;
+ //BA.debugLineNum = 983042;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
@@ -492,43 +493,56 @@ RDebugUtils.currentLine=851970;
  //BA.debugLineNum = 851970;BA.debugLine="End Sub";
 return "";
 }
+public static String  _btn_calendario_click() throws Exception{
+RDebugUtils.currentModule="menu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_calendario_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_calendario_click", null));}
+RDebugUtils.currentLine=34930688;
+ //BA.debugLineNum = 34930688;BA.debugLine="Private Sub Btn_calendario_Click";
+RDebugUtils.currentLine=34930689;
+ //BA.debugLineNum = 34930689;BA.debugLine="StartActivity(Calendario)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._calendario.getObject()));
+RDebugUtils.currentLine=34930690;
+ //BA.debugLineNum = 34930690;BA.debugLine="End Sub";
+return "";
+}
 public static String  _btn_fecha_click() throws Exception{
 RDebugUtils.currentModule="menu";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_fecha_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_fecha_click", null));}
-RDebugUtils.currentLine=983040;
- //BA.debugLineNum = 983040;BA.debugLine="Private Sub Btn_Fecha_Click";
-RDebugUtils.currentLine=983041;
- //BA.debugLineNum = 983041;BA.debugLine="StartActivity(Modulo_Seleccion)";
+RDebugUtils.currentLine=1048576;
+ //BA.debugLineNum = 1048576;BA.debugLine="Private Sub Btn_Fecha_Click";
+RDebugUtils.currentLine=1048577;
+ //BA.debugLineNum = 1048577;BA.debugLine="StartActivity(Modulo_Seleccion)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._modulo_seleccion.getObject()));
-RDebugUtils.currentLine=983042;
- //BA.debugLineNum = 983042;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1048578;
+ //BA.debugLineNum = 1048578;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_gestionar_click() throws Exception{
 RDebugUtils.currentModule="menu";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_gestionar_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_gestionar_click", null));}
-RDebugUtils.currentLine=33292288;
- //BA.debugLineNum = 33292288;BA.debugLine="Private Sub Btn_Gestionar_Click";
-RDebugUtils.currentLine=33292289;
- //BA.debugLineNum = 33292289;BA.debugLine="StartActivity(\"ModuloGestion\")";
+RDebugUtils.currentLine=1114112;
+ //BA.debugLineNum = 1114112;BA.debugLine="Private Sub Btn_Gestionar_Click";
+RDebugUtils.currentLine=1114113;
+ //BA.debugLineNum = 1114113;BA.debugLine="StartActivity(\"ModuloGestion\")";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)("ModuloGestion"));
-RDebugUtils.currentLine=33292290;
- //BA.debugLineNum = 33292290;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1114114;
+ //BA.debugLineNum = 1114114;BA.debugLine="End Sub";
 return "";
 }
 public static String  _mostrarmensajeshock(String _titulo,String _mensaje) throws Exception{
 RDebugUtils.currentModule="menu";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "mostrarmensajeshock", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "mostrarmensajeshock", new Object[] {_titulo,_mensaje}));}
-RDebugUtils.currentLine=34340864;
- //BA.debugLineNum = 34340864;BA.debugLine="Sub MostrarMensajeShock(titulo As String, mensaje";
-RDebugUtils.currentLine=34340865;
- //BA.debugLineNum = 34340865;BA.debugLine="xui.MsgboxAsync(mensaje, titulo)";
+RDebugUtils.currentLine=917504;
+ //BA.debugLineNum = 917504;BA.debugLine="Sub MostrarMensajeShock(titulo As String, mensaje";
+RDebugUtils.currentLine=917505;
+ //BA.debugLineNum = 917505;BA.debugLine="xui.MsgboxAsync(mensaje, titulo)";
 mostCurrent._xui.MsgboxAsync(processBA,BA.ObjectToCharSequence(_mensaje),BA.ObjectToCharSequence(_titulo));
-RDebugUtils.currentLine=34340866;
- //BA.debugLineNum = 34340866;BA.debugLine="End Sub";
+RDebugUtils.currentLine=917506;
+ //BA.debugLineNum = 917506;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -62,6 +62,25 @@ catch (Exception e) {
 finally {
 			Debug.PopSubsStack();
 		}}
+public static RemoteObject  _btn_calendario_click() throws Exception{
+try {
+		Debug.PushSubsStack("Btn_calendario_Click (menu) ","menu",1,menu.mostCurrent.activityBA,menu.mostCurrent,78);
+if (RapidSub.canDelegate("btn_calendario_click")) { return b4a.example.menu.remoteMe.runUserSub(false, "menu","btn_calendario_click");}
+ BA.debugLineNum = 78;BA.debugLine="Private Sub Btn_calendario_Click";
+Debug.ShouldStop(8192);
+ BA.debugLineNum = 79;BA.debugLine="StartActivity(Calendario)";
+Debug.ShouldStop(16384);
+menu.mostCurrent.__c.runVoidMethod ("StartActivity",menu.processBA,(Object)((menu.mostCurrent._calendario.getObject())));
+ BA.debugLineNum = 80;BA.debugLine="End Sub";
+Debug.ShouldStop(32768);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static RemoteObject  _btn_fecha_click() throws Exception{
 try {
 		Debug.PushSubsStack("Btn_Fecha_Click (menu) ","menu",1,menu.mostCurrent.activityBA,menu.mostCurrent,37);
@@ -231,7 +250,7 @@ Debug.CheckDeviceExceptions();if (true) return RemoteObject.createImmutable("");
        catch (Exception e24) {
 			BA.rdebugUtils.runVoidMethod("setLastException",menu.processBA, e24.toString()); BA.debugLineNum = 71;BA.debugLine="Log(\"Error al interpretar fecha: \" & fechaText";
 Debug.ShouldStop(64);
-menu.mostCurrent.__c.runVoidMethod ("LogImpl","434209819",RemoteObject.concat(RemoteObject.createImmutable("Error al interpretar fecha: "),_fechatexto),0);
+menu.mostCurrent.__c.runVoidMethod ("LogImpl","21179675",RemoteObject.concat(RemoteObject.createImmutable("Error al interpretar fecha: "),_fechatexto),0);
  };
  };
  }
