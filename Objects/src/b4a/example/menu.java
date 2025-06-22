@@ -352,8 +352,9 @@ public b4a.example.main _main = null;
 public b4a.example.registrar _registrar = null;
 public b4a.example.modulo_seleccion _modulo_seleccion = null;
 public b4a.example.modulogestion _modulogestion = null;
-public b4a.example.starter _starter = null;
 public b4a.example.calendario _calendario = null;
+public b4a.example.starter _starter = null;
+public b4a.example.verexamenes _verexamenes = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
@@ -466,7 +467,7 @@ if (true) return "";
        catch (Exception e24) {
 			processBA.setLastException(e24);RDebugUtils.currentLine=1179675;
  //BA.debugLineNum = 1179675;BA.debugLine="Log(\"Error al interpretar fecha: \" & fechaText";
-anywheresoftware.b4a.keywords.Common.LogImpl("21179675","Error al interpretar fecha: "+_fechatexto,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("11179675","Error al interpretar fecha: "+_fechatexto,0);
  };
  };
  }
@@ -497,13 +498,13 @@ public static String  _btn_calendario_click() throws Exception{
 RDebugUtils.currentModule="menu";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_calendario_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_calendario_click", null));}
-RDebugUtils.currentLine=34930688;
- //BA.debugLineNum = 34930688;BA.debugLine="Private Sub Btn_calendario_Click";
-RDebugUtils.currentLine=34930689;
- //BA.debugLineNum = 34930689;BA.debugLine="StartActivity(Calendario)";
+RDebugUtils.currentLine=1245184;
+ //BA.debugLineNum = 1245184;BA.debugLine="Private Sub Btn_calendario_Click";
+RDebugUtils.currentLine=1245185;
+ //BA.debugLineNum = 1245185;BA.debugLine="StartActivity(Calendario)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._calendario.getObject()));
-RDebugUtils.currentLine=34930690;
- //BA.debugLineNum = 34930690;BA.debugLine="End Sub";
+RDebugUtils.currentLine=1245186;
+ //BA.debugLineNum = 1245186;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_fecha_click() throws Exception{
@@ -530,6 +531,19 @@ RDebugUtils.currentLine=1114113;
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)("ModuloGestion"));
 RDebugUtils.currentLine=1114114;
  //BA.debugLineNum = 1114114;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btn_verexa_click() throws Exception{
+RDebugUtils.currentModule="menu";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_verexa_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_verexa_click", null));}
+RDebugUtils.currentLine=35848192;
+ //BA.debugLineNum = 35848192;BA.debugLine="Private Sub Btn_VerEXA_Click";
+RDebugUtils.currentLine=35848193;
+ //BA.debugLineNum = 35848193;BA.debugLine="StartActivity(VerExamenes)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._verexamenes.getObject()));
+RDebugUtils.currentLine=35848195;
+ //BA.debugLineNum = 35848195;BA.debugLine="End Sub";
 return "";
 }
 public static String  _mostrarmensajeshock(String _titulo,String _mensaje) throws Exception{

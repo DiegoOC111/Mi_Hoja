@@ -8,7 +8,7 @@ public class calendario_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,23);
+		Debug.PushSubsStack("Activity_Create (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,23);
 if (RapidSub.canDelegate("activity_create")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 23;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -43,7 +43,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,161);
+		Debug.PushSubsStack("Activity_Pause (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,161);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 161;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -60,7 +60,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,34);
+		Debug.PushSubsStack("Activity_Resume (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,34);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","activity_resume");}
  BA.debugLineNum = 34;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(2);
@@ -76,7 +76,7 @@ finally {
 		}}
 public static RemoteObject  _asignardiaapanel(RemoteObject _p,RemoteObject _dia,RemoteObject _mes,RemoteObject _año) throws Exception{
 try {
-		Debug.PushSubsStack("AsignarDiaAPanel (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,103);
+		Debug.PushSubsStack("AsignarDiaAPanel (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,103);
 if (RapidSub.canDelegate("asignardiaapanel")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","asignardiaapanel", _p, _dia, _mes, _año);}
 RemoteObject _fechatexto = RemoteObject.createImmutable("");
 RemoteObject _contenedor = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
@@ -142,7 +142,7 @@ finally {
 		}}
 public static RemoteObject  _cargarfechaspaciente(RemoteObject _rut) throws Exception{
 try {
-		Debug.PushSubsStack("CargarFechasPaciente (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,87);
+		Debug.PushSubsStack("CargarFechasPaciente (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,87);
 if (RapidSub.canDelegate("cargarfechaspaciente")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","cargarfechaspaciente", _rut);}
 RemoteObject _parser = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.JSONParser");
 RemoteObject _archivo = RemoteObject.createImmutable("");
@@ -202,7 +202,7 @@ finally {
 		}}
 public static RemoteObject  _crearfilacalendario() throws Exception{
 try {
-		Debug.PushSubsStack("CrearFilaCalendario (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,74);
+		Debug.PushSubsStack("CrearFilaCalendario (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,74);
 if (RapidSub.canDelegate("crearfilacalendario")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","crearfilacalendario");}
 RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
 int _i = 0;
@@ -254,7 +254,7 @@ finally {
 		}}
 public static RemoteObject  _crearfiladiassemana() throws Exception{
 try {
-		Debug.PushSubsStack("CrearFilaDiasSemana (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,142);
+		Debug.PushSubsStack("CrearFilaDiasSemana (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,142);
 if (RapidSub.canDelegate("crearfiladiassemana")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","crearfiladiassemana");}
 RemoteObject _fila = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
 RemoteObject _nombresdias = null;
@@ -318,7 +318,7 @@ finally {
 		}}
 public static RemoteObject  _generarcalendariomes(RemoteObject _año,RemoteObject _mes) throws Exception{
 try {
-		Debug.PushSubsStack("GenerarCalendarioMes (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,37);
+		Debug.PushSubsStack("GenerarCalendarioMes (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,37);
 if (RapidSub.canDelegate("generarcalendariomes")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","generarcalendariomes", _año, _mes);}
 RemoteObject _diasmes = RemoteObject.createImmutable(0);
 RemoteObject _primerdiasemana = RemoteObject.createImmutable(0);
@@ -441,7 +441,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _paneldia_click() throws Exception{
 try {
-		Debug.PushSubsStack("PanelDia_Click (calendario) ","calendario",6,calendario.mostCurrent.activityBA,calendario.mostCurrent,125);
+		Debug.PushSubsStack("PanelDia_Click (calendario) ","calendario",5,calendario.mostCurrent.activityBA,calendario.mostCurrent,125);
 if (RapidSub.canDelegate("paneldia_click")) { return b4a.example.calendario.remoteMe.runUserSub(false, "calendario","paneldia_click");}
 RemoteObject _btn = RemoteObject.declareNull("anywheresoftware.b4a.objects.PanelWrapper");
 RemoteObject _fecha = RemoteObject.createImmutable("");

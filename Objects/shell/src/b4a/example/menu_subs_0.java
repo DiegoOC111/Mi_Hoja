@@ -119,6 +119,25 @@ catch (Exception e) {
 finally {
 			Debug.PopSubsStack();
 		}}
+public static RemoteObject  _btn_verexa_click() throws Exception{
+try {
+		Debug.PushSubsStack("Btn_VerEXA_Click (menu) ","menu",1,menu.mostCurrent.activityBA,menu.mostCurrent,82);
+if (RapidSub.canDelegate("btn_verexa_click")) { return b4a.example.menu.remoteMe.runUserSub(false, "menu","btn_verexa_click");}
+ BA.debugLineNum = 82;BA.debugLine="Private Sub Btn_VerEXA_Click";
+Debug.ShouldStop(131072);
+ BA.debugLineNum = 83;BA.debugLine="StartActivity(VerExamenes)";
+Debug.ShouldStop(262144);
+menu.mostCurrent.__c.runVoidMethod ("StartActivity",menu.processBA,(Object)((menu.mostCurrent._verexamenes.getObject())));
+ BA.debugLineNum = 85;BA.debugLine="End Sub";
+Debug.ShouldStop(1048576);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static RemoteObject  _globals() throws Exception{
  //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
  //BA.debugLineNum = 15;BA.debugLine="Private FechaSeleccionada As String";
@@ -250,7 +269,7 @@ Debug.CheckDeviceExceptions();if (true) return RemoteObject.createImmutable("");
        catch (Exception e24) {
 			BA.rdebugUtils.runVoidMethod("setLastException",menu.processBA, e24.toString()); BA.debugLineNum = 71;BA.debugLine="Log(\"Error al interpretar fecha: \" & fechaText";
 Debug.ShouldStop(64);
-menu.mostCurrent.__c.runVoidMethod ("LogImpl","21179675",RemoteObject.concat(RemoteObject.createImmutable("Error al interpretar fecha: "),_fechatexto),0);
+menu.mostCurrent.__c.runVoidMethod ("LogImpl","11179675",RemoteObject.concat(RemoteObject.createImmutable("Error al interpretar fecha: "),_fechatexto),0);
  };
  };
  }

@@ -37,17 +37,18 @@ public b4a.example.menu _menu = null;
 public b4a.example.registrar _registrar = null;
 public b4a.example.modulo_seleccion _modulo_seleccion = null;
 public b4a.example.modulogestion _modulogestion = null;
-public b4a.example.starter _starter = null;
 public b4a.example.calendario _calendario = null;
+public b4a.example.starter _starter = null;
+public b4a.example.verexamenes _verexamenes = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public String  _class_globals(b4a.example.b4xcomparatorsort __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xcomparatorsort";
-RDebugUtils.currentLine=7536640;
- //BA.debugLineNum = 7536640;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=7536641;
- //BA.debugLineNum = 7536641;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8323072;
+ //BA.debugLineNum = 8323072;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=8323073;
+ //BA.debugLineNum = 8323073;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.example.b4xcomparatorsort __ref,anywheresoftware.b4a.BA _ba) throws Exception{
@@ -56,10 +57,10 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xcomparatorsort";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=7602176;
- //BA.debugLineNum = 7602176;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=7602177;
- //BA.debugLineNum = 7602177;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8388608;
+ //BA.debugLineNum = 8388608;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=8388609;
+ //BA.debugLineNum = 8388609;BA.debugLine="End Sub";
 return "";
 }
 public int  _partition(b4a.example.b4xcomparatorsort __ref,anywheresoftware.b4a.objects.collections.List _data,int _startindex,int _length,int _pivotindex,Object _comparator) throws Exception{
@@ -70,44 +71,44 @@ if (Debug.shouldDelegate(ba, "partition", true))
 Object _pivotvalue = null;
 int _l = 0;
 int _i = 0;
-RDebugUtils.currentLine=7798784;
- //BA.debugLineNum = 7798784;BA.debugLine="Private Sub Partition(Data As List, StartIndex As";
-RDebugUtils.currentLine=7798785;
- //BA.debugLineNum = 7798785;BA.debugLine="Dim PivotValue As Object = Data.Get(StartIndex +";
+RDebugUtils.currentLine=8585216;
+ //BA.debugLineNum = 8585216;BA.debugLine="Private Sub Partition(Data As List, StartIndex As";
+RDebugUtils.currentLine=8585217;
+ //BA.debugLineNum = 8585217;BA.debugLine="Dim PivotValue As Object = Data.Get(StartIndex +";
 _pivotvalue = _data.Get((int) (_startindex+_pivotindex));
-RDebugUtils.currentLine=7798786;
- //BA.debugLineNum = 7798786;BA.debugLine="Swap(Data, StartIndex, PivotIndex, Length - 1)";
+RDebugUtils.currentLine=8585218;
+ //BA.debugLineNum = 8585218;BA.debugLine="Swap(Data, StartIndex, PivotIndex, Length - 1)";
 __ref._swap /*String*/ (null,_data,_startindex,_pivotindex,(int) (_length-1));
-RDebugUtils.currentLine=7798787;
- //BA.debugLineNum = 7798787;BA.debugLine="Dim L As Int = 0";
+RDebugUtils.currentLine=8585219;
+ //BA.debugLineNum = 8585219;BA.debugLine="Dim L As Int = 0";
 _l = (int) (0);
-RDebugUtils.currentLine=7798788;
- //BA.debugLineNum = 7798788;BA.debugLine="For i = 0 To Length - 2";
+RDebugUtils.currentLine=8585220;
+ //BA.debugLineNum = 8585220;BA.debugLine="For i = 0 To Length - 2";
 {
 final int step4 = 1;
 final int limit4 = (int) (_length-2);
 _i = (int) (0) ;
 for (;_i <= limit4 ;_i = _i + step4 ) {
-RDebugUtils.currentLine=7798789;
- //BA.debugLineNum = 7798789;BA.debugLine="If CallSub3(Comparator, \"Compare\", Data.Get(Star";
+RDebugUtils.currentLine=8585221;
+ //BA.debugLineNum = 8585221;BA.debugLine="If CallSub3(Comparator, \"Compare\", Data.Get(Star";
 if (((int)(BA.ObjectToNumber(__c.CallSubDebug3(ba,_comparator,"Compare",_data.Get((int) (_startindex+_i)),_pivotvalue))))<0) { 
-RDebugUtils.currentLine=7798790;
- //BA.debugLineNum = 7798790;BA.debugLine="L = L + 1";
+RDebugUtils.currentLine=8585222;
+ //BA.debugLineNum = 8585222;BA.debugLine="L = L + 1";
 _l = (int) (_l+1);
-RDebugUtils.currentLine=7798791;
- //BA.debugLineNum = 7798791;BA.debugLine="Swap(Data, StartIndex, L - 1, i)";
+RDebugUtils.currentLine=8585223;
+ //BA.debugLineNum = 8585223;BA.debugLine="Swap(Data, StartIndex, L - 1, i)";
 __ref._swap /*String*/ (null,_data,_startindex,(int) (_l-1),_i);
  };
  }
 };
-RDebugUtils.currentLine=7798794;
- //BA.debugLineNum = 7798794;BA.debugLine="Swap(Data, StartIndex, Length - 1, L)";
+RDebugUtils.currentLine=8585226;
+ //BA.debugLineNum = 8585226;BA.debugLine="Swap(Data, StartIndex, Length - 1, L)";
 __ref._swap /*String*/ (null,_data,_startindex,(int) (_length-1),_l);
-RDebugUtils.currentLine=7798795;
- //BA.debugLineNum = 7798795;BA.debugLine="Return L";
+RDebugUtils.currentLine=8585227;
+ //BA.debugLineNum = 8585227;BA.debugLine="Return L";
 if (true) return _l;
-RDebugUtils.currentLine=7798796;
- //BA.debugLineNum = 7798796;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8585228;
+ //BA.debugLineNum = 8585228;BA.debugLine="End Sub";
 return 0;
 }
 public String  _swap(b4a.example.b4xcomparatorsort __ref,anywheresoftware.b4a.objects.collections.List _data,int _startindex,int _i1,int _i2) throws Exception{
@@ -116,19 +117,19 @@ RDebugUtils.currentModule="b4xcomparatorsort";
 if (Debug.shouldDelegate(ba, "swap", true))
 	 {return ((String) Debug.delegate(ba, "swap", new Object[] {_data,_startindex,_i1,_i2}));}
 Object _o = null;
-RDebugUtils.currentLine=7864320;
- //BA.debugLineNum = 7864320;BA.debugLine="Private Sub Swap (Data As List, StartIndex As Int,";
-RDebugUtils.currentLine=7864321;
- //BA.debugLineNum = 7864321;BA.debugLine="Dim o As Object = Data.Get(StartIndex + i1)";
+RDebugUtils.currentLine=8650752;
+ //BA.debugLineNum = 8650752;BA.debugLine="Private Sub Swap (Data As List, StartIndex As Int,";
+RDebugUtils.currentLine=8650753;
+ //BA.debugLineNum = 8650753;BA.debugLine="Dim o As Object = Data.Get(StartIndex + i1)";
 _o = _data.Get((int) (_startindex+_i1));
-RDebugUtils.currentLine=7864322;
- //BA.debugLineNum = 7864322;BA.debugLine="Data.Set(StartIndex + i1, Data.Get(StartIndex + i";
+RDebugUtils.currentLine=8650754;
+ //BA.debugLineNum = 8650754;BA.debugLine="Data.Set(StartIndex + i1, Data.Get(StartIndex + i";
 _data.Set((int) (_startindex+_i1),_data.Get((int) (_startindex+_i2)));
-RDebugUtils.currentLine=7864323;
- //BA.debugLineNum = 7864323;BA.debugLine="Data.Set(StartIndex + i2, o)";
+RDebugUtils.currentLine=8650755;
+ //BA.debugLineNum = 8650755;BA.debugLine="Data.Set(StartIndex + i2, o)";
 _data.Set((int) (_startindex+_i2),_o);
-RDebugUtils.currentLine=7864324;
- //BA.debugLineNum = 7864324;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8650756;
+ //BA.debugLineNum = 8650756;BA.debugLine="End Sub";
 return "";
 }
 public String  _quicksort(b4a.example.b4xcomparatorsort __ref,anywheresoftware.b4a.objects.collections.List _data,int _startindex,int _length,Object _comparator) throws Exception{
@@ -138,26 +139,26 @@ if (Debug.shouldDelegate(ba, "quicksort", true))
 	 {return ((String) Debug.delegate(ba, "quicksort", new Object[] {_data,_startindex,_length,_comparator}));}
 int _pivotindex = 0;
 int _r = 0;
-RDebugUtils.currentLine=7733248;
- //BA.debugLineNum = 7733248;BA.debugLine="Private Sub QuickSort (Data As List, StartIndex As";
-RDebugUtils.currentLine=7733249;
- //BA.debugLineNum = 7733249;BA.debugLine="If Length > 1 Then";
+RDebugUtils.currentLine=8519680;
+ //BA.debugLineNum = 8519680;BA.debugLine="Private Sub QuickSort (Data As List, StartIndex As";
+RDebugUtils.currentLine=8519681;
+ //BA.debugLineNum = 8519681;BA.debugLine="If Length > 1 Then";
 if (_length>1) { 
-RDebugUtils.currentLine=7733250;
- //BA.debugLineNum = 7733250;BA.debugLine="Dim PivotIndex As Int = Rnd(0, Length)";
+RDebugUtils.currentLine=8519682;
+ //BA.debugLineNum = 8519682;BA.debugLine="Dim PivotIndex As Int = Rnd(0, Length)";
 _pivotindex = __c.Rnd((int) (0),_length);
-RDebugUtils.currentLine=7733251;
- //BA.debugLineNum = 7733251;BA.debugLine="Dim r As Int = Partition(Data, StartIndex, Lengt";
+RDebugUtils.currentLine=8519683;
+ //BA.debugLineNum = 8519683;BA.debugLine="Dim r As Int = Partition(Data, StartIndex, Lengt";
 _r = __ref._partition /*int*/ (null,_data,_startindex,_length,_pivotindex,_comparator);
-RDebugUtils.currentLine=7733252;
- //BA.debugLineNum = 7733252;BA.debugLine="QuickSort(Data, StartIndex, r, Comparator)";
+RDebugUtils.currentLine=8519684;
+ //BA.debugLineNum = 8519684;BA.debugLine="QuickSort(Data, StartIndex, r, Comparator)";
 __ref._quicksort /*String*/ (null,_data,_startindex,_r,_comparator);
-RDebugUtils.currentLine=7733253;
- //BA.debugLineNum = 7733253;BA.debugLine="QuickSort(Data, StartIndex + r + 1, Length - r -";
+RDebugUtils.currentLine=8519685;
+ //BA.debugLineNum = 8519685;BA.debugLine="QuickSort(Data, StartIndex + r + 1, Length - r -";
 __ref._quicksort /*String*/ (null,_data,(int) (_startindex+_r+1),(int) (_length-_r-1),_comparator);
  };
-RDebugUtils.currentLine=7733255;
- //BA.debugLineNum = 7733255;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8519687;
+ //BA.debugLineNum = 8519687;BA.debugLine="End Sub";
 return "";
 }
 public String  _sort(b4a.example.b4xcomparatorsort __ref,anywheresoftware.b4a.objects.collections.List _data,Object _comparator) throws Exception{
@@ -165,13 +166,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xcomparatorsort";
 if (Debug.shouldDelegate(ba, "sort", true))
 	 {return ((String) Debug.delegate(ba, "sort", new Object[] {_data,_comparator}));}
-RDebugUtils.currentLine=7667712;
- //BA.debugLineNum = 7667712;BA.debugLine="Public Sub Sort (Data As List, Comparator As Objec";
-RDebugUtils.currentLine=7667714;
- //BA.debugLineNum = 7667714;BA.debugLine="QuickSort(Data, 0, Data.Size, Comparator)";
+RDebugUtils.currentLine=8454144;
+ //BA.debugLineNum = 8454144;BA.debugLine="Public Sub Sort (Data As List, Comparator As Objec";
+RDebugUtils.currentLine=8454146;
+ //BA.debugLineNum = 8454146;BA.debugLine="QuickSort(Data, 0, Data.Size, Comparator)";
 __ref._quicksort /*String*/ (null,_data,(int) (0),_data.getSize(),_comparator);
-RDebugUtils.currentLine=7667718;
- //BA.debugLineNum = 7667718;BA.debugLine="End Sub";
+RDebugUtils.currentLine=8454150;
+ //BA.debugLineNum = 8454150;BA.debugLine="End Sub";
 return "";
 }
 }

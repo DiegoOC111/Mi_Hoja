@@ -8,7 +8,7 @@ public class b4xdialog_subs_0 {
 
 public static RemoteObject  _background_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Background_Click (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,261);
+		Debug.PushSubsStack("Background_Click (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,261);
 if (RapidSub.canDelegate("background_click")) { return __ref.runUserSub(false, "b4xdialog","background_click", __ref);}
  BA.debugLineNum = 261;BA.debugLine="Private Sub Background_Click";
 Debug.JustUpdateDeviceLine();
@@ -24,7 +24,7 @@ finally {
 		}}
 public static RemoteObject  _background_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("Background_Touch (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,256);
+		Debug.PushSubsStack("Background_Touch (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,256);
 if (RapidSub.canDelegate("background_touch")) { return __ref.runUserSub(false, "b4xdialog","background_touch", __ref, _action, _x, _y);}
 Debug.locals.put("Action", _action);
 Debug.locals.put("X", _x);
@@ -43,7 +43,7 @@ finally {
 		}}
 public static RemoteObject  _blur(RemoteObject __ref,RemoteObject _bmp) throws Exception{
 try {
-		Debug.PushSubsStack("Blur (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,290);
+		Debug.PushSubsStack("Blur (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,290);
 if (RapidSub.canDelegate("blur")) { return __ref.runUserSub(false, "b4xdialog","blur", __ref, _bmp);}
 RemoteObject _bc = RemoteObject.declareNull("b4a.example.bitmapcreator");
 RemoteObject _reducescale = RemoteObject.createImmutable(0);
@@ -209,7 +209,7 @@ finally {
 		}}
 public static RemoteObject  _button_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Button_Click (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,236);
+		Debug.PushSubsStack("Button_Click (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,236);
 if (RapidSub.canDelegate("button_click")) { return __ref.runUserSub(false, "b4xdialog","button_click", __ref);}
 RemoteObject _b = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
  BA.debugLineNum = 236;BA.debugLine="Private Sub Button_Click";
@@ -300,7 +300,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _close(RemoteObject __ref,RemoteObject _result) throws Exception{
 try {
-		Debug.PushSubsStack("Close (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,242);
+		Debug.PushSubsStack("Close (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,242);
 if (RapidSub.canDelegate("close")) { return __ref.runUserSub(false, "b4xdialog","close", __ref, _result);}
 Debug.locals.put("Result", _result);
  BA.debugLineNum = 242;BA.debugLine="Public Sub Close (Result As Int) As Boolean";
@@ -330,7 +330,7 @@ finally {
 		}}
 public static RemoteObject  _createbutton(RemoteObject __ref,RemoteObject _text,RemoteObject _code) throws Exception{
 try {
-		Debug.PushSubsStack("CreateButton (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,196);
+		Debug.PushSubsStack("CreateButton (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,196);
 if (RapidSub.canDelegate("createbutton")) { return __ref.runUserSub(false, "b4xdialog","createbutton", __ref, _text, _code);}
 RemoteObject _btn = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 RemoteObject _xbtn = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -393,7 +393,7 @@ finally {
 		}}
 public static RemoteObject  _getbutton(RemoteObject __ref,RemoteObject _resultcode) throws Exception{
 try {
-		Debug.PushSubsStack("GetButton (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,218);
+		Debug.PushSubsStack("GetButton (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,218);
 if (RapidSub.canDelegate("getbutton")) { return __ref.runUserSub(false, "b4xdialog","getbutton", __ref, _resultcode);}
 RemoteObject _b = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 Debug.locals.put("ResultCode", _resultcode);
@@ -432,7 +432,7 @@ finally {
 		}}
 public static RemoteObject  _getvisible(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getVisible (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,192);
+		Debug.PushSubsStack("getVisible (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,192);
 if (RapidSub.canDelegate("getvisible")) { return __ref.runUserSub(false, "b4xdialog","getvisible", __ref);}
  BA.debugLineNum = 192;BA.debugLine="Public Sub getVisible As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -451,7 +451,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _parent) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,36);
+		Debug.PushSubsStack("Initialize (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,36);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xdialog","initialize", __ref, _ba, _parent);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -510,7 +510,7 @@ finally {
 		}}
 public static RemoteObject  _internaladdstubtoclvifneeded(RemoteObject __ref,RemoteObject _customlistview1,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("InternalAddStubToCLVIfNeeded (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,346);
+		Debug.PushSubsStack("InternalAddStubToCLVIfNeeded (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,346);
 if (RapidSub.canDelegate("internaladdstubtoclvifneeded")) { return __ref.runUserSub(false, "b4xdialog","internaladdstubtoclvifneeded", __ref, _customlistview1, _color);}
 Debug.locals.put("CustomListView1", _customlistview1);
 Debug.locals.put("Color", _color);
@@ -531,7 +531,7 @@ finally {
 		}}
 public static RemoteObject  _internalsettextorcsbuildertolabel(RemoteObject __ref,RemoteObject _xlbl,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("InternalSetTextOrCSBuilderToLabel (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,342);
+		Debug.PushSubsStack("InternalSetTextOrCSBuilderToLabel (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,342);
 if (RapidSub.canDelegate("internalsettextorcsbuildertolabel")) { return __ref.runUserSub(false, "b4xdialog","internalsettextorcsbuildertolabel", __ref, _xlbl, _text);}
 Debug.locals.put("xlbl", _xlbl);
 Debug.locals.put("Text", _text);
@@ -552,7 +552,7 @@ finally {
 		}}
 public static RemoteObject  _resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Resize (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,266);
+		Debug.PushSubsStack("Resize (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,266);
 if (RapidSub.canDelegate("resize")) { return __ref.runUserSub(false, "b4xdialog","resize", __ref, _width, _height);}
 RemoteObject _top = RemoteObject.createImmutable(0);
 Debug.locals.put("Width", _width);
@@ -591,7 +591,7 @@ finally {
 		}}
 public static RemoteObject  _setavg(RemoteObject __ref,RemoteObject _bc,RemoteObject _x,RemoteObject _y,RemoteObject _clrs,RemoteObject _temp) throws Exception{
 try {
-		Debug.PushSubsStack("SetAvg (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,328);
+		Debug.PushSubsStack("SetAvg (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,328);
 if (RapidSub.canDelegate("setavg")) { return __ref.runUserSub(false, "b4xdialog","setavg", __ref, _bc, _x, _y, _clrs, _temp);}
 RemoteObject _c = RemoteObject.declareNull("b4a.example.bitmapcreator._argbcolor");
 Debug.locals.put("bc", _bc);
@@ -653,7 +653,7 @@ finally {
 		}}
 public static RemoteObject  _setbuttonstate(RemoteObject __ref,RemoteObject _resultcode,RemoteObject _enabled) throws Exception{
 try {
-		Debug.PushSubsStack("SetButtonState (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,226);
+		Debug.PushSubsStack("SetButtonState (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,226);
 if (RapidSub.canDelegate("setbuttonstate")) { return __ref.runUserSub(false, "b4xdialog","setbuttonstate", __ref, _resultcode, _enabled);}
 RemoteObject _b = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 Debug.locals.put("ResultCode", _resultcode);
@@ -692,7 +692,7 @@ finally {
 		}}
 public static RemoteObject  _show(RemoteObject __ref,RemoteObject _text,RemoteObject _yes,RemoteObject _no,RemoteObject _cancel) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,74);
+		Debug.PushSubsStack("Show (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,74);
 if (RapidSub.canDelegate("show")) { return __ref.runUserSub(false, "b4xdialog","show", __ref, _text, _yes, _no, _cancel);}
 ResumableSub_Show rsub = new ResumableSub_Show(null,__ref,_text,_yes,_no,_cancel);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -729,7 +729,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,74);
+		Debug.PushSubsStack("Show (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,74);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -814,7 +814,7 @@ public static void  _complete(RemoteObject __ref,RemoteObject _result) throws Ex
 }
 public static RemoteObject  _showcustom(RemoteObject __ref,RemoteObject _content,RemoteObject _yes,RemoteObject _no,RemoteObject _cancel) throws Exception{
 try {
-		Debug.PushSubsStack("ShowCustom (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,97);
+		Debug.PushSubsStack("ShowCustom (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,97);
 if (RapidSub.canDelegate("showcustom")) { return __ref.runUserSub(false, "b4xdialog","showcustom", __ref, _content, _yes, _no, _cancel);}
 ResumableSub_ShowCustom rsub = new ResumableSub_ShowCustom(null,__ref,_content,_yes,_no,_cancel);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -872,7 +872,7 @@ int groupLen81;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("ShowCustom (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,97);
+		Debug.PushSubsStack("ShowCustom (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,97);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1034,7 +1034,7 @@ case 17:
 this.state = 18;
  BA.debugLineNum = 121;BA.debugLine="Log(\"Warning: dialog shown with zero sized paren";
 Debug.JustUpdateDeviceLine();
-parent.__c.runVoidMethod ("LogImpl","918677784",RemoteObject.createImmutable("Warning: dialog shown with zero sized parent."),0);
+parent.__c.runVoidMethod ("LogImpl","919464216",RemoteObject.createImmutable("Warning: dialog shown with zero sized parent."),0);
  if (true) break;
 
 case 18:
@@ -1484,7 +1484,7 @@ public static void  _closemessage(RemoteObject __ref,RemoteObject _result) throw
 }
 public static RemoteObject  _showtemplate(RemoteObject __ref,RemoteObject _dialogtemplate,RemoteObject _yes,RemoteObject _no,RemoteObject _cancel) throws Exception{
 try {
-		Debug.PushSubsStack("ShowTemplate (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,65);
+		Debug.PushSubsStack("ShowTemplate (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,65);
 if (RapidSub.canDelegate("showtemplate")) { return __ref.runUserSub(false, "b4xdialog","showtemplate", __ref, _dialogtemplate, _yes, _no, _cancel);}
 ResumableSub_ShowTemplate rsub = new ResumableSub_ShowTemplate(null,__ref,_dialogtemplate,_yes,_no,_cancel);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1519,7 +1519,7 @@ RemoteObject _result = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("ShowTemplate (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,65);
+		Debug.PushSubsStack("ShowTemplate (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,65);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1578,7 +1578,7 @@ finally {
 }
 public static RemoteObject  _stub_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Stub_Click (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,352);
+		Debug.PushSubsStack("Stub_Click (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,352);
 if (RapidSub.canDelegate("stub_click")) { return __ref.runUserSub(false, "b4xdialog","stub_click", __ref);}
  BA.debugLineNum = 352;BA.debugLine="Private Sub Stub_Click";
 Debug.JustUpdateDeviceLine();
@@ -1594,7 +1594,7 @@ finally {
 		}}
 public static RemoteObject  _updateblur(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("UpdateBlur (b4xdialog) ","b4xdialog",24,__ref.getField(false, "ba"),__ref,277);
+		Debug.PushSubsStack("UpdateBlur (b4xdialog) ","b4xdialog",25,__ref.getField(false, "ba"),__ref,277);
 if (RapidSub.canDelegate("updateblur")) { return __ref.runUserSub(false, "b4xdialog","updateblur", __ref);}
 RemoteObject _source = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper");
 RemoteObject _blurred = RemoteObject.declareNull("b4a.example.bitmapcreator");

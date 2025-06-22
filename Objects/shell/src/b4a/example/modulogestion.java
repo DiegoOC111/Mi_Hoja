@@ -68,11 +68,12 @@ public static b4a.example.main _main = null;
 public static b4a.example.menu _menu = null;
 public static b4a.example.registrar _registrar = null;
 public static b4a.example.modulo_seleccion _modulo_seleccion = null;
-public static b4a.example.starter _starter = null;
 public static b4a.example.calendario _calendario = null;
+public static b4a.example.starter _starter = null;
+public static b4a.example.verexamenes _verexamenes = null;
 public static b4a.example.b4xcollections _b4xcollections = null;
 public static b4a.example.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",modulogestion.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"Btn_Cancelar",modulogestion.mostCurrent._btn_cancelar,"Btn_Editar",modulogestion.mostCurrent._btn_editar,"Btn_Modificar",modulogestion.mostCurrent._btn_modificar,"Calendario",Debug.moduleToString(b4a.example.calendario.class),"DateUtils",modulogestion.mostCurrent._dateutils,"Lbl_Fecha",modulogestion.mostCurrent._lbl_fecha,"Lbl_Medico",modulogestion.mostCurrent._lbl_medico,"ListaCitas",modulogestion.mostCurrent._listacitas,"ListaDoctores",modulogestion.mostCurrent._listadoctores,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"xui",modulogestion.mostCurrent._xui,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
+		return new Object[] {"Activity",modulogestion.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.example.b4xcollections.class),"Btn_Cancelar",modulogestion.mostCurrent._btn_cancelar,"Btn_Editar",modulogestion.mostCurrent._btn_editar,"Btn_Modificar",modulogestion.mostCurrent._btn_modificar,"Calendario",Debug.moduleToString(b4a.example.calendario.class),"DateUtils",modulogestion.mostCurrent._dateutils,"Lbl_Fecha",modulogestion.mostCurrent._lbl_fecha,"Lbl_Medico",modulogestion.mostCurrent._lbl_medico,"ListaCitas",modulogestion.mostCurrent._listacitas,"ListaDoctores",modulogestion.mostCurrent._listadoctores,"Main",Debug.moduleToString(b4a.example.main.class),"Menu",Debug.moduleToString(b4a.example.menu.class),"Modulo_Seleccion",Debug.moduleToString(b4a.example.modulo_seleccion.class),"Registrar",Debug.moduleToString(b4a.example.registrar.class),"Starter",Debug.moduleToString(b4a.example.starter.class),"VerExamenes",Debug.moduleToString(b4a.example.verexamenes.class),"xui",modulogestion.mostCurrent._xui,"XUIViewsUtils",Debug.moduleToString(b4a.example.xuiviewsutils.class)};
 }
 }

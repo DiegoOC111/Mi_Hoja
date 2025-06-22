@@ -142,6 +142,10 @@ menu,btn_gestionar_click,0,0,41,43
 
 
 
+menu,btn_verexa_click,0,0,82,85
+
+
+
 menu,globals,0,1,12,17
 
 
@@ -310,6 +314,50 @@ modulogestion,recibirfechamodificada,1,0,92,109
 ,listadoctores,main,usuarioactivo,,xui,,btn_cancelar,,btn_modificar,,lbl_fecha,,lbl_medico
 ,btn_cancelar,,btn_modificar,,lbl_fecha,,lbl_medico
 ,mostraratenciones
+calendario,activity_create,1,0,23,32
+,clv_calendario,,listaatenciones,,fechasconatencion,main,usuarioactivo,,xui,,lbl_dia,,paneldia
+,clv_calendario,,listaatenciones,,lbl_dia,,paneldia
+,cargarfechaspaciente,,generarcalendariomes,,crearfiladiassemana,,crearfilacalendario,,asignardiaapanel
+calendario,cargarfechaspaciente,0,0,87,101
+,listaatenciones,,fechasconatencion
+,listaatenciones
+
+calendario,generarcalendariomes,1,0,37,72
+,clv_calendario,,xui,,lbl_dia,,paneldia,,fechasconatencion
+,lbl_dia,,paneldia
+,crearfiladiassemana,,crearfilacalendario,,asignardiaapanel
+calendario,activity_pause,0,0,161,163
+
+
+
+calendario,activity_resume,0,0,34,36
+
+
+
+calendario,asignardiaapanel,0,0,103,123
+,fechasconatencion
+
+
+calendario,crearfilacalendario,1,0,74,85
+,xui,,lbl_dia,,paneldia
+,lbl_dia,,paneldia
+
+calendario,crearfiladiassemana,0,0,142,159
+
+
+
+calendario,globals,0,1,12,21
+
+
+
+calendario,paneldia_click,1,0,125,140
+,listaatenciones,main,usuarioactivo
+
+
+calendario,process_globals,0,1,6,10
+
+
+
 starter,application_error,0,0,27,29
 
 
@@ -334,47 +382,47 @@ starter,service_taskremoved,0,0,22,24
 
 
 
-calendario,activity_create,1,1,23,32
-,clv_calendario,,listaatenciones,,fechasconatencion,main,usuarioactivo,,xui,,lbl_dia,,paneldia
-,clv_calendario,,listaatenciones,,lbl_dia,,paneldia
-,cargarfechaspaciente,,generarcalendariomes,,crearfiladiassemana,,crearfilacalendario,,asignardiaapanel
-calendario,cargarfechaspaciente,0,0,87,101
-,listaatenciones,,fechasconatencion
-,listaatenciones
-
-calendario,generarcalendariomes,1,1,37,72
-,clv_calendario,,xui,,lbl_dia,,paneldia,,fechasconatencion
-,lbl_dia,,paneldia
-,crearfiladiassemana,,crearfilacalendario,,asignardiaapanel
-calendario,activity_pause,0,0,161,163
+verexamenes,activity_create,1,0,47,52
+,clv_examenes,,imageviewer,,mainpanel,,panelexa,main,usuarioactivo,,listaexamenes,,xui,,panel1
+,clv_examenes,,imageviewer,,mainpanel,,panelexa,,listaexamenes,,panel1
+,creararchivoexamenessinoexiste,,cargarexamenes,,createitemexamen
+verexamenes,creararchivoexamenessinoexiste,0,0,23,45
+main,usuarioactivo
 
 
-
-calendario,activity_resume,0,0,34,36
+verexamenes,cargarexamenes,1,0,54,75
+,listaexamenes,,clv_examenes,main,usuarioactivo,,xui,,panel1
+,listaexamenes,,panel1
+,createitemexamen
+verexamenes,activity_pause,0,0,101,103
 
 
 
-calendario,asignardiaapanel,0,1,103,123
-,fechasconatencion
-
-
-calendario,crearfilacalendario,1,0,74,85
-,xui,,lbl_dia,,paneldia
-,lbl_dia,,paneldia
-
-calendario,crearfiladiassemana,0,1,142,159
+verexamenes,activity_resume,0,0,97,99
 
 
 
-calendario,globals,0,1,12,21
+verexamenes,btn_cerrar_click,0,0,106,109
+,panelexa,,mainpanel
+
+
+verexamenes,btn_ver_click,0,0,111,124
+,panelexa,,mainpanel,,imageviewer
+
+
+verexamenes,btnver_click,0,0,93,95
 
 
 
-calendario,paneldia_click,1,1,125,140
-,listaatenciones,main,usuarioactivo
+verexamenes,createitemexamen,1,0,77,92
+,xui,,clv_examenes,,panel1
+,panel1
+
+verexamenes,globals,0,1,12,22
 
 
-calendario,process_globals,0,1,6,10
+
+verexamenes,process_globals,0,1,6,10
 
 
 

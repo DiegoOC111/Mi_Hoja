@@ -8,7 +8,7 @@ public class b4xradiobutton_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width1,RemoteObject _height1) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,59);
+		Debug.PushSubsStack("Base_Resize (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,59);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xradiobutton","base_resize", __ref, _width1, _height1);}
 RemoteObject _newsize = RemoteObject.createImmutable(0);
 RemoteObject _gap = RemoteObject.createImmutable(0);
@@ -111,7 +111,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,33);
+		Debug.PushSubsStack("DesignerCreateView (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,33);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xradiobutton","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _iiv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ImageViewWrapper");
 Debug.locals.put("Base", _base);
@@ -194,7 +194,7 @@ finally {
 		}}
 public static RemoteObject  _draw(RemoteObject __ref,RemoteObject _state) throws Exception{
 try {
-		Debug.PushSubsStack("Draw (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,153);
+		Debug.PushSubsStack("Draw (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,153);
 if (RapidSub.canDelegate("draw")) { return __ref.runUserSub(false, "b4xradiobutton","draw", __ref, _state);}
 RemoteObject _r = RemoteObject.createImmutable(0f);
 Debug.locals.put("State", _state);
@@ -229,7 +229,7 @@ finally {
 		}}
 public static RemoteObject  _getchecked(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getChecked (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,140);
+		Debug.PushSubsStack("getChecked (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,140);
 if (RapidSub.canDelegate("getchecked")) { return __ref.runUserSub(false, "b4xradiobutton","getchecked", __ref);}
  BA.debugLineNum = 140;BA.debugLine="Public Sub getChecked As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -248,7 +248,7 @@ finally {
 		}}
 public static RemoteObject  _getenabled(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getEnabled (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,149);
+		Debug.PushSubsStack("getEnabled (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,149);
 if (RapidSub.canDelegate("getenabled")) { return __ref.runUserSub(false, "b4xradiobutton","getenabled", __ref);}
  BA.debugLineNum = 149;BA.debugLine="Public Sub getEnabled As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -267,7 +267,7 @@ finally {
 		}}
 public static RemoteObject  _gettext(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getText (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,165);
+		Debug.PushSubsStack("getText (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,165);
 if (RapidSub.canDelegate("gettext")) { return __ref.runUserSub(false, "b4xradiobutton","gettext", __ref);}
  BA.debugLineNum = 165;BA.debugLine="Public Sub getText As Object";
 Debug.JustUpdateDeviceLine();
@@ -286,7 +286,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,27);
+		Debug.PushSubsStack("Initialize (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,27);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xradiobutton","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -312,7 +312,7 @@ finally {
 		}}
 public static RemoteObject  _pnl_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("pnl_Click (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,86);
+		Debug.PushSubsStack("pnl_Click (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,86);
 if (RapidSub.canDelegate("pnl_click")) { return __ref.runUserSub(false, "b4xradiobutton","pnl_click", __ref);}
  BA.debugLineNum = 86;BA.debugLine="Private Sub pnl_Click";
 Debug.JustUpdateDeviceLine();
@@ -350,7 +350,7 @@ finally {
 		}}
 public static RemoteObject  _setchecked(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setChecked (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,135);
+		Debug.PushSubsStack("setChecked (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,135);
 if (RapidSub.canDelegate("setchecked")) { return __ref.runUserSub(false, "b4xradiobutton","setchecked", __ref, _b);}
 Debug.locals.put("b", _b);
  BA.debugLineNum = 135;BA.debugLine="Public Sub setChecked(b As Boolean)";
@@ -374,7 +374,7 @@ finally {
 		}}
 public static RemoteObject  _setenabled(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setEnabled (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,144);
+		Debug.PushSubsStack("setEnabled (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,144);
 if (RapidSub.canDelegate("setenabled")) { return __ref.runUserSub(false, "b4xradiobutton","setenabled", __ref, _b);}
 Debug.locals.put("b", _b);
  BA.debugLineNum = 144;BA.debugLine="Public Sub setEnabled (b As Boolean)";
@@ -397,7 +397,7 @@ finally {
 		}}
 public static RemoteObject  _settext(RemoteObject __ref,RemoteObject _t) throws Exception{
 try {
-		Debug.PushSubsStack("setText (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,161);
+		Debug.PushSubsStack("setText (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,161);
 if (RapidSub.canDelegate("settext")) { return __ref.runUserSub(false, "b4xradiobutton","settext", __ref, _t);}
 Debug.locals.put("t", _t);
  BA.debugLineNum = 161;BA.debugLine="Public Sub setText (t As Object)";
@@ -417,7 +417,7 @@ finally {
 		}}
 public static void  _setvalueimpl(RemoteObject __ref,RemoteObject _b,RemoteObject _immediate) throws Exception{
 try {
-		Debug.PushSubsStack("SetValueImpl (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,98);
+		Debug.PushSubsStack("SetValueImpl (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,98);
 if (RapidSub.canDelegate("setvalueimpl")) { __ref.runUserSub(false, "b4xradiobutton","setvalueimpl", __ref, _b, _immediate); return;}
 ResumableSub_SetValueImpl rsub = new ResumableSub_SetValueImpl(null,__ref,_b,_immediate);
 rsub.resume(null, null);
@@ -453,7 +453,7 @@ int limit3;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("SetValueImpl (b4xradiobutton) ","b4xradiobutton",33,__ref.getField(false, "ba"),__ref,98);
+		Debug.PushSubsStack("SetValueImpl (b4xradiobutton) ","b4xradiobutton",34,__ref.getField(false, "ba"),__ref,98);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {

@@ -8,7 +8,7 @@ public class b4xformatter_subs_0 {
 
 public static RemoteObject  _addformatdata(RemoteObject __ref,RemoteObject _data,RemoteObject _rangestart,RemoteObject _rangeend,RemoteObject _includeedges) throws Exception{
 try {
-		Debug.PushSubsStack("AddFormatData (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,65);
+		Debug.PushSubsStack("AddFormatData (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,65);
 if (RapidSub.canDelegate("addformatdata")) { return __ref.runUserSub(false, "b4xformatter","addformatdata", __ref, _data, _rangestart, _rangeend, _includeedges);}
 RemoteObject _factor = RemoteObject.createImmutable(0);
 Debug.locals.put("Data", _data);
@@ -71,7 +71,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _copyformatdata(RemoteObject __ref,RemoteObject _data) throws Exception{
 try {
-		Debug.PushSubsStack("CopyFormatData (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,38);
+		Debug.PushSubsStack("CopyFormatData (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,38);
 if (RapidSub.canDelegate("copyformatdata")) { return __ref.runUserSub(false, "b4xformatter","copyformatdata", __ref, _data);}
 RemoteObject _d = RemoteObject.declareNull("b4a.example.b4xformatter._b4xformatdata");
 Debug.locals.put("Data", _data);
@@ -144,7 +144,7 @@ finally {
 		}}
 public static RemoteObject  _createdefaultformat(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateDefaultFormat (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,19);
+		Debug.PushSubsStack("CreateDefaultFormat (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,19);
 if (RapidSub.canDelegate("createdefaultformat")) { return __ref.runUserSub(false, "b4xformatter","createdefaultformat", __ref);}
 RemoteObject _d = RemoteObject.declareNull("b4a.example.b4xformatter._b4xformatdata");
  BA.debugLineNum = 19;BA.debugLine="Private Sub CreateDefaultFormat As B4XFormatData";
@@ -188,7 +188,7 @@ finally {
 		}}
 public static RemoteObject  _format(RemoteObject __ref,RemoteObject _number) throws Exception{
 try {
-		Debug.PushSubsStack("Format (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,92);
+		Debug.PushSubsStack("Format (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,92);
 if (RapidSub.canDelegate("format")) { return __ref.runUserSub(false, "b4xformatter","format", __ref, _number);}
 RemoteObject _data = RemoteObject.declareNull("b4a.example.b4xformatter._b4xformatdata");
 RemoteObject _sb = RemoteObject.declareNull("anywheresoftware.b4a.keywords.StringBuilderWrapper");
@@ -366,7 +366,7 @@ finally {
 		}}
 public static RemoteObject  _formatlabel(RemoteObject __ref,RemoteObject _number,RemoteObject _label) throws Exception{
 try {
-		Debug.PushSubsStack("FormatLabel (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,150);
+		Debug.PushSubsStack("FormatLabel (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,150);
 if (RapidSub.canDelegate("formatlabel")) { return __ref.runUserSub(false, "b4xformatter","formatlabel", __ref, _number, _label);}
 RemoteObject _data = RemoteObject.declareNull("b4a.example.b4xformatter._b4xformatdata");
 Debug.locals.put("Number", _number);
@@ -399,7 +399,7 @@ finally {
 		}}
 public static RemoteObject  _getdefaultformat(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("GetDefaultFormat (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,78);
+		Debug.PushSubsStack("GetDefaultFormat (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,78);
 if (RapidSub.canDelegate("getdefaultformat")) { return __ref.runUserSub(false, "b4xformatter","getdefaultformat", __ref);}
  BA.debugLineNum = 78;BA.debugLine="Public Sub GetDefaultFormat As B4XFormatData";
 Debug.JustUpdateDeviceLine();
@@ -418,7 +418,7 @@ finally {
 		}}
 public static RemoteObject  _getformatdata(RemoteObject __ref,RemoteObject _number) throws Exception{
 try {
-		Debug.PushSubsStack("GetFormatData (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,83);
+		Debug.PushSubsStack("GetFormatData (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,83);
 if (RapidSub.canDelegate("getformatdata")) { return __ref.runUserSub(false, "b4xformatter","getformatdata", __ref, _number);}
 int _i = 0;
 RemoteObject _d = RemoteObject.declareNull("b4a.example.b4xformatter._b4xformatdata");
@@ -458,7 +458,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,13);
+		Debug.PushSubsStack("Initialize (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,13);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xformatter","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 RemoteObject _d = RemoteObject.declareNull("b4a.example.b4xformatter._b4xformatdata");
@@ -486,7 +486,7 @@ finally {
 		}}
 public static RemoteObject  _newformatdata(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("NewFormatData (b4xformatter) ","b4xformatter",17,__ref.getField(false, "ba"),__ref,32);
+		Debug.PushSubsStack("NewFormatData (b4xformatter) ","b4xformatter",18,__ref.getField(false, "ba"),__ref,32);
 if (RapidSub.canDelegate("newformatdata")) { return __ref.runUserSub(false, "b4xformatter","newformatdata", __ref);}
  BA.debugLineNum = 32;BA.debugLine="Public Sub NewFormatData As B4XFormatData";
 Debug.JustUpdateDeviceLine();

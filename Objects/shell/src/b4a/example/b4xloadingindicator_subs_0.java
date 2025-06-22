@@ -8,7 +8,7 @@ public class b4xloadingindicator_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,37);
+		Debug.PushSubsStack("Base_Resize (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,37);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xloadingindicator","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -57,7 +57,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,26);
+		Debug.PushSubsStack("DesignerCreateView (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,26);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xloadingindicator","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _style = RemoteObject.createImmutable("");
 Debug.locals.put("Base", _base);
@@ -104,7 +104,7 @@ finally {
 		}}
 public static RemoteObject  _draw_arc1(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_Arc1 (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,112);
+		Debug.PushSubsStack("Draw_Arc1 (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,112);
 if (RapidSub.canDelegate("draw_arc1")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_arc1", __ref, _progress);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XPath");
 RemoteObject _r = RemoteObject.createImmutable(0f);
@@ -149,7 +149,7 @@ finally {
 		}}
 public static RemoteObject  _draw_arc2(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_Arc2 (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,125);
+		Debug.PushSubsStack("Draw_Arc2 (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,125);
 if (RapidSub.canDelegate("draw_arc2")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_arc2", __ref, _progress);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XPath");
 RemoteObject _r = RemoteObject.createImmutable(0f);
@@ -194,7 +194,7 @@ finally {
 		}}
 public static RemoteObject  _draw_fivelines1(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_FiveLines1 (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,102);
+		Debug.PushSubsStack("Draw_FiveLines1 (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,102);
 if (RapidSub.canDelegate("draw_fivelines1")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_fivelines1", __ref, _progress);}
 RemoteObject _minr = RemoteObject.createImmutable(0);
 RemoteObject _maxr = RemoteObject.createImmutable(0);
@@ -242,7 +242,7 @@ finally {
 		}}
 public static RemoteObject  _draw_pacman(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_PacMan (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,138);
+		Debug.PushSubsStack("Draw_PacMan (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,138);
 if (RapidSub.canDelegate("draw_pacman")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_pacman", __ref, _progress);}
 RemoteObject _dotr = RemoteObject.createImmutable(0);
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XPath");
@@ -306,7 +306,7 @@ finally {
 		}}
 public static RemoteObject  _draw_singlecircle(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_SingleCircle (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,92);
+		Debug.PushSubsStack("Draw_SingleCircle (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,92);
 if (RapidSub.canDelegate("draw_singlecircle")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_singlecircle", __ref, _progress);}
 int _i = 0;
 Debug.locals.put("Progress", _progress);
@@ -338,7 +338,7 @@ finally {
 		}}
 public static RemoteObject  _draw_threecircles1(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_ThreeCircles1 (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,73);
+		Debug.PushSubsStack("Draw_ThreeCircles1 (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,73);
 if (RapidSub.canDelegate("draw_threecircles1")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_threecircles1", __ref, _progress);}
 RemoteObject _maxr = RemoteObject.createImmutable(0f);
 RemoteObject _r = RemoteObject.createImmutable(0f);
@@ -382,7 +382,7 @@ finally {
 		}}
 public static RemoteObject  _draw_threecircles2(RemoteObject __ref,RemoteObject _progress) throws Exception{
 try {
-		Debug.PushSubsStack("Draw_ThreeCircles2 (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,83);
+		Debug.PushSubsStack("Draw_ThreeCircles2 (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,83);
 if (RapidSub.canDelegate("draw_threecircles2")) { return __ref.runUserSub(false, "b4xloadingindicator","draw_threecircles2", __ref, _progress);}
 RemoteObject _minr = RemoteObject.createImmutable(0);
 RemoteObject _maxr = RemoteObject.createImmutable(0);
@@ -426,7 +426,7 @@ finally {
 		}}
 public static RemoteObject  _hide(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Hide (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,68);
+		Debug.PushSubsStack("Hide (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,68);
 if (RapidSub.canDelegate("hide")) { return __ref.runUserSub(false, "b4xloadingindicator","hide", __ref);}
  BA.debugLineNum = 68;BA.debugLine="Public Sub Hide";
 Debug.JustUpdateDeviceLine();
@@ -448,7 +448,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,20);
+		Debug.PushSubsStack("Initialize (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,20);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xloadingindicator","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -474,7 +474,7 @@ finally {
 		}}
 public static void  _mainloop(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("MainLoop (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,49);
+		Debug.PushSubsStack("MainLoop (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,49);
 if (RapidSub.canDelegate("mainloop")) { __ref.runUserSub(false, "b4xloadingindicator","mainloop", __ref); return;}
 ResumableSub_MainLoop rsub = new ResumableSub_MainLoop(null,__ref);
 rsub.resume(null, null);
@@ -500,7 +500,7 @@ RemoteObject _progress = RemoteObject.createImmutable(0f);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("MainLoop (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,49);
+		Debug.PushSubsStack("MainLoop (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,49);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -583,7 +583,7 @@ finally {
 }
 public static RemoteObject  _setalpha(RemoteObject __ref,RemoteObject _c,RemoteObject _alpha) throws Exception{
 try {
-		Debug.PushSubsStack("SetAlpha (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,98);
+		Debug.PushSubsStack("SetAlpha (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,98);
 if (RapidSub.canDelegate("setalpha")) { return __ref.runUserSub(false, "b4xloadingindicator","setalpha", __ref, _c, _alpha);}
 Debug.locals.put("c", _c);
 Debug.locals.put("alpha", _alpha);
@@ -604,7 +604,7 @@ finally {
 		}}
 public static RemoteObject  _setstyle(RemoteObject __ref,RemoteObject _style) throws Exception{
 try {
-		Debug.PushSubsStack("SetStyle (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,44);
+		Debug.PushSubsStack("SetStyle (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,44);
 if (RapidSub.canDelegate("setstyle")) { return __ref.runUserSub(false, "b4xloadingindicator","setstyle", __ref, _style);}
 Debug.locals.put("Style", _style);
  BA.debugLineNum = 44;BA.debugLine="Public Sub SetStyle(Style As String)";
@@ -624,7 +624,7 @@ finally {
 		}}
 public static RemoteObject  _show(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xloadingindicator) ","b4xloadingindicator",29,__ref.getField(false, "ba"),__ref,63);
+		Debug.PushSubsStack("Show (b4xloadingindicator) ","b4xloadingindicator",30,__ref.getField(false, "ba"),__ref,63);
 if (RapidSub.canDelegate("show")) { return __ref.runUserSub(false, "b4xloadingindicator","show", __ref);}
  BA.debugLineNum = 63;BA.debugLine="Public Sub Show";
 Debug.JustUpdateDeviceLine();

@@ -47,8 +47,9 @@ public b4a.example.menu _menu = null;
 public b4a.example.registrar _registrar = null;
 public b4a.example.modulo_seleccion _modulo_seleccion = null;
 public b4a.example.modulogestion _modulogestion = null;
-public b4a.example.starter _starter = null;
 public b4a.example.calendario _calendario = null;
+public b4a.example.starter _starter = null;
+public b4a.example.verexamenes _verexamenes = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public String  _base_resize(b4a.example.b4xloadingindicator __ref,double _width,double _height) throws Exception{
@@ -56,16 +57,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "base_resize", true))
 	 {return ((String) Debug.delegate(ba, "base_resize", new Object[] {_width,_height}));}
-RDebugUtils.currentLine=24313856;
- //BA.debugLineNum = 24313856;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
-RDebugUtils.currentLine=24313857;
- //BA.debugLineNum = 24313857;BA.debugLine="cvs.Resize(Width, Height)";
+RDebugUtils.currentLine=25100288;
+ //BA.debugLineNum = 25100288;BA.debugLine="Private Sub Base_Resize (Width As Double, Height A";
+RDebugUtils.currentLine=25100289;
+ //BA.debugLineNum = 25100289;BA.debugLine="cvs.Resize(Width, Height)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Resize((float) (_width),(float) (_height));
-RDebugUtils.currentLine=24313858;
- //BA.debugLineNum = 24313858;BA.debugLine="MainLoop";
+RDebugUtils.currentLine=25100290;
+ //BA.debugLineNum = 25100290;BA.debugLine="MainLoop";
 __ref._mainloop /*void*/ (null);
-RDebugUtils.currentLine=24313859;
- //BA.debugLineNum = 24313859;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25100291;
+ //BA.debugLineNum = 25100291;BA.debugLine="End Sub";
 return "";
 }
 public void  _mainloop(b4a.example.b4xloadingindicator __ref) throws Exception{
@@ -99,17 +100,17 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=24444929;
- //BA.debugLineNum = 24444929;BA.debugLine="index = index + 1";
+RDebugUtils.currentLine=25231361;
+ //BA.debugLineNum = 25231361;BA.debugLine="index = index + 1";
 __ref._index /*int*/  = (int) (__ref._index /*int*/ +1);
-RDebugUtils.currentLine=24444930;
- //BA.debugLineNum = 24444930;BA.debugLine="Dim MyIndex As Int = index";
+RDebugUtils.currentLine=25231362;
+ //BA.debugLineNum = 25231362;BA.debugLine="Dim MyIndex As Int = index";
 _myindex = __ref._index /*int*/ ;
-RDebugUtils.currentLine=24444931;
- //BA.debugLineNum = 24444931;BA.debugLine="Dim n As Long = DateTime.Now";
+RDebugUtils.currentLine=25231363;
+ //BA.debugLineNum = 25231363;BA.debugLine="Dim n As Long = DateTime.Now";
 _n = parent.__c.DateTime.getNow();
-RDebugUtils.currentLine=24444932;
- //BA.debugLineNum = 24444932;BA.debugLine="Do While MyIndex = index";
+RDebugUtils.currentLine=25231364;
+ //BA.debugLineNum = 25231364;BA.debugLine="Do While MyIndex = index";
 if (true) break;
 
 case 1:
@@ -124,23 +125,23 @@ if (true) break;
 case 3:
 //C
 this.state = 1;
-RDebugUtils.currentLine=24444933;
- //BA.debugLineNum = 24444933;BA.debugLine="Dim progress As Float = (DateTime.Now - n) / Dur";
+RDebugUtils.currentLine=25231365;
+ //BA.debugLineNum = 25231365;BA.debugLine="Dim progress As Float = (DateTime.Now - n) / Dur";
 _progress = (float) ((parent.__c.DateTime.getNow()-_n)/(double)__ref._duration /*int*/ );
-RDebugUtils.currentLine=24444934;
- //BA.debugLineNum = 24444934;BA.debugLine="progress = progress - Floor(progress)";
+RDebugUtils.currentLine=25231366;
+ //BA.debugLineNum = 25231366;BA.debugLine="progress = progress - Floor(progress)";
 _progress = (float) (_progress-parent.__c.Floor(_progress));
-RDebugUtils.currentLine=24444935;
- //BA.debugLineNum = 24444935;BA.debugLine="cvs.ClearRect(cvs.TargetRect)";
+RDebugUtils.currentLine=25231367;
+ //BA.debugLineNum = 25231367;BA.debugLine="cvs.ClearRect(cvs.TargetRect)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .ClearRect(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect());
-RDebugUtils.currentLine=24444936;
- //BA.debugLineNum = 24444936;BA.debugLine="CallSub2(Me, DrawingSubName, progress)";
+RDebugUtils.currentLine=25231368;
+ //BA.debugLineNum = 25231368;BA.debugLine="CallSub2(Me, DrawingSubName, progress)";
 parent.__c.CallSubDebug2(ba,parent,__ref._drawingsubname /*String*/ ,(Object)(_progress));
-RDebugUtils.currentLine=24444937;
- //BA.debugLineNum = 24444937;BA.debugLine="cvs.Invalidate";
+RDebugUtils.currentLine=25231369;
+ //BA.debugLineNum = 25231369;BA.debugLine="cvs.Invalidate";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Invalidate();
-RDebugUtils.currentLine=24444938;
- //BA.debugLineNum = 24444938;BA.debugLine="Sleep(10)";
+RDebugUtils.currentLine=25231370;
+ //BA.debugLineNum = 25231370;BA.debugLine="Sleep(10)";
 parent.__c.Sleep(ba,new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "b4xloadingindicator", "mainloop"),(int) (10));
 this.state = 5;
 return;
@@ -154,8 +155,8 @@ case 4:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=24444940;
- //BA.debugLineNum = 24444940;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25231372;
+ //BA.debugLineNum = 25231372;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -165,40 +166,40 @@ if (true) break;
 public String  _class_globals(b4a.example.b4xloadingindicator __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="b4xloadingindicator";
-RDebugUtils.currentLine=24117248;
- //BA.debugLineNum = 24117248;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=24117249;
- //BA.debugLineNum = 24117249;BA.debugLine="Private mEventName As String 'ignore";
+RDebugUtils.currentLine=24903680;
+ //BA.debugLineNum = 24903680;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=24903681;
+ //BA.debugLineNum = 24903681;BA.debugLine="Private mEventName As String 'ignore";
 _meventname = "";
-RDebugUtils.currentLine=24117250;
- //BA.debugLineNum = 24117250;BA.debugLine="Private mCallBack As Object 'ignore";
+RDebugUtils.currentLine=24903682;
+ //BA.debugLineNum = 24903682;BA.debugLine="Private mCallBack As Object 'ignore";
 _mcallback = new Object();
-RDebugUtils.currentLine=24117251;
- //BA.debugLineNum = 24117251;BA.debugLine="Public mBase As B4XView 'ignore";
+RDebugUtils.currentLine=24903683;
+ //BA.debugLineNum = 24903683;BA.debugLine="Public mBase As B4XView 'ignore";
 _mbase = new anywheresoftware.b4a.objects.B4XViewWrapper();
-RDebugUtils.currentLine=24117252;
- //BA.debugLineNum = 24117252;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=24903684;
+ //BA.debugLineNum = 24903684;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=24117253;
- //BA.debugLineNum = 24117253;BA.debugLine="Public IndicatorColor As Int";
+RDebugUtils.currentLine=24903685;
+ //BA.debugLineNum = 24903685;BA.debugLine="Public IndicatorColor As Int";
 _indicatorcolor = 0;
-RDebugUtils.currentLine=24117254;
- //BA.debugLineNum = 24117254;BA.debugLine="Private index As Int";
+RDebugUtils.currentLine=24903686;
+ //BA.debugLineNum = 24903686;BA.debugLine="Private index As Int";
 _index = 0;
-RDebugUtils.currentLine=24117255;
- //BA.debugLineNum = 24117255;BA.debugLine="Private cvs As B4XCanvas";
+RDebugUtils.currentLine=24903687;
+ //BA.debugLineNum = 24903687;BA.debugLine="Private cvs As B4XCanvas";
 _cvs = new anywheresoftware.b4a.objects.B4XCanvas();
-RDebugUtils.currentLine=24117256;
- //BA.debugLineNum = 24117256;BA.debugLine="Public Duration As Int";
+RDebugUtils.currentLine=24903688;
+ //BA.debugLineNum = 24903688;BA.debugLine="Public Duration As Int";
 _duration = 0;
-RDebugUtils.currentLine=24117257;
- //BA.debugLineNum = 24117257;BA.debugLine="Private DrawingSubName As String";
+RDebugUtils.currentLine=24903689;
+ //BA.debugLineNum = 24903689;BA.debugLine="Private DrawingSubName As String";
 _drawingsubname = "";
-RDebugUtils.currentLine=24117258;
- //BA.debugLineNum = 24117258;BA.debugLine="Public Tag As Object";
+RDebugUtils.currentLine=24903690;
+ //BA.debugLineNum = 24903690;BA.debugLine="Public Tag As Object";
 _tag = new Object();
-RDebugUtils.currentLine=24117259;
- //BA.debugLineNum = 24117259;BA.debugLine="End Sub";
+RDebugUtils.currentLine=24903691;
+ //BA.debugLineNum = 24903691;BA.debugLine="End Sub";
 return "";
 }
 public String  _designercreateview(b4a.example.b4xloadingindicator __ref,Object _base,anywheresoftware.b4a.objects.LabelWrapper _lbl,anywheresoftware.b4a.objects.collections.Map _props) throws Exception{
@@ -207,37 +208,37 @@ RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "designercreateview", true))
 	 {return ((String) Debug.delegate(ba, "designercreateview", new Object[] {_base,_lbl,_props}));}
 String _style = "";
-RDebugUtils.currentLine=24248320;
- //BA.debugLineNum = 24248320;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
-RDebugUtils.currentLine=24248321;
- //BA.debugLineNum = 24248321;BA.debugLine="mBase = Base";
+RDebugUtils.currentLine=25034752;
+ //BA.debugLineNum = 25034752;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
+RDebugUtils.currentLine=25034753;
+ //BA.debugLineNum = 25034753;BA.debugLine="mBase = Base";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/  = (anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_base));
-RDebugUtils.currentLine=24248322;
- //BA.debugLineNum = 24248322;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
+RDebugUtils.currentLine=25034754;
+ //BA.debugLineNum = 25034754;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
 __ref._tag /*Object*/  = __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .getTag();
-RDebugUtils.currentLine=24248322;
- //BA.debugLineNum = 24248322;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
+RDebugUtils.currentLine=25034754;
+ //BA.debugLineNum = 25034754;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setTag(this);
-RDebugUtils.currentLine=24248323;
- //BA.debugLineNum = 24248323;BA.debugLine="IndicatorColor = xui.PaintOrColorToColor(Props.";
+RDebugUtils.currentLine=25034755;
+ //BA.debugLineNum = 25034755;BA.debugLine="IndicatorColor = xui.PaintOrColorToColor(Props.";
 __ref._indicatorcolor /*int*/  = __ref._xui /*anywheresoftware.b4a.objects.B4XViewWrapper.XUI*/ .PaintOrColorToColor(_props.Get((Object)("Color")));
-RDebugUtils.currentLine=24248324;
- //BA.debugLineNum = 24248324;BA.debugLine="Dim style As String = Props.Get(\"IndicatorStyle\")";
+RDebugUtils.currentLine=25034756;
+ //BA.debugLineNum = 25034756;BA.debugLine="Dim style As String = Props.Get(\"IndicatorStyle\")";
 _style = BA.ObjectToString(_props.Get((Object)("IndicatorStyle")));
-RDebugUtils.currentLine=24248325;
- //BA.debugLineNum = 24248325;BA.debugLine="Duration = Props.Get(\"Duration\")";
+RDebugUtils.currentLine=25034757;
+ //BA.debugLineNum = 25034757;BA.debugLine="Duration = Props.Get(\"Duration\")";
 __ref._duration /*int*/  = (int)(BA.ObjectToNumber(_props.Get((Object)("Duration"))));
-RDebugUtils.currentLine=24248326;
- //BA.debugLineNum = 24248326;BA.debugLine="SetStyle(style)";
+RDebugUtils.currentLine=25034758;
+ //BA.debugLineNum = 25034758;BA.debugLine="SetStyle(style)";
 __ref._setstyle /*String*/ (null,_style);
-RDebugUtils.currentLine=24248327;
- //BA.debugLineNum = 24248327;BA.debugLine="cvs.Initialize(mBase)";
+RDebugUtils.currentLine=25034759;
+ //BA.debugLineNum = 25034759;BA.debugLine="cvs.Initialize(mBase)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .Initialize(__ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ );
-RDebugUtils.currentLine=24248328;
- //BA.debugLineNum = 24248328;BA.debugLine="MainLoop";
+RDebugUtils.currentLine=25034760;
+ //BA.debugLineNum = 25034760;BA.debugLine="MainLoop";
 __ref._mainloop /*void*/ (null);
-RDebugUtils.currentLine=24248329;
- //BA.debugLineNum = 24248329;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25034761;
+ //BA.debugLineNum = 25034761;BA.debugLine="End Sub";
 return "";
 }
 public String  _setstyle(b4a.example.b4xloadingindicator __ref,String _style) throws Exception{
@@ -245,13 +246,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "setstyle", true))
 	 {return ((String) Debug.delegate(ba, "setstyle", new Object[] {_style}));}
-RDebugUtils.currentLine=24379392;
- //BA.debugLineNum = 24379392;BA.debugLine="Public Sub SetStyle(Style As String)";
-RDebugUtils.currentLine=24379393;
- //BA.debugLineNum = 24379393;BA.debugLine="DrawingSubName = \"Draw_\" & Style.Replace(\" \", \"\")";
+RDebugUtils.currentLine=25165824;
+ //BA.debugLineNum = 25165824;BA.debugLine="Public Sub SetStyle(Style As String)";
+RDebugUtils.currentLine=25165825;
+ //BA.debugLineNum = 25165825;BA.debugLine="DrawingSubName = \"Draw_\" & Style.Replace(\" \", \"\")";
 __ref._drawingsubname /*String*/  = "Draw_"+_style.replace(" ","");
-RDebugUtils.currentLine=24379394;
- //BA.debugLineNum = 24379394;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25165826;
+ //BA.debugLineNum = 25165826;BA.debugLine="End Sub";
 return "";
 }
 public String  _draw_arc1(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -261,36 +262,36 @@ if (Debug.shouldDelegate(ba, "draw_arc1", true))
 	 {return ((String) Debug.delegate(ba, "draw_arc1", new Object[] {_progress}));}
 anywheresoftware.b4a.objects.B4XCanvas.B4XPath _p = null;
 float _r = 0f;
-RDebugUtils.currentLine=24969216;
- //BA.debugLineNum = 24969216;BA.debugLine="Private Sub Draw_Arc1 (Progress As Float)";
-RDebugUtils.currentLine=24969217;
- //BA.debugLineNum = 24969217;BA.debugLine="Dim p As B4XPath";
+RDebugUtils.currentLine=25755648;
+ //BA.debugLineNum = 25755648;BA.debugLine="Private Sub Draw_Arc1 (Progress As Float)";
+RDebugUtils.currentLine=25755649;
+ //BA.debugLineNum = 25755649;BA.debugLine="Dim p As B4XPath";
 _p = new anywheresoftware.b4a.objects.B4XCanvas.B4XPath();
-RDebugUtils.currentLine=24969218;
- //BA.debugLineNum = 24969218;BA.debugLine="Dim r As Float = cvs.TargetRect.CenterX - 5dip";
+RDebugUtils.currentLine=25755650;
+ //BA.debugLineNum = 25755650;BA.debugLine="Dim r As Float = cvs.TargetRect.CenterX - 5dip";
 _r = (float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX()-__c.DipToCurrent((int) (5)));
-RDebugUtils.currentLine=24969219;
- //BA.debugLineNum = 24969219;BA.debugLine="If Progress < 0.5 Then";
+RDebugUtils.currentLine=25755651;
+ //BA.debugLineNum = 25755651;BA.debugLine="If Progress < 0.5 Then";
 if (_progress<0.5) { 
-RDebugUtils.currentLine=24969220;
- //BA.debugLineNum = 24969220;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
+RDebugUtils.currentLine=25755652;
+ //BA.debugLineNum = 25755652;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
 _p.InitializeArc(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX(),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),_r,(float) (-90),(float) (_progress*2*360));
  }else {
-RDebugUtils.currentLine=24969222;
- //BA.debugLineNum = 24969222;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
+RDebugUtils.currentLine=25755654;
+ //BA.debugLineNum = 25755654;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
 _p.InitializeArc(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX(),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),_r,(float) (-90),(float) (-(1-_progress)*2*360));
  };
-RDebugUtils.currentLine=24969224;
- //BA.debugLineNum = 24969224;BA.debugLine="cvs.ClipPath(p)";
+RDebugUtils.currentLine=25755656;
+ //BA.debugLineNum = 25755656;BA.debugLine="cvs.ClipPath(p)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .ClipPath(_p);
-RDebugUtils.currentLine=24969225;
- //BA.debugLineNum = 24969225;BA.debugLine="cvs.DrawRect(cvs.TargetRect, IndicatorColor, True";
+RDebugUtils.currentLine=25755657;
+ //BA.debugLineNum = 25755657;BA.debugLine="cvs.DrawRect(cvs.TargetRect, IndicatorColor, True";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawRect(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect(),__ref._indicatorcolor /*int*/ ,__c.True,(float) (0));
-RDebugUtils.currentLine=24969226;
- //BA.debugLineNum = 24969226;BA.debugLine="cvs.RemoveClip";
+RDebugUtils.currentLine=25755658;
+ //BA.debugLineNum = 25755658;BA.debugLine="cvs.RemoveClip";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .RemoveClip();
-RDebugUtils.currentLine=24969227;
- //BA.debugLineNum = 24969227;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25755659;
+ //BA.debugLineNum = 25755659;BA.debugLine="End Sub";
 return "";
 }
 public String  _draw_arc2(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -300,36 +301,36 @@ if (Debug.shouldDelegate(ba, "draw_arc2", true))
 	 {return ((String) Debug.delegate(ba, "draw_arc2", new Object[] {_progress}));}
 anywheresoftware.b4a.objects.B4XCanvas.B4XPath _p = null;
 float _r = 0f;
-RDebugUtils.currentLine=25034752;
- //BA.debugLineNum = 25034752;BA.debugLine="Private Sub Draw_Arc2 (Progress As Float)";
-RDebugUtils.currentLine=25034753;
- //BA.debugLineNum = 25034753;BA.debugLine="Dim p As B4XPath";
+RDebugUtils.currentLine=25821184;
+ //BA.debugLineNum = 25821184;BA.debugLine="Private Sub Draw_Arc2 (Progress As Float)";
+RDebugUtils.currentLine=25821185;
+ //BA.debugLineNum = 25821185;BA.debugLine="Dim p As B4XPath";
 _p = new anywheresoftware.b4a.objects.B4XCanvas.B4XPath();
-RDebugUtils.currentLine=25034754;
- //BA.debugLineNum = 25034754;BA.debugLine="Dim r As Float = cvs.TargetRect.CenterX - 5dip";
+RDebugUtils.currentLine=25821186;
+ //BA.debugLineNum = 25821186;BA.debugLine="Dim r As Float = cvs.TargetRect.CenterX - 5dip";
 _r = (float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX()-__c.DipToCurrent((int) (5)));
-RDebugUtils.currentLine=25034755;
- //BA.debugLineNum = 25034755;BA.debugLine="If Progress < 0.5 Then";
+RDebugUtils.currentLine=25821187;
+ //BA.debugLineNum = 25821187;BA.debugLine="If Progress < 0.5 Then";
 if (_progress<0.5) { 
-RDebugUtils.currentLine=25034756;
- //BA.debugLineNum = 25034756;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
+RDebugUtils.currentLine=25821188;
+ //BA.debugLineNum = 25821188;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
 _p.InitializeArc(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX(),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),_r,(float) (-90),(float) (_progress*2*360));
  }else {
-RDebugUtils.currentLine=25034758;
- //BA.debugLineNum = 25034758;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
+RDebugUtils.currentLine=25821190;
+ //BA.debugLineNum = 25821190;BA.debugLine="p.InitializeArc(cvs.TargetRect.CenterX, cvs.Targ";
 _p.InitializeArc(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX(),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),_r,(float) (-90),(float) (360-(_progress-0.5)*2*360));
  };
-RDebugUtils.currentLine=25034760;
- //BA.debugLineNum = 25034760;BA.debugLine="cvs.ClipPath(p)";
+RDebugUtils.currentLine=25821192;
+ //BA.debugLineNum = 25821192;BA.debugLine="cvs.ClipPath(p)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .ClipPath(_p);
-RDebugUtils.currentLine=25034761;
- //BA.debugLineNum = 25034761;BA.debugLine="cvs.DrawRect(cvs.TargetRect, IndicatorColor, True";
+RDebugUtils.currentLine=25821193;
+ //BA.debugLineNum = 25821193;BA.debugLine="cvs.DrawRect(cvs.TargetRect, IndicatorColor, True";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawRect(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect(),__ref._indicatorcolor /*int*/ ,__c.True,(float) (0));
-RDebugUtils.currentLine=25034762;
- //BA.debugLineNum = 25034762;BA.debugLine="cvs.RemoveClip";
+RDebugUtils.currentLine=25821194;
+ //BA.debugLineNum = 25821194;BA.debugLine="cvs.RemoveClip";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .RemoveClip();
-RDebugUtils.currentLine=25034763;
- //BA.debugLineNum = 25034763;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25821195;
+ //BA.debugLineNum = 25821195;BA.debugLine="End Sub";
 return "";
 }
 public String  _draw_fivelines1(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -342,34 +343,34 @@ int _maxr = 0;
 int _dx = 0;
 int _i = 0;
 float _r = 0f;
-RDebugUtils.currentLine=24903680;
- //BA.debugLineNum = 24903680;BA.debugLine="Private Sub Draw_FiveLines1(Progress As Float)";
-RDebugUtils.currentLine=24903681;
- //BA.debugLineNum = 24903681;BA.debugLine="Dim MinR As Int = 10dip";
+RDebugUtils.currentLine=25690112;
+ //BA.debugLineNum = 25690112;BA.debugLine="Private Sub Draw_FiveLines1(Progress As Float)";
+RDebugUtils.currentLine=25690113;
+ //BA.debugLineNum = 25690113;BA.debugLine="Dim MinR As Int = 10dip";
 _minr = __c.DipToCurrent((int) (10));
-RDebugUtils.currentLine=24903682;
- //BA.debugLineNum = 24903682;BA.debugLine="Dim MaxR As Int = cvs.TargetRect.Height / 2";
+RDebugUtils.currentLine=25690114;
+ //BA.debugLineNum = 25690114;BA.debugLine="Dim MaxR As Int = cvs.TargetRect.Height / 2";
 _maxr = (int) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getHeight()/(double)2);
-RDebugUtils.currentLine=24903683;
- //BA.debugLineNum = 24903683;BA.debugLine="Dim dx As Int = (cvs.TargetRect.Width - 2dip) / 5";
+RDebugUtils.currentLine=25690115;
+ //BA.debugLineNum = 25690115;BA.debugLine="Dim dx As Int = (cvs.TargetRect.Width - 2dip) / 5";
 _dx = (int) ((__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getWidth()-__c.DipToCurrent((int) (2)))/(double)5);
-RDebugUtils.currentLine=24903684;
- //BA.debugLineNum = 24903684;BA.debugLine="For i = 0 To 4";
+RDebugUtils.currentLine=25690116;
+ //BA.debugLineNum = 25690116;BA.debugLine="For i = 0 To 4";
 {
 final int step4 = 1;
 final int limit4 = (int) (4);
 _i = (int) (0) ;
 for (;_i <= limit4 ;_i = _i + step4 ) {
-RDebugUtils.currentLine=24903685;
- //BA.debugLineNum = 24903685;BA.debugLine="Dim r As Float = MinR + MaxR / 2 + MaxR / 2 * Si";
+RDebugUtils.currentLine=25690117;
+ //BA.debugLineNum = 25690117;BA.debugLine="Dim r As Float = MinR + MaxR / 2 + MaxR / 2 * Si";
 _r = (float) (_minr+_maxr/(double)2+_maxr/(double)2*__c.SinD(_progress*360-30*_i));
-RDebugUtils.currentLine=24903686;
- //BA.debugLineNum = 24903686;BA.debugLine="cvs.DrawLine(2dip + i * dx, cvs.TargetRect.Cente";
+RDebugUtils.currentLine=25690118;
+ //BA.debugLineNum = 25690118;BA.debugLine="cvs.DrawLine(2dip + i * dx, cvs.TargetRect.Cente";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawLine((float) (__c.DipToCurrent((int) (2))+_i*_dx),(float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY()-_r),(float) (__c.DipToCurrent((int) (2))+_i*_dx),(float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY()+_r),__ref._indicatorcolor /*int*/ ,(float) (__c.DipToCurrent((int) (4))));
  }
 };
-RDebugUtils.currentLine=24903688;
- //BA.debugLineNum = 24903688;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25690120;
+ //BA.debugLineNum = 25690120;BA.debugLine="End Sub";
 return "";
 }
 public String  _draw_pacman(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -383,51 +384,51 @@ int _angle = 0;
 int _cx = 0;
 int _cy = 0;
 int _r = 0;
-RDebugUtils.currentLine=25100288;
- //BA.debugLineNum = 25100288;BA.debugLine="Private Sub Draw_PacMan(Progress As Float)";
-RDebugUtils.currentLine=25100289;
- //BA.debugLineNum = 25100289;BA.debugLine="Dim DotR As Int = 5dip";
+RDebugUtils.currentLine=25886720;
+ //BA.debugLineNum = 25886720;BA.debugLine="Private Sub Draw_PacMan(Progress As Float)";
+RDebugUtils.currentLine=25886721;
+ //BA.debugLineNum = 25886721;BA.debugLine="Dim DotR As Int = 5dip";
 _dotr = __c.DipToCurrent((int) (5));
-RDebugUtils.currentLine=25100290;
- //BA.debugLineNum = 25100290;BA.debugLine="cvs.DrawCircle(cvs.TargetRect.Width - DotR - Prog";
+RDebugUtils.currentLine=25886722;
+ //BA.debugLineNum = 25886722;BA.debugLine="cvs.DrawCircle(cvs.TargetRect.Width - DotR - Prog";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawCircle((float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getWidth()-_dotr-_progress*(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX()-__c.DipToCurrent((int) (10)))),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),(float) (_dotr),__ref._setalpha /*int*/ (null,__ref._indicatorcolor /*int*/ ,(int) (255-200*_progress)),__c.True,(float) (0));
-RDebugUtils.currentLine=25100291;
- //BA.debugLineNum = 25100291;BA.debugLine="Dim p As B4XPath";
+RDebugUtils.currentLine=25886723;
+ //BA.debugLineNum = 25886723;BA.debugLine="Dim p As B4XPath";
 _p = new anywheresoftware.b4a.objects.B4XCanvas.B4XPath();
-RDebugUtils.currentLine=25100292;
- //BA.debugLineNum = 25100292;BA.debugLine="Dim angle As Int = 70 * SinD(Progress * 180)";
+RDebugUtils.currentLine=25886724;
+ //BA.debugLineNum = 25886724;BA.debugLine="Dim angle As Int = 70 * SinD(Progress * 180)";
 _angle = (int) (70*__c.SinD(_progress*180));
-RDebugUtils.currentLine=25100293;
- //BA.debugLineNum = 25100293;BA.debugLine="Dim cx As Int = cvs.TargetRect.CenterX - 5dip";
+RDebugUtils.currentLine=25886725;
+ //BA.debugLineNum = 25886725;BA.debugLine="Dim cx As Int = cvs.TargetRect.CenterX - 5dip";
 _cx = (int) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX()-__c.DipToCurrent((int) (5)));
-RDebugUtils.currentLine=25100294;
- //BA.debugLineNum = 25100294;BA.debugLine="Dim cy As Int = cvs.TargetRect.CenterY";
+RDebugUtils.currentLine=25886726;
+ //BA.debugLineNum = 25886726;BA.debugLine="Dim cy As Int = cvs.TargetRect.CenterY";
 _cy = (int) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY());
-RDebugUtils.currentLine=25100295;
- //BA.debugLineNum = 25100295;BA.debugLine="Dim r As Int = cvs.TargetRect.CenterY - 5dip";
+RDebugUtils.currentLine=25886727;
+ //BA.debugLineNum = 25886727;BA.debugLine="Dim r As Int = cvs.TargetRect.CenterY - 5dip";
 _r = (int) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY()-__c.DipToCurrent((int) (5)));
-RDebugUtils.currentLine=25100296;
- //BA.debugLineNum = 25100296;BA.debugLine="If angle = 0 Then";
+RDebugUtils.currentLine=25886728;
+ //BA.debugLineNum = 25886728;BA.debugLine="If angle = 0 Then";
 if (_angle==0) { 
-RDebugUtils.currentLine=25100297;
- //BA.debugLineNum = 25100297;BA.debugLine="cvs.DrawCircle(cx, cy, r, IndicatorColor, True,";
+RDebugUtils.currentLine=25886729;
+ //BA.debugLineNum = 25886729;BA.debugLine="cvs.DrawCircle(cx, cy, r, IndicatorColor, True,";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawCircle((float) (_cx),(float) (_cy),(float) (_r),__ref._indicatorcolor /*int*/ ,__c.True,(float) (0));
  }else {
-RDebugUtils.currentLine=25100299;
- //BA.debugLineNum = 25100299;BA.debugLine="p.InitializeArc(cx, cy , r, -angle / 2, -(360-an";
+RDebugUtils.currentLine=25886731;
+ //BA.debugLineNum = 25886731;BA.debugLine="p.InitializeArc(cx, cy , r, -angle / 2, -(360-an";
 _p.InitializeArc((float) (_cx),(float) (_cy),(float) (_r),(float) (-_angle/(double)2),(float) (-(360-_angle)));
-RDebugUtils.currentLine=25100300;
- //BA.debugLineNum = 25100300;BA.debugLine="cvs.ClipPath(p)";
+RDebugUtils.currentLine=25886732;
+ //BA.debugLineNum = 25886732;BA.debugLine="cvs.ClipPath(p)";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .ClipPath(_p);
-RDebugUtils.currentLine=25100301;
- //BA.debugLineNum = 25100301;BA.debugLine="cvs.DrawRect(cvs.TargetRect, IndicatorColor, Tru";
+RDebugUtils.currentLine=25886733;
+ //BA.debugLineNum = 25886733;BA.debugLine="cvs.DrawRect(cvs.TargetRect, IndicatorColor, Tru";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawRect(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect(),__ref._indicatorcolor /*int*/ ,__c.True,(float) (0));
-RDebugUtils.currentLine=25100302;
- //BA.debugLineNum = 25100302;BA.debugLine="cvs.RemoveClip";
+RDebugUtils.currentLine=25886734;
+ //BA.debugLineNum = 25886734;BA.debugLine="cvs.RemoveClip";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .RemoveClip();
  };
-RDebugUtils.currentLine=25100305;
- //BA.debugLineNum = 25100305;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25886737;
+ //BA.debugLineNum = 25886737;BA.debugLine="End Sub";
 return "";
 }
 public int  _setalpha(b4a.example.b4xloadingindicator __ref,int _c,int _alpha) throws Exception{
@@ -435,13 +436,13 @@ __ref = this;
 RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "setalpha", true))
 	 {return ((Integer) Debug.delegate(ba, "setalpha", new Object[] {_c,_alpha}));}
-RDebugUtils.currentLine=24838144;
- //BA.debugLineNum = 24838144;BA.debugLine="Private Sub SetAlpha (c As Int, alpha As Int) As I";
-RDebugUtils.currentLine=24838145;
- //BA.debugLineNum = 24838145;BA.debugLine="Return Bit.And(0xffffff, c) + Bit.ShiftLeft(alpha";
+RDebugUtils.currentLine=25624576;
+ //BA.debugLineNum = 25624576;BA.debugLine="Private Sub SetAlpha (c As Int, alpha As Int) As I";
+RDebugUtils.currentLine=25624577;
+ //BA.debugLineNum = 25624577;BA.debugLine="Return Bit.And(0xffffff, c) + Bit.ShiftLeft(alpha";
 if (true) return (int) (__c.Bit.And(((int)0xffffff),_c)+__c.Bit.ShiftLeft(_alpha,(int) (24)));
-RDebugUtils.currentLine=24838146;
- //BA.debugLineNum = 24838146;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25624578;
+ //BA.debugLineNum = 25624578;BA.debugLine="End Sub";
 return 0;
 }
 public String  _draw_singlecircle(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -450,22 +451,22 @@ RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "draw_singlecircle", true))
 	 {return ((String) Debug.delegate(ba, "draw_singlecircle", new Object[] {_progress}));}
 int _i = 0;
-RDebugUtils.currentLine=24772608;
- //BA.debugLineNum = 24772608;BA.debugLine="Private Sub Draw_SingleCircle(Progress As Float)";
-RDebugUtils.currentLine=24772609;
- //BA.debugLineNum = 24772609;BA.debugLine="For i = 0 To 2";
+RDebugUtils.currentLine=25559040;
+ //BA.debugLineNum = 25559040;BA.debugLine="Private Sub Draw_SingleCircle(Progress As Float)";
+RDebugUtils.currentLine=25559041;
+ //BA.debugLineNum = 25559041;BA.debugLine="For i = 0 To 2";
 {
 final int step1 = 1;
 final int limit1 = (int) (2);
 _i = (int) (0) ;
 for (;_i <= limit1 ;_i = _i + step1 ) {
-RDebugUtils.currentLine=24772610;
- //BA.debugLineNum = 24772610;BA.debugLine="cvs.DrawCircle(cvs.TargetRect.CenterX, cvs.Targe";
+RDebugUtils.currentLine=25559042;
+ //BA.debugLineNum = 25559042;BA.debugLine="cvs.DrawCircle(cvs.TargetRect.CenterX, cvs.Targe";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawCircle(__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX(),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),(float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX()*_progress),__ref._setalpha /*int*/ (null,__ref._indicatorcolor /*int*/ ,(int) (255-255*_progress)),__c.True,(float) (0));
  }
 };
-RDebugUtils.currentLine=24772612;
- //BA.debugLineNum = 24772612;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25559044;
+ //BA.debugLineNum = 25559044;BA.debugLine="End Sub";
 return "";
 }
 public String  _draw_threecircles1(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -477,31 +478,31 @@ float _maxr = 0f;
 float _r = 0f;
 int _i = 0;
 int _alpha = 0;
-RDebugUtils.currentLine=24641536;
- //BA.debugLineNum = 24641536;BA.debugLine="Private Sub Draw_ThreeCircles1 (Progress As Float)";
-RDebugUtils.currentLine=24641537;
- //BA.debugLineNum = 24641537;BA.debugLine="Dim MaxR As Float = (cvs.TargetRect.Width / 2 - 2";
+RDebugUtils.currentLine=25427968;
+ //BA.debugLineNum = 25427968;BA.debugLine="Private Sub Draw_ThreeCircles1 (Progress As Float)";
+RDebugUtils.currentLine=25427969;
+ //BA.debugLineNum = 25427969;BA.debugLine="Dim MaxR As Float = (cvs.TargetRect.Width / 2 - 2";
 _maxr = (float) ((__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getWidth()/(double)2-__c.DipToCurrent((int) (20)))/(double)2);
-RDebugUtils.currentLine=24641538;
- //BA.debugLineNum = 24641538;BA.debugLine="Dim r As Float = 10dip + MaxR + MaxR * Sin(Progre";
+RDebugUtils.currentLine=25427970;
+ //BA.debugLineNum = 25427970;BA.debugLine="Dim r As Float = 10dip + MaxR + MaxR * Sin(Progre";
 _r = (float) (__c.DipToCurrent((int) (10))+_maxr+_maxr*__c.Sin(_progress*2*__c.cPI));
-RDebugUtils.currentLine=24641539;
- //BA.debugLineNum = 24641539;BA.debugLine="For i = 0 To 2";
+RDebugUtils.currentLine=25427971;
+ //BA.debugLineNum = 25427971;BA.debugLine="For i = 0 To 2";
 {
 final int step3 = 1;
 final int limit3 = (int) (2);
 _i = (int) (0) ;
 for (;_i <= limit3 ;_i = _i + step3 ) {
-RDebugUtils.currentLine=24641540;
- //BA.debugLineNum = 24641540;BA.debugLine="Dim alpha As Int = i * 120 + Progress * 360";
+RDebugUtils.currentLine=25427972;
+ //BA.debugLineNum = 25427972;BA.debugLine="Dim alpha As Int = i * 120 + Progress * 360";
 _alpha = (int) (_i*120+_progress*360);
-RDebugUtils.currentLine=24641542;
- //BA.debugLineNum = 24641542;BA.debugLine="cvs.DrawCircle(cvs.TargetRect.CenterX + r * SinD";
+RDebugUtils.currentLine=25427974;
+ //BA.debugLineNum = 25427974;BA.debugLine="cvs.DrawCircle(cvs.TargetRect.CenterX + r * SinD";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawCircle((float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterX()+_r*__c.SinD(_alpha)),(float) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY()+_r*__c.CosD(_alpha)),(float) (__c.DipToCurrent((int) (7))),__ref._indicatorcolor /*int*/ ,__c.True,(float) (__c.DipToCurrent((int) (1))));
  }
 };
-RDebugUtils.currentLine=24641544;
- //BA.debugLineNum = 24641544;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25427976;
+ //BA.debugLineNum = 25427976;BA.debugLine="End Sub";
 return "";
 }
 public String  _draw_threecircles2(b4a.example.b4xloadingindicator __ref,float _progress) throws Exception{
@@ -513,31 +514,31 @@ int _minr = 0;
 int _maxr = 0;
 int _i = 0;
 float _r = 0f;
-RDebugUtils.currentLine=24707072;
- //BA.debugLineNum = 24707072;BA.debugLine="Private Sub Draw_ThreeCircles2 (Progress As Float)";
-RDebugUtils.currentLine=24707073;
- //BA.debugLineNum = 24707073;BA.debugLine="Dim MinR As Int = 5dip";
+RDebugUtils.currentLine=25493504;
+ //BA.debugLineNum = 25493504;BA.debugLine="Private Sub Draw_ThreeCircles2 (Progress As Float)";
+RDebugUtils.currentLine=25493505;
+ //BA.debugLineNum = 25493505;BA.debugLine="Dim MinR As Int = 5dip";
 _minr = __c.DipToCurrent((int) (5));
-RDebugUtils.currentLine=24707074;
- //BA.debugLineNum = 24707074;BA.debugLine="Dim MaxR As Int = cvs.TargetRect.Width / 2 / 3 -";
+RDebugUtils.currentLine=25493506;
+ //BA.debugLineNum = 25493506;BA.debugLine="Dim MaxR As Int = cvs.TargetRect.Width / 2 / 3 -";
 _maxr = (int) (__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getWidth()/(double)2/(double)3-_minr-__c.DipToCurrent((int) (2)));
-RDebugUtils.currentLine=24707075;
- //BA.debugLineNum = 24707075;BA.debugLine="For i = 0 To 2";
+RDebugUtils.currentLine=25493507;
+ //BA.debugLineNum = 25493507;BA.debugLine="For i = 0 To 2";
 {
 final int step3 = 1;
 final int limit3 = (int) (2);
 _i = (int) (0) ;
 for (;_i <= limit3 ;_i = _i + step3 ) {
-RDebugUtils.currentLine=24707076;
- //BA.debugLineNum = 24707076;BA.debugLine="Dim r As Float = MinR + MaxR / 2 + MaxR / 2 * Si";
+RDebugUtils.currentLine=25493508;
+ //BA.debugLineNum = 25493508;BA.debugLine="Dim r As Float = MinR + MaxR / 2 + MaxR / 2 * Si";
 _r = (float) (_minr+_maxr/(double)2+_maxr/(double)2*__c.SinD(_progress*360-60*_i));
-RDebugUtils.currentLine=24707077;
- //BA.debugLineNum = 24707077;BA.debugLine="cvs.DrawCircle(MaxR + MinR + (MinR + MaxR + 2dip";
+RDebugUtils.currentLine=25493509;
+ //BA.debugLineNum = 25493509;BA.debugLine="cvs.DrawCircle(MaxR + MinR + (MinR + MaxR + 2dip";
 __ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .DrawCircle((float) (_maxr+_minr+(_minr+_maxr+__c.DipToCurrent((int) (2)))*2*_i),__ref._cvs /*anywheresoftware.b4a.objects.B4XCanvas*/ .getTargetRect().getCenterY(),_r,__ref._indicatorcolor /*int*/ ,__c.True,(float) (0));
  }
 };
-RDebugUtils.currentLine=24707079;
- //BA.debugLineNum = 24707079;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25493511;
+ //BA.debugLineNum = 25493511;BA.debugLine="End Sub";
 return "";
 }
 public String  _hide(b4a.example.b4xloadingindicator __ref) throws Exception{
@@ -545,16 +546,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "hide", true))
 	 {return ((String) Debug.delegate(ba, "hide", null));}
-RDebugUtils.currentLine=24576000;
- //BA.debugLineNum = 24576000;BA.debugLine="Public Sub Hide";
-RDebugUtils.currentLine=24576001;
- //BA.debugLineNum = 24576001;BA.debugLine="mBase.Visible = False";
+RDebugUtils.currentLine=25362432;
+ //BA.debugLineNum = 25362432;BA.debugLine="Public Sub Hide";
+RDebugUtils.currentLine=25362433;
+ //BA.debugLineNum = 25362433;BA.debugLine="mBase.Visible = False";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setVisible(__c.False);
-RDebugUtils.currentLine=24576002;
- //BA.debugLineNum = 24576002;BA.debugLine="index = index + 1";
+RDebugUtils.currentLine=25362434;
+ //BA.debugLineNum = 25362434;BA.debugLine="index = index + 1";
 __ref._index /*int*/  = (int) (__ref._index /*int*/ +1);
-RDebugUtils.currentLine=24576003;
- //BA.debugLineNum = 24576003;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25362435;
+ //BA.debugLineNum = 25362435;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.example.b4xloadingindicator __ref,anywheresoftware.b4a.BA _ba,Object _callback,String _eventname) throws Exception{
@@ -563,16 +564,16 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba,_callback,_eventname}));}
-RDebugUtils.currentLine=24182784;
- //BA.debugLineNum = 24182784;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
-RDebugUtils.currentLine=24182785;
- //BA.debugLineNum = 24182785;BA.debugLine="mEventName = EventName";
+RDebugUtils.currentLine=24969216;
+ //BA.debugLineNum = 24969216;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
+RDebugUtils.currentLine=24969217;
+ //BA.debugLineNum = 24969217;BA.debugLine="mEventName = EventName";
 __ref._meventname /*String*/  = _eventname;
-RDebugUtils.currentLine=24182786;
- //BA.debugLineNum = 24182786;BA.debugLine="mCallBack = Callback";
+RDebugUtils.currentLine=24969218;
+ //BA.debugLineNum = 24969218;BA.debugLine="mCallBack = Callback";
 __ref._mcallback /*Object*/  = _callback;
-RDebugUtils.currentLine=24182787;
- //BA.debugLineNum = 24182787;BA.debugLine="End Sub";
+RDebugUtils.currentLine=24969219;
+ //BA.debugLineNum = 24969219;BA.debugLine="End Sub";
 return "";
 }
 public String  _show(b4a.example.b4xloadingindicator __ref) throws Exception{
@@ -580,16 +581,16 @@ __ref = this;
 RDebugUtils.currentModule="b4xloadingindicator";
 if (Debug.shouldDelegate(ba, "show", true))
 	 {return ((String) Debug.delegate(ba, "show", null));}
-RDebugUtils.currentLine=24510464;
- //BA.debugLineNum = 24510464;BA.debugLine="Public Sub Show";
-RDebugUtils.currentLine=24510465;
- //BA.debugLineNum = 24510465;BA.debugLine="mBase.Visible = True";
+RDebugUtils.currentLine=25296896;
+ //BA.debugLineNum = 25296896;BA.debugLine="Public Sub Show";
+RDebugUtils.currentLine=25296897;
+ //BA.debugLineNum = 25296897;BA.debugLine="mBase.Visible = True";
 __ref._mbase /*anywheresoftware.b4a.objects.B4XViewWrapper*/ .setVisible(__c.True);
-RDebugUtils.currentLine=24510466;
- //BA.debugLineNum = 24510466;BA.debugLine="MainLoop";
+RDebugUtils.currentLine=25296898;
+ //BA.debugLineNum = 25296898;BA.debugLine="MainLoop";
 __ref._mainloop /*void*/ (null);
-RDebugUtils.currentLine=24510467;
- //BA.debugLineNum = 24510467;BA.debugLine="End Sub";
+RDebugUtils.currentLine=25296899;
+ //BA.debugLineNum = 25296899;BA.debugLine="End Sub";
 return "";
 }
 }

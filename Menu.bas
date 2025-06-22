@@ -84,3 +84,8 @@ End Sub
 Private Sub Btn_calendario_Click
 	StartActivity(Calendario)
 End Sub
+
+Private Sub Btn_VerEXA_Click
+	StartActivity(VerExamenes)
+	
+End Sub

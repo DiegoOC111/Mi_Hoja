@@ -8,7 +8,7 @@ public class b4xseekbar_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,52);
+		Debug.PushSubsStack("Base_Resize (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,52);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xseekbar","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -82,7 +82,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("DesignerCreateView (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,35);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "b4xseekbar","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -148,7 +148,7 @@ finally {
 		}}
 public static RemoteObject  _getvalue(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getValue (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,130);
+		Debug.PushSubsStack("getValue (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,130);
 if (RapidSub.canDelegate("getvalue")) { return __ref.runUserSub(false, "b4xseekbar","getvalue", __ref);}
  BA.debugLineNum = 130;BA.debugLine="Public Sub getValue As Int";
 Debug.JustUpdateDeviceLine();
@@ -167,7 +167,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,29);
+		Debug.PushSubsStack("Initialize (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,29);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xseekbar","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -193,7 +193,7 @@ finally {
 		}}
 public static RemoteObject  _raisetouchstateevent(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("RaiseTouchStateEvent (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,102);
+		Debug.PushSubsStack("RaiseTouchStateEvent (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,102);
 if (RapidSub.canDelegate("raisetouchstateevent")) { return __ref.runUserSub(false, "b4xseekbar","raisetouchstateevent", __ref);}
  BA.debugLineNum = 102;BA.debugLine="Private Sub RaiseTouchStateEvent";
 Debug.JustUpdateDeviceLine();
@@ -216,7 +216,7 @@ finally {
 		}}
 public static RemoteObject  _setvalue(RemoteObject __ref,RemoteObject _v) throws Exception{
 try {
-		Debug.PushSubsStack("setValue (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,125);
+		Debug.PushSubsStack("setValue (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,125);
 if (RapidSub.canDelegate("setvalue")) { return __ref.runUserSub(false, "b4xseekbar","setvalue", __ref, _v);}
 Debug.locals.put("v", _v);
  BA.debugLineNum = 125;BA.debugLine="Public Sub setValue(v As Int)";
@@ -239,7 +239,7 @@ finally {
 		}}
 public static RemoteObject  _setvaluebasedontouch(RemoteObject __ref,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("SetValueBasedOnTouch (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,108);
+		Debug.PushSubsStack("SetValueBasedOnTouch (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,108);
 if (RapidSub.canDelegate("setvaluebasedontouch")) { return __ref.runUserSub(false, "b4xseekbar","setvaluebasedontouch", __ref, _x, _y);}
 RemoteObject _v = RemoteObject.createImmutable(0);
 RemoteObject _newvalue = RemoteObject.createImmutable(0);
@@ -293,7 +293,7 @@ finally {
 		}}
 public static RemoteObject  _touchpanel_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("TouchPanel_Touch (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,88);
+		Debug.PushSubsStack("TouchPanel_Touch (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,88);
 if (RapidSub.canDelegate("touchpanel_touch")) { return __ref.runUserSub(false, "b4xseekbar","touchpanel_touch", __ref, _action, _x, _y);}
 Debug.locals.put("Action", _action);
 Debug.locals.put("X", _x);
@@ -346,7 +346,7 @@ finally {
 		}}
 public static RemoteObject  _update(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Update (b4xseekbar) ","b4xseekbar",35,__ref.getField(false, "ba"),__ref,61);
+		Debug.PushSubsStack("Update (b4xseekbar) ","b4xseekbar",36,__ref.getField(false, "ba"),__ref,61);
 if (RapidSub.canDelegate("update")) { return __ref.runUserSub(false, "b4xseekbar","update", __ref);}
 RemoteObject _s1 = RemoteObject.createImmutable(0);
 RemoteObject _y = RemoteObject.createImmutable(0);

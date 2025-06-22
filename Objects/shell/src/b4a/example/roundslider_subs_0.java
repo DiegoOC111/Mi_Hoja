@@ -8,7 +8,7 @@ public class roundslider_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,89);
+		Debug.PushSubsStack("Base_Resize (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,89);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "roundslider","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -91,7 +91,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createthumb(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("CreateThumb (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,70);
+		Debug.PushSubsStack("CreateThumb (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,70);
 if (RapidSub.canDelegate("createthumb")) { return __ref.runUserSub(false, "roundslider","createthumb", __ref);}
 RemoteObject _p = RemoteObject.declareNull("b4a.example.bcpath");
 RemoteObject _r = RemoteObject.createImmutable(0);
@@ -160,7 +160,7 @@ finally {
 		}}
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,35);
+		Debug.PushSubsStack("DesignerCreateView (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,35);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "roundslider","designercreateview", __ref, _base, _lbl, _props);}
 Debug.locals.put("Base", _base);
 Debug.locals.put("Lbl", _lbl);
@@ -239,7 +239,7 @@ finally {
 		}}
 public static RemoteObject  _draw(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Draw (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,98);
+		Debug.PushSubsStack("Draw (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,98);
 if (RapidSub.canDelegate("draw")) { return __ref.runUserSub(false, "roundslider","draw", __ref);}
 RemoteObject _radius = RemoteObject.createImmutable(0);
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XPath");
@@ -326,7 +326,7 @@ finally {
 		}}
 public static RemoteObject  _getvalue(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getValue (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,182);
+		Debug.PushSubsStack("getValue (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,182);
 if (RapidSub.canDelegate("getvalue")) { return __ref.runUserSub(false, "roundslider","getvalue", __ref);}
  BA.debugLineNum = 182;BA.debugLine="Public Sub getValue As Int";
 Debug.JustUpdateDeviceLine();
@@ -345,7 +345,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,29);
+		Debug.PushSubsStack("Initialize (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,29);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "roundslider","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -371,7 +371,7 @@ finally {
 		}}
 public static RemoteObject  _pnl_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("pnl_Touch (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,123);
+		Debug.PushSubsStack("pnl_Touch (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,123);
 if (RapidSub.canDelegate("pnl_touch")) { return __ref.runUserSub(false, "roundslider","pnl_touch", __ref, _action, _x, _y);}
 RemoteObject _dx = RemoteObject.createImmutable(0);
 RemoteObject _dy = RemoteObject.createImmutable(0);
@@ -468,7 +468,7 @@ finally {
 		}}
 public static RemoteObject  _setcirclecolor(RemoteObject __ref,RemoteObject _nonvaluecolor,RemoteObject _innercolor) throws Exception{
 try {
-		Debug.PushSubsStack("SetCircleColor (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,64);
+		Debug.PushSubsStack("SetCircleColor (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,64);
 if (RapidSub.canDelegate("setcirclecolor")) { return __ref.runUserSub(false, "roundslider","setcirclecolor", __ref, _nonvaluecolor, _innercolor);}
 Debug.locals.put("NonValueColor", _nonvaluecolor);
 Debug.locals.put("InnerColor", _innercolor);
@@ -495,7 +495,7 @@ finally {
 		}}
 public static RemoteObject  _setrange(RemoteObject __ref,RemoteObject _newmin,RemoteObject _newmax) throws Exception{
 try {
-		Debug.PushSubsStack("SetRange (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,176);
+		Debug.PushSubsStack("SetRange (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,176);
 if (RapidSub.canDelegate("setrange")) { return __ref.runUserSub(false, "roundslider","setrange", __ref, _newmin, _newmax);}
 Debug.locals.put("NewMin", _newmin);
 Debug.locals.put("NewMax", _newmax);
@@ -522,7 +522,7 @@ finally {
 		}}
 public static RemoteObject  _setthumbcolor(RemoteObject __ref,RemoteObject _bordercolor,RemoteObject _innercolor) throws Exception{
 try {
-		Debug.PushSubsStack("SetThumbColor (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,57);
+		Debug.PushSubsStack("SetThumbColor (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,57);
 if (RapidSub.canDelegate("setthumbcolor")) { return __ref.runUserSub(false, "roundslider","setthumbcolor", __ref, _bordercolor, _innercolor);}
 Debug.locals.put("BorderColor", _bordercolor);
 Debug.locals.put("InnerColor", _innercolor);
@@ -552,7 +552,7 @@ finally {
 		}}
 public static RemoteObject  _setvalue(RemoteObject __ref,RemoteObject _v) throws Exception{
 try {
-		Debug.PushSubsStack("setValue (roundslider) ","roundslider",40,__ref.getField(false, "ba"),__ref,170);
+		Debug.PushSubsStack("setValue (roundslider) ","roundslider",41,__ref.getField(false, "ba"),__ref,170);
 if (RapidSub.canDelegate("setvalue")) { return __ref.runUserSub(false, "roundslider","setvalue", __ref, _v);}
 Debug.locals.put("v", _v);
  BA.debugLineNum = 170;BA.debugLine="Public Sub setValue (v As Int)";

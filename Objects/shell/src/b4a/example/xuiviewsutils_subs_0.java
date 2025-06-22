@@ -8,7 +8,7 @@ public class xuiviewsutils_subs_0 {
 
 public static RemoteObject  _addstubtoclvifneeded(RemoteObject _ba,RemoteObject _customlistview1,RemoteObject _color) throws Exception{
 try {
-		Debug.PushSubsStack("AddStubToCLVIfNeeded (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,34);
+		Debug.PushSubsStack("AddStubToCLVIfNeeded (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,34);
 if (RapidSub.canDelegate("addstubtoclvifneeded")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","addstubtoclvifneeded", _ba, _customlistview1, _color);}
 RemoteObject _lastitem = RemoteObject.declareNull("b4a.example3.customlistview._clvitem");
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -64,7 +64,7 @@ finally {
 		}}
 public static RemoteObject  _createb4ximageview(RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("CreateB4XImageView (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,85);
+		Debug.PushSubsStack("CreateB4XImageView (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,85);
 if (RapidSub.canDelegate("createb4ximageview")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","createb4ximageview", _ba);}
 RemoteObject _iv = RemoteObject.declareNull("b4a.example.b4ximageview");
 RemoteObject _base = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -102,7 +102,7 @@ finally {
 		}}
 public static RemoteObject  _createlabel(RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("CreateLabel (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,78);
+		Debug.PushSubsStack("CreateLabel (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,78);
 if (RapidSub.canDelegate("createlabel")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","createlabel", _ba);}
 RemoteObject _lbl = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 ;
@@ -129,7 +129,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,10);
+		Debug.PushSubsStack("Initialize (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,10);
 if (RapidSub.canDelegate("initialize")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","initialize", _ba);}
 ;
  BA.debugLineNum = 10;BA.debugLine="Private Sub Initialize";
@@ -153,7 +153,7 @@ finally {
 		}}
 public static RemoteObject  _performhapticfeedback(RemoteObject _ba,RemoteObject _view) throws Exception{
 try {
-		Debug.PushSubsStack("PerformHapticFeedback (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,21);
+		Debug.PushSubsStack("PerformHapticFeedback (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,21);
 if (RapidSub.canDelegate("performhapticfeedback")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","performhapticfeedback", _ba, _view);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 ;
@@ -191,7 +191,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _setalpha(RemoteObject _ba,RemoteObject _view,RemoteObject _level) throws Exception{
 try {
-		Debug.PushSubsStack("SetAlpha (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,95);
+		Debug.PushSubsStack("SetAlpha (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,95);
 if (RapidSub.canDelegate("setalpha")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","setalpha", _ba, _view, _level);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 RemoteObject _alpha = RemoteObject.createImmutable(0f);
@@ -222,7 +222,7 @@ finally {
 		}}
 public static RemoteObject  _setbitmapandfill(RemoteObject _ba,RemoteObject _imageview,RemoteObject _bmp) throws Exception{
 try {
-		Debug.PushSubsStack("SetBitmapAndFill (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,65);
+		Debug.PushSubsStack("SetBitmapAndFill (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,65);
 if (RapidSub.canDelegate("setbitmapandfill")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","setbitmapandfill", _ba, _imageview, _bmp);}
 RemoteObject _iiv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ImageViewWrapper");
 ;
@@ -252,7 +252,7 @@ finally {
 		}}
 public static RemoteObject  _settextorcsbuildertolabel(RemoteObject _ba,RemoteObject _xlbl,RemoteObject _text) throws Exception{
 try {
-		Debug.PushSubsStack("SetTextOrCSBuilderToLabel (xuiviewsutils) ","xuiviewsutils",43,_ba,xuiviewsutils.mostCurrent,50);
+		Debug.PushSubsStack("SetTextOrCSBuilderToLabel (xuiviewsutils) ","xuiviewsutils",44,_ba,xuiviewsutils.mostCurrent,50);
 if (RapidSub.canDelegate("settextorcsbuildertolabel")) { return b4a.example.xuiviewsutils.remoteMe.runUserSub(false, "xuiviewsutils","settextorcsbuildertolabel", _ba, _xlbl, _text);}
 ;
 Debug.locals.put("xlbl", _xlbl);

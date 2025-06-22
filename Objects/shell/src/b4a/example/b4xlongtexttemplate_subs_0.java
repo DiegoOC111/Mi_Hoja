@@ -21,7 +21,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _dialogclosed(RemoteObject __ref,RemoteObject _result) throws Exception{
 try {
-		Debug.PushSubsStack("DialogClosed (b4xlongtexttemplate) ","b4xlongtexttemplate",30,__ref.getField(false, "ba"),__ref,41);
+		Debug.PushSubsStack("DialogClosed (b4xlongtexttemplate) ","b4xlongtexttemplate",31,__ref.getField(false, "ba"),__ref,41);
 if (RapidSub.canDelegate("dialogclosed")) { return __ref.runUserSub(false, "b4xlongtexttemplate","dialogclosed", __ref, _result);}
 Debug.locals.put("Result", _result);
  BA.debugLineNum = 41;BA.debugLine="Private Sub DialogClosed(Result As Int) 'ignore";
@@ -38,7 +38,7 @@ finally {
 		}}
 public static RemoteObject  _getpanel(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("GetPanel (b4xlongtexttemplate) ","b4xlongtexttemplate",30,__ref.getField(false, "ba"),__ref,30);
+		Debug.PushSubsStack("GetPanel (b4xlongtexttemplate) ","b4xlongtexttemplate",31,__ref.getField(false, "ba"),__ref,30);
 if (RapidSub.canDelegate("getpanel")) { return __ref.runUserSub(false, "b4xlongtexttemplate","getpanel", __ref, _dialog);}
 Debug.locals.put("Dialog", _dialog);
  BA.debugLineNum = 30;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
@@ -58,7 +58,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xlongtexttemplate) ","b4xlongtexttemplate",30,__ref.getField(false, "ba"),__ref,8);
+		Debug.PushSubsStack("Initialize (b4xlongtexttemplate) ","b4xlongtexttemplate",31,__ref.getField(false, "ba"),__ref,8);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xlongtexttemplate","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -100,7 +100,7 @@ finally {
 		}}
 public static RemoteObject  _resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Resize (b4xlongtexttemplate) ","b4xlongtexttemplate",30,__ref.getField(false, "ba"),__ref,23);
+		Debug.PushSubsStack("Resize (b4xlongtexttemplate) ","b4xlongtexttemplate",31,__ref.getField(false, "ba"),__ref,23);
 if (RapidSub.canDelegate("resize")) { return __ref.runUserSub(false, "b4xlongtexttemplate","resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -127,7 +127,7 @@ finally {
 		}}
 public static RemoteObject  _show(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xlongtexttemplate) ","b4xlongtexttemplate",30,__ref.getField(false, "ba"),__ref,34);
+		Debug.PushSubsStack("Show (b4xlongtexttemplate) ","b4xlongtexttemplate",31,__ref.getField(false, "ba"),__ref,34);
 if (RapidSub.canDelegate("show")) { return __ref.runUserSub(false, "b4xlongtexttemplate","show", __ref, _dialog);}
 Debug.locals.put("Dialog", _dialog);
  BA.debugLineNum = 34;BA.debugLine="Private Sub Show (Dialog As B4XDialog) 'ignore";

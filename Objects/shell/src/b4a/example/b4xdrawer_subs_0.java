@@ -8,7 +8,7 @@ public class b4xdrawer_subs_0 {
 
 public static RemoteObject  _base_onintercepttouchevent(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y,RemoteObject _motionevent) throws Exception{
 try {
-		Debug.PushSubsStack("Base_OnInterceptTouchEvent (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,97);
+		Debug.PushSubsStack("Base_OnInterceptTouchEvent (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,97);
 if (RapidSub.canDelegate("base_onintercepttouchevent")) { return __ref.runUserSub(false, "b4xdrawer","base_onintercepttouchevent", __ref, _action, _x, _y, _motionevent);}
 RemoteObject _dx = RemoteObject.createImmutable(0f);
 RemoteObject _dy = RemoteObject.createImmutable(0f);
@@ -83,7 +83,7 @@ finally {
 		}}
 public static RemoteObject  _base_ontouchevent(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y,RemoteObject _motionevent) throws Exception{
 try {
-		Debug.PushSubsStack("Base_OnTouchEvent (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,66);
+		Debug.PushSubsStack("Base_OnTouchEvent (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,66);
 if (RapidSub.canDelegate("base_ontouchevent")) { return __ref.runUserSub(false, "b4xdrawer","base_ontouchevent", __ref, _action, _x, _y, _motionevent);}
 RemoteObject _leftpanelrightside = RemoteObject.createImmutable(0);
 RemoteObject _dx = RemoteObject.createImmutable(0f);
@@ -175,7 +175,7 @@ finally {
 		}}
 public static RemoteObject  _changeoffset(RemoteObject __ref,RemoteObject _x,RemoteObject _currentlytouching,RemoteObject _noanimation) throws Exception{
 try {
-		Debug.PushSubsStack("ChangeOffset (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,175);
+		Debug.PushSubsStack("ChangeOffset (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,175);
 if (RapidSub.canDelegate("changeoffset")) { return __ref.runUserSub(false, "b4xdrawer","changeoffset", __ref, _x, _currentlytouching, _noanimation);}
 RemoteObject _visibleoffset = RemoteObject.createImmutable(0);
 RemoteObject _dx = RemoteObject.createImmutable(0);
@@ -281,7 +281,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _getcenterpanel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getCenterPanel (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,241);
+		Debug.PushSubsStack("getCenterPanel (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,241);
 if (RapidSub.canDelegate("getcenterpanel")) { return __ref.runUserSub(false, "b4xdrawer","getcenterpanel", __ref);}
  BA.debugLineNum = 241;BA.debugLine="Public Sub getCenterPanel As B4XView";
 Debug.JustUpdateDeviceLine();
@@ -300,7 +300,7 @@ finally {
 		}}
 public static RemoteObject  _getgestureenabled(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getGestureEnabled (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,253);
+		Debug.PushSubsStack("getGestureEnabled (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,253);
 if (RapidSub.canDelegate("getgestureenabled")) { return __ref.runUserSub(false, "b4xdrawer","getgestureenabled", __ref);}
  BA.debugLineNum = 253;BA.debugLine="Public Sub getGestureEnabled As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -319,7 +319,7 @@ finally {
 		}}
 public static RemoteObject  _getleftopen(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getLeftOpen (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,226);
+		Debug.PushSubsStack("getLeftOpen (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,226);
 if (RapidSub.canDelegate("getleftopen")) { return __ref.runUserSub(false, "b4xdrawer","getleftopen", __ref);}
  BA.debugLineNum = 226;BA.debugLine="Public Sub getLeftOpen As Boolean";
 Debug.JustUpdateDeviceLine();
@@ -338,7 +338,7 @@ finally {
 		}}
 public static RemoteObject  _getleftpanel(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getLeftPanel (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,237);
+		Debug.PushSubsStack("getLeftPanel (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,237);
 if (RapidSub.canDelegate("getleftpanel")) { return __ref.runUserSub(false, "b4xdrawer","getleftpanel", __ref);}
  BA.debugLineNum = 237;BA.debugLine="Public Sub getLeftPanel As B4XView";
 Debug.JustUpdateDeviceLine();
@@ -357,7 +357,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname,RemoteObject _parent,RemoteObject _sidewidth) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,19);
+		Debug.PushSubsStack("Initialize (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,19);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xdrawer","initialize", __ref, _ba, _callback, _eventname, _parent, _sidewidth);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 RemoteObject _creator = RemoteObject.declareNull("anywheresoftware.b4a.objects.TouchPanelCreator");
@@ -427,7 +427,7 @@ finally {
 		}}
 public static RemoteObject  _leftpanel_click(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("LeftPanel_Click (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,60);
+		Debug.PushSubsStack("LeftPanel_Click (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,60);
 if (RapidSub.canDelegate("leftpanel_click")) { return __ref.runUserSub(false, "b4xdrawer","leftpanel_click", __ref);}
  BA.debugLineNum = 60;BA.debugLine="Private Sub LeftPanel_Click";
 Debug.JustUpdateDeviceLine();
@@ -443,7 +443,7 @@ finally {
 		}}
 public static RemoteObject  _offsettocolor(RemoteObject __ref,RemoteObject _x) throws Exception{
 try {
-		Debug.PushSubsStack("OffsetToColor (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,221);
+		Debug.PushSubsStack("OffsetToColor (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,221);
 if (RapidSub.canDelegate("offsettocolor")) { return __ref.runUserSub(false, "b4xdrawer","offsettocolor", __ref, _x);}
 RemoteObject _visible = RemoteObject.createImmutable(0f);
 Debug.locals.put("x", _x);
@@ -467,7 +467,7 @@ finally {
 		}}
 public static RemoteObject  _resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Resize (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,245);
+		Debug.PushSubsStack("Resize (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,245);
 if (RapidSub.canDelegate("resize")) { return __ref.runUserSub(false, "b4xdrawer","resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -501,7 +501,7 @@ finally {
 		}}
 public static RemoteObject  _setgestureenabled(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setGestureEnabled (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,257);
+		Debug.PushSubsStack("setGestureEnabled (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,257);
 if (RapidSub.canDelegate("setgestureenabled")) { return __ref.runUserSub(false, "b4xdrawer","setgestureenabled", __ref, _b);}
 Debug.locals.put("b", _b);
  BA.debugLineNum = 257;BA.debugLine="Public Sub setGestureEnabled (b As Boolean)";
@@ -521,7 +521,7 @@ finally {
 		}}
 public static RemoteObject  _setisopen(RemoteObject __ref,RemoteObject _newstate) throws Exception{
 try {
-		Debug.PushSubsStack("SetIsOpen (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,213);
+		Debug.PushSubsStack("SetIsOpen (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,213);
 if (RapidSub.canDelegate("setisopen")) { return __ref.runUserSub(false, "b4xdrawer","setisopen", __ref, _newstate);}
 Debug.locals.put("NewState", _newstate);
  BA.debugLineNum = 213;BA.debugLine="Private Sub SetIsOpen (NewState As Boolean)";
@@ -552,7 +552,7 @@ finally {
 		}}
 public static RemoteObject  _setleftopen(RemoteObject __ref,RemoteObject _b) throws Exception{
 try {
-		Debug.PushSubsStack("setLeftOpen (b4xdrawer) ","b4xdrawer",16,__ref.getField(false, "ba"),__ref,230);
+		Debug.PushSubsStack("setLeftOpen (b4xdrawer) ","b4xdrawer",17,__ref.getField(false, "ba"),__ref,230);
 if (RapidSub.canDelegate("setleftopen")) { return __ref.runUserSub(false, "b4xdrawer","setleftopen", __ref, _b);}
 RemoteObject _x = RemoteObject.createImmutable(0f);
 Debug.locals.put("b", _b);

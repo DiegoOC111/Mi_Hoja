@@ -8,7 +8,7 @@ public class scrollinglabel_subs_0 {
 
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,40);
+		Debug.PushSubsStack("Base_Resize (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,40);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "scrollinglabel","base_resize", __ref, _width, _height);}
 Debug.locals.put("Width", _width);
 Debug.locals.put("Height", _height);
@@ -61,7 +61,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _designercreateview(RemoteObject __ref,RemoteObject _base,RemoteObject _lbl,RemoteObject _props) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerCreateView (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,23);
+		Debug.PushSubsStack("DesignerCreateView (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,23);
 if (RapidSub.canDelegate("designercreateview")) { return __ref.runUserSub(false, "scrollinglabel","designercreateview", __ref, _base, _lbl, _props);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 RemoteObject _l = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -128,7 +128,7 @@ finally {
 		}}
 public static RemoteObject  _gettext(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getText (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,93);
+		Debug.PushSubsStack("getText (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,93);
 if (RapidSub.canDelegate("gettext")) { return __ref.runUserSub(false, "scrollinglabel","gettext", __ref);}
  BA.debugLineNum = 93;BA.debugLine="Public Sub getText As String";
 Debug.JustUpdateDeviceLine();
@@ -147,7 +147,7 @@ finally {
 		}}
 public static RemoteObject  _gettextcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getTextColor (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,126);
+		Debug.PushSubsStack("getTextColor (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,126);
 if (RapidSub.canDelegate("gettextcolor")) { return __ref.runUserSub(false, "scrollinglabel","gettextcolor", __ref);}
  BA.debugLineNum = 126;BA.debugLine="Public Sub getTextColor As Int";
 Debug.JustUpdateDeviceLine();
@@ -166,7 +166,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _callback,RemoteObject _eventname) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,18);
+		Debug.PushSubsStack("Initialize (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,18);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "scrollinglabel","initialize", __ref, _ba, _callback, _eventname);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -192,7 +192,7 @@ finally {
 		}}
 public static RemoteObject  _measuretextwidth(RemoteObject __ref,RemoteObject _s,RemoteObject _font1) throws Exception{
 try {
-		Debug.PushSubsStack("MeasureTextWidth (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,117);
+		Debug.PushSubsStack("MeasureTextWidth (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,117);
 if (RapidSub.canDelegate("measuretextwidth")) { return __ref.runUserSub(false, "scrollinglabel","measuretextwidth", __ref, _s, _font1);}
 Debug.locals.put("s", _s);
 Debug.locals.put("font1", _font1);
@@ -213,7 +213,7 @@ finally {
 		}}
 public static RemoteObject  _settext(RemoteObject __ref,RemoteObject _t) throws Exception{
 try {
-		Debug.PushSubsStack("setText (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,45);
+		Debug.PushSubsStack("setText (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,45);
 if (RapidSub.canDelegate("settext")) { return __ref.runUserSub(false, "scrollinglabel","settext", __ref, _t);}
 RemoteObject _needtocreatenewlabel = RemoteObject.createImmutable(false);
 RemoteObject _parent = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -353,7 +353,7 @@ finally {
 		}}
 public static RemoteObject  _settextcolor(RemoteObject __ref,RemoteObject _c) throws Exception{
 try {
-		Debug.PushSubsStack("setTextColor (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,121);
+		Debug.PushSubsStack("setTextColor (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,121);
 if (RapidSub.canDelegate("settextcolor")) { return __ref.runUserSub(false, "scrollinglabel","settextcolor", __ref, _c);}
 Debug.locals.put("c", _c);
  BA.debugLineNum = 121;BA.debugLine="Public Sub setTextColor(c As Int)";
@@ -376,7 +376,7 @@ finally {
 		}}
 public static void  _startscrolling(RemoteObject __ref,RemoteObject _p,RemoteObject _originalwidth) throws Exception{
 try {
-		Debug.PushSubsStack("StartScrolling (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,101);
+		Debug.PushSubsStack("StartScrolling (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,101);
 if (RapidSub.canDelegate("startscrolling")) { __ref.runUserSub(false, "scrollinglabel","startscrolling", __ref, _p, _originalwidth); return;}
 ResumableSub_StartScrolling rsub = new ResumableSub_StartScrolling(null,__ref,_p,_originalwidth);
 rsub.resume(null, null);
@@ -405,7 +405,7 @@ RemoteObject _duration = RemoteObject.createImmutable(0);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("StartScrolling (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,101);
+		Debug.PushSubsStack("StartScrolling (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,101);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -562,7 +562,7 @@ finally {
 }
 public static RemoteObject  _stopscrolling(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("StopScrolling (scrollinglabel) ","scrollinglabel",41,__ref.getField(false, "ba"),__ref,97);
+		Debug.PushSubsStack("StopScrolling (scrollinglabel) ","scrollinglabel",42,__ref.getField(false, "ba"),__ref,97);
 if (RapidSub.canDelegate("stopscrolling")) { return __ref.runUserSub(false, "scrollinglabel","stopscrolling", __ref);}
  BA.debugLineNum = 97;BA.debugLine="Private Sub StopScrolling";
 Debug.JustUpdateDeviceLine();

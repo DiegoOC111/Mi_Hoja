@@ -8,7 +8,7 @@ public class b4xcolortemplate_subs_0 {
 
 public static RemoteObject  _alpha_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("Alpha_Touch (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,263);
+		Debug.PushSubsStack("Alpha_Touch (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,263);
 if (RapidSub.canDelegate("alpha_touch")) { return __ref.runUserSub(false, "b4xcolortemplate","alpha_touch", __ref, _action, _x, _y);}
 Debug.locals.put("Action", _action);
 Debug.locals.put("X", _x);
@@ -34,7 +34,7 @@ finally {
 		}}
 public static RemoteObject  _alphabarselectedchange(RemoteObject __ref,RemoteObject _x) throws Exception{
 try {
-		Debug.PushSubsStack("AlphaBarSelectedChange (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,147);
+		Debug.PushSubsStack("AlphaBarSelectedChange (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,147);
 if (RapidSub.canDelegate("alphabarselectedchange")) { return __ref.runUserSub(false, "b4xcolortemplate","alphabarselectedchange", __ref, _x);}
 RemoteObject _r = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XRect");
 Debug.locals.put("x", _x);
@@ -76,7 +76,7 @@ finally {
 		}}
 public static RemoteObject  _base_resize(RemoteObject __ref,RemoteObject _width,RemoteObject _height) throws Exception{
 try {
-		Debug.PushSubsStack("Base_Resize (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,51);
+		Debug.PushSubsStack("Base_Resize (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,51);
 if (RapidSub.canDelegate("base_resize")) { return __ref.runUserSub(false, "b4xcolortemplate","base_resize", __ref, _width, _height);}
 RemoteObject _r = RemoteObject.createImmutable(0);
 RemoteObject _w = RemoteObject.createImmutable(0);
@@ -214,7 +214,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _colors_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("Colors_Touch (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,253);
+		Debug.PushSubsStack("Colors_Touch (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,253);
 if (RapidSub.canDelegate("colors_touch")) { return __ref.runUserSub(false, "b4xcolortemplate","colors_touch", __ref, _action, _x, _y);}
 Debug.locals.put("Action", _action);
 Debug.locals.put("X", _x);
@@ -240,7 +240,7 @@ finally {
 		}}
 public static RemoteObject  _colortohsv(RemoteObject __ref,RemoteObject _clr) throws Exception{
 try {
-		Debug.PushSubsStack("ColorToHSV (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,199);
+		Debug.PushSubsStack("ColorToHSV (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,199);
 if (RapidSub.canDelegate("colortohsv")) { return __ref.runUserSub(false, "b4xcolortemplate","colortohsv", __ref, _clr);}
 RemoteObject _a = RemoteObject.createImmutable(0);
 RemoteObject _r = RemoteObject.createImmutable(0);
@@ -348,7 +348,7 @@ finally {
 		}}
 public static RemoteObject  _createpanelforbitmapcreator(RemoteObject __ref,RemoteObject _eventname,RemoteObject _withcheckers) throws Exception{
 try {
-		Debug.PushSubsStack("CreatePanelForBitmapCreator (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,30);
+		Debug.PushSubsStack("CreatePanelForBitmapCreator (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,30);
 if (RapidSub.canDelegate("createpanelforbitmapcreator")) { return __ref.runUserSub(false, "b4xcolortemplate","createpanelforbitmapcreator", __ref, _eventname, _withcheckers);}
 RemoteObject _cpp = RemoteObject.declareNull("b4a.example.b4xcolortemplate._colorpickerpart");
 RemoteObject _iv = RemoteObject.declareNull("anywheresoftware.b4a.objects.ImageViewWrapper");
@@ -422,7 +422,7 @@ finally {
 		}}
 public static RemoteObject  _dialogclosed(RemoteObject __ref,RemoteObject _result) throws Exception{
 try {
-		Debug.PushSubsStack("DialogClosed (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,241);
+		Debug.PushSubsStack("DialogClosed (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,241);
 if (RapidSub.canDelegate("dialogclosed")) { return __ref.runUserSub(false, "b4xcolortemplate","dialogclosed", __ref, _result);}
 Debug.locals.put("Result", _result);
  BA.debugLineNum = 241;BA.debugLine="Private Sub DialogClosed(Result As Int)";
@@ -446,7 +446,7 @@ finally {
 		}}
 public static RemoteObject  _drawalphabar(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("DrawAlphaBar (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,109);
+		Debug.PushSubsStack("DrawAlphaBar (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,109);
 if (RapidSub.canDelegate("drawalphabar")) { return __ref.runUserSub(false, "b4xcolortemplate","drawalphabar", __ref);}
 RemoteObject _bc = RemoteObject.declareNull("b4a.example.bitmapcreator");
 RemoteObject _argb = RemoteObject.declareNull("b4a.example.bitmapcreator._argbcolor");
@@ -515,7 +515,7 @@ finally {
 		}}
 public static RemoteObject  _drawcheckers(RemoteObject __ref,RemoteObject _cpp) throws Exception{
 try {
-		Debug.PushSubsStack("DrawCheckers (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,79);
+		Debug.PushSubsStack("DrawCheckers (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,79);
 if (RapidSub.canDelegate("drawcheckers")) { return __ref.runUserSub(false, "b4xcolortemplate","drawcheckers", __ref, _cpp);}
 RemoteObject _size = RemoteObject.createImmutable(0);
 RemoteObject _clrs = null;
@@ -597,7 +597,7 @@ finally {
 		}}
 public static RemoteObject  _drawcolors(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("DrawColors (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,126);
+		Debug.PushSubsStack("DrawColors (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,126);
 if (RapidSub.canDelegate("drawcolors")) { return __ref.runUserSub(false, "b4xcolortemplate","drawcolors", __ref);}
 int _x = 0;
 int _y = 0;
@@ -643,7 +643,7 @@ finally {
 		}}
 public static RemoteObject  _drawhuebar(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("DrawHueBar (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,98);
+		Debug.PushSubsStack("DrawHueBar (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,98);
 if (RapidSub.canDelegate("drawhuebar")) { return __ref.runUserSub(false, "b4xcolortemplate","drawhuebar", __ref);}
 RemoteObject _bchue = RemoteObject.declareNull("b4a.example.bitmapcreator");
 int _y = 0;
@@ -696,7 +696,7 @@ finally {
 		}}
 public static RemoteObject  _getpanel(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("GetPanel (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,230);
+		Debug.PushSubsStack("GetPanel (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,230);
 if (RapidSub.canDelegate("getpanel")) { return __ref.runUserSub(false, "b4xcolortemplate","getpanel", __ref, _dialog);}
 Debug.locals.put("Dialog", _dialog);
  BA.debugLineNum = 230;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
@@ -716,7 +716,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedColor (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,175);
+		Debug.PushSubsStack("getSelectedColor (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,175);
 if (RapidSub.canDelegate("getselectedcolor")) { return __ref.runUserSub(false, "b4xcolortemplate","getselectedcolor", __ref);}
 RemoteObject _hsv = null;
  BA.debugLineNum = 175;BA.debugLine="Public Sub getSelectedColor As Int";
@@ -742,7 +742,7 @@ finally {
 		}}
 public static RemoteObject  _getselectedhsvcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getSelectedHSVColor (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,186);
+		Debug.PushSubsStack("getSelectedHSVColor (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,186);
 if (RapidSub.canDelegate("getselectedhsvcolor")) { return __ref.runUserSub(false, "b4xcolortemplate","getselectedhsvcolor", __ref);}
  BA.debugLineNum = 186;BA.debugLine="Public Sub getSelectedHSVColor As Object()";
 Debug.JustUpdateDeviceLine();
@@ -761,7 +761,7 @@ finally {
 		}}
 public static RemoteObject  _handleselectedcolorchanged(RemoteObject __ref,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("HandleSelectedColorChanged (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,163);
+		Debug.PushSubsStack("HandleSelectedColorChanged (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,163);
 if (RapidSub.canDelegate("handleselectedcolorchanged")) { return __ref.runUserSub(false, "b4xcolortemplate","handleselectedcolorchanged", __ref, _x, _y);}
 Debug.locals.put("x", _x);
 Debug.locals.put("y", _y);
@@ -801,7 +801,7 @@ finally {
 		}}
 public static RemoteObject  _huebar_touch(RemoteObject __ref,RemoteObject _action,RemoteObject _x,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("HueBar_Touch (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,258);
+		Debug.PushSubsStack("HueBar_Touch (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,258);
 if (RapidSub.canDelegate("huebar_touch")) { return __ref.runUserSub(false, "b4xcolortemplate","huebar_touch", __ref, _action, _x, _y);}
 Debug.locals.put("Action", _action);
 Debug.locals.put("X", _x);
@@ -827,7 +827,7 @@ finally {
 		}}
 public static RemoteObject  _huebarselectedchanged(RemoteObject __ref,RemoteObject _y) throws Exception{
 try {
-		Debug.PushSubsStack("HueBarSelectedChanged (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,136);
+		Debug.PushSubsStack("HueBarSelectedChanged (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,136);
 if (RapidSub.canDelegate("huebarselectedchanged")) { return __ref.runUserSub(false, "b4xcolortemplate","huebarselectedchanged", __ref, _y);}
 RemoteObject _r = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XCanvas.B4XRect");
 Debug.locals.put("y", _y);
@@ -869,7 +869,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,17);
+		Debug.PushSubsStack("Initialize (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,17);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "b4xcolortemplate","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -917,7 +917,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedcolor(RemoteObject __ref,RemoteObject _i) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedColor (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,181);
+		Debug.PushSubsStack("setSelectedColor (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,181);
 if (RapidSub.canDelegate("setselectedcolor")) { return __ref.runUserSub(false, "b4xcolortemplate","setselectedcolor", __ref, _i);}
 Debug.locals.put("i", _i);
  BA.debugLineNum = 181;BA.debugLine="Public Sub setSelectedColor(i As Int)";
@@ -937,7 +937,7 @@ finally {
 		}}
 public static RemoteObject  _setselectedhsvcolor(RemoteObject __ref,RemoteObject _hsv) throws Exception{
 try {
-		Debug.PushSubsStack("setSelectedHSVColor (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,190);
+		Debug.PushSubsStack("setSelectedHSVColor (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,190);
 if (RapidSub.canDelegate("setselectedhsvcolor")) { return __ref.runUserSub(false, "b4xcolortemplate","setselectedhsvcolor", __ref, _hsv);}
 Debug.locals.put("HSV", _hsv);
  BA.debugLineNum = 190;BA.debugLine="Public Sub setSelectedHSVColor (HSV() As Object)";
@@ -972,7 +972,7 @@ finally {
 		}}
 public static void  _show(RemoteObject __ref,RemoteObject _dialog) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,234);
+		Debug.PushSubsStack("Show (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,234);
 if (RapidSub.canDelegate("show")) { __ref.runUserSub(false, "b4xcolortemplate","show", __ref, _dialog); return;}
 ResumableSub_Show rsub = new ResumableSub_Show(null,__ref,_dialog);
 rsub.resume(null, null);
@@ -997,7 +997,7 @@ RemoteObject _dialog;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("Show (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,234);
+		Debug.PushSubsStack("Show (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,234);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1044,7 +1044,7 @@ finally {
 }
 public static RemoteObject  _update(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("Update (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,158);
+		Debug.PushSubsStack("Update (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,158);
 if (RapidSub.canDelegate("update")) { return __ref.runUserSub(false, "b4xcolortemplate","update", __ref);}
  BA.debugLineNum = 158;BA.debugLine="Private Sub Update";
 Debug.JustUpdateDeviceLine();
@@ -1066,7 +1066,7 @@ finally {
 		}}
 public static RemoteObject  _updatebarcolor(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("UpdateBarColor (b4xcolortemplate) ","b4xcolortemplate",21,__ref.getField(false, "ba"),__ref,247);
+		Debug.PushSubsStack("UpdateBarColor (b4xcolortemplate) ","b4xcolortemplate",22,__ref.getField(false, "ba"),__ref,247);
 if (RapidSub.canDelegate("updatebarcolor")) { return __ref.runUserSub(false, "b4xcolortemplate","updatebarcolor", __ref);}
  BA.debugLineNum = 247;BA.debugLine="Private Sub UpdateBarColor";
 Debug.JustUpdateDeviceLine();
