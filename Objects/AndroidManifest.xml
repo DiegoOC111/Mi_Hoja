@@ -11,7 +11,6 @@
 	    android:normalScreens="true" 
 	    android:smallScreens="true" 
 	    android:anyDensity="true"/>
-	<uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 	<application
 		android:name="androidx.multidex.MultiDexApplication"
@@ -71,14 +70,6 @@
 			android:screenOrientation="portrait"
 			android:exported="true">
 		</activity>
-		<service
-			android:name=".starter"
-			android:exported="true">
-		</service>
-		<receiver
-			android:name=".starter$starter_BR"
-			android:exported="true">
-		</receiver>
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
@@ -87,5 +78,13 @@
 			android:screenOrientation="portrait"
 			android:exported="true">
 		</activity>
+		<service
+			android:name=".starter"
+			android:exported="true">
+		</service>
+		<receiver
+			android:name=".starter$starter_BR"
+			android:exported="true">
+		</receiver>
 	</application>
 </manifest>

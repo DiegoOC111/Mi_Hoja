@@ -37,7 +37,7 @@ public class modulo_seleccion extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.modulo_seleccion");
+			processBA = new BA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.modulo_seleccion");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -338,15 +338,6 @@ public class modulo_seleccion extends Activity implements B4AActivity{
             
     }
 
-
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public b4a.example3.customlistview _listadoctores = null;
 public anywheresoftware.b4a.objects.SpinnerWrapper _spiner_especialidad = null;
@@ -363,93 +354,243 @@ public b4a.example.menu _menu = null;
 public b4a.example.registrar _registrar = null;
 public b4a.example.modulogestion _modulogestion = null;
 public b4a.example.calendario _calendario = null;
-public b4a.example.starter _starter = null;
 public b4a.example.verexamenes _verexamenes = null;
+public b4a.example.starter _starter = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=2293760;
- //BA.debugLineNum = 2293760;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=2293761;
- //BA.debugLineNum = 2293761;BA.debugLine="Activity.LoadLayout(\"VistaElegirHora\")";
+ //BA.debugLineNum = 24;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 25;BA.debugLine="Activity.LoadLayout(\"VistaElegirHora\")";
 mostCurrent._activity.LoadLayout("VistaElegirHora",mostCurrent.activityBA);
-RDebugUtils.currentLine=2293763;
- //BA.debugLineNum = 2293763;BA.debugLine="CargarDoctores";
+ //BA.debugLineNum = 27;BA.debugLine="CargarDoctores";
 _cargardoctores();
-RDebugUtils.currentLine=2293764;
- //BA.debugLineNum = 2293764;BA.debugLine="LlenarSpinner";
+ //BA.debugLineNum = 28;BA.debugLine="LlenarSpinner";
 _llenarspinner();
-RDebugUtils.currentLine=2293765;
- //BA.debugLineNum = 2293765;BA.debugLine="Spiner_especialidad.SelectedIndex = 0 ' Disparar";
+ //BA.debugLineNum = 29;BA.debugLine="Spiner_especialidad.SelectedIndex = 0 ' Disparar";
 mostCurrent._spiner_especialidad.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=2293766;
- //BA.debugLineNum = 2293766;BA.debugLine="End Sub";
+ //BA.debugLineNum = 30;BA.debugLine="End Sub";
+return "";
+}
+public static String  _addclickeventtopanel(anywheresoftware.b4a.objects.B4XViewWrapper _p) throws Exception{
+anywheresoftware.b4j.object.JavaObject _jo = null;
+String _eventname = "";
+Object _pe = null;
+ //BA.debugLineNum = 169;BA.debugLine="Sub AddClickEventToPanel(p As B4XView)";
+ //BA.debugLineNum = 170;BA.debugLine="Dim jo As JavaObject = p";
+_jo = new anywheresoftware.b4j.object.JavaObject();
+_jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_p.getObject()));
+ //BA.debugLineNum = 171;BA.debugLine="jo.RunMethod(\"setClickable\", Array(True))";
+_jo.RunMethod("setClickable",new Object[]{(Object)(anywheresoftware.b4a.keywords.Common.True)});
+ //BA.debugLineNum = 172;BA.debugLine="Dim eventName As String = \"DoctorPanel\"";
+_eventname = "DoctorPanel";
+ //BA.debugLineNum = 173;BA.debugLine="Dim pe As Object = jo.CreateEvent(\"android.vie";
+_pe = _jo.CreateEvent(processBA,"android.view.View.OnClickListener",_eventname,(Object)(anywheresoftware.b4a.keywords.Common.False));
+ //BA.debugLineNum = 174;BA.debugLine="jo.RunMethod(\"setOnClickListener\", Array(pe))";
+_jo.RunMethod("setOnClickListener",new Object[]{_pe});
+ //BA.debugLineNum = 175;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btn_elegirfecha_click() throws Exception{
+ //BA.debugLineNum = 77;BA.debugLine="Private Sub Btn_elegirFecha_Click";
+ //BA.debugLineNum = 78;BA.debugLine="ShowDatePickerDialog";
+_showdatepickerdialog();
+ //BA.debugLineNum = 79;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btn_guardaratencion_click() throws Exception{
+String _rut = "";
+anywheresoftware.b4a.objects.collections.Map _atencion = null;
+String _ruta = "";
+String _archivo = "";
+anywheresoftware.b4a.objects.collections.List _listaatenciones = null;
+anywheresoftware.b4a.objects.collections.JSONParser _parser = null;
+anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator _generador = null;
+ //BA.debugLineNum = 109;BA.debugLine="Sub Btn_guardarAtencion_Click";
+ //BA.debugLineNum = 110;BA.debugLine="If DoctorSeleccionado.IsInitialized = False Then";
+if (mostCurrent._doctorseleccionado.IsInitialized()==anywheresoftware.b4a.keywords.Common.False) { 
+ //BA.debugLineNum = 111;BA.debugLine="ToastMessageShow(\"Selecciona un doctor.\", True)";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Selecciona un doctor."),anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 112;BA.debugLine="Return";
+if (true) return "";
+ };
+ //BA.debugLineNum = 114;BA.debugLine="If FechaSeleccionada = \"\" Then";
+if ((mostCurrent._fechaseleccionada).equals("")) { 
+ //BA.debugLineNum = 115;BA.debugLine="ToastMessageShow(\"Selecciona una fecha.\", True)";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Selecciona una fecha."),anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 116;BA.debugLine="Return";
+if (true) return "";
+ };
+ //BA.debugLineNum = 118;BA.debugLine="Dim Rut As String = Main.UsuarioActivo.Rut";
+_rut = mostCurrent._main._usuarioactivo /*b4a.example.main._usuario*/ .Rut /*String*/ ;
+ //BA.debugLineNum = 119;BA.debugLine="Dim atencion As Map";
+_atencion = new anywheresoftware.b4a.objects.collections.Map();
+ //BA.debugLineNum = 120;BA.debugLine="atencion.Initialize";
+_atencion.Initialize();
+ //BA.debugLineNum = 121;BA.debugLine="atencion.Put(\"rut_paciente\", Rut)";
+_atencion.Put((Object)("rut_paciente"),(Object)(_rut));
+ //BA.debugLineNum = 122;BA.debugLine="atencion.Put(\"nombre_medico\", DoctorSeleccionado.";
+_atencion.Put((Object)("nombre_medico"),mostCurrent._doctorseleccionado.Get((Object)("nombre_completo")));
+ //BA.debugLineNum = 123;BA.debugLine="atencion.Put(\"especialidad\", DoctorSeleccionado.G";
+_atencion.Put((Object)("especialidad"),mostCurrent._doctorseleccionado.Get((Object)("especialidad")));
+ //BA.debugLineNum = 124;BA.debugLine="atencion.Put(\"fecha_atencion\", FechaSeleccionada)";
+_atencion.Put((Object)("fecha_atencion"),(Object)(mostCurrent._fechaseleccionada));
+ //BA.debugLineNum = 126;BA.debugLine="Dim ruta As String = File.DirInternal";
+_ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
+ //BA.debugLineNum = 127;BA.debugLine="Dim archivo As String = \"atenciones.json\"";
+_archivo = "atenciones.json";
+ //BA.debugLineNum = 129;BA.debugLine="Dim listaAtenciones As List";
+_listaatenciones = new anywheresoftware.b4a.objects.collections.List();
+ //BA.debugLineNum = 130;BA.debugLine="If File.Exists(ruta, archivo) Then";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_archivo)) { 
+ //BA.debugLineNum = 131;BA.debugLine="Dim parser As JSONParser";
+_parser = new anywheresoftware.b4a.objects.collections.JSONParser();
+ //BA.debugLineNum = 132;BA.debugLine="parser.Initialize(File.ReadString(ruta, archivo)";
+_parser.Initialize(anywheresoftware.b4a.keywords.Common.File.ReadString(_ruta,_archivo));
+ //BA.debugLineNum = 133;BA.debugLine="listaAtenciones = parser.NextArray";
+_listaatenciones = _parser.NextArray();
+ }else {
+ //BA.debugLineNum = 135;BA.debugLine="listaAtenciones.Initialize";
+_listaatenciones.Initialize();
+ };
+ //BA.debugLineNum = 138;BA.debugLine="listaAtenciones.Add(atencion)";
+_listaatenciones.Add((Object)(_atencion.getObject()));
+ //BA.debugLineNum = 140;BA.debugLine="Dim generador As JSONGenerator";
+_generador = new anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator();
+ //BA.debugLineNum = 141;BA.debugLine="generador.Initialize2(listaAtenciones)";
+_generador.Initialize2(_listaatenciones);
+ //BA.debugLineNum = 142;BA.debugLine="File.WriteString(ruta, archivo, generador.ToStrin";
+anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_archivo,_generador.ToString());
+ //BA.debugLineNum = 143;BA.debugLine="ToastMessageShow(\"Atención guardada correctamente";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Atención guardada correctamente"),anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 144;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+ //BA.debugLineNum = 145;BA.debugLine="End Sub";
 return "";
 }
 public static String  _cargardoctores() throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "cargardoctores", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "cargardoctores", null));}
 String _ruta = "";
 String _nombrearchivo = "";
 anywheresoftware.b4a.objects.collections.JSONParser _parser = null;
 anywheresoftware.b4a.objects.collections.Map _root = null;
-RDebugUtils.currentLine=2359296;
- //BA.debugLineNum = 2359296;BA.debugLine="Sub CargarDoctores";
-RDebugUtils.currentLine=2359297;
- //BA.debugLineNum = 2359297;BA.debugLine="Dim ruta As String = File.DirInternal";
+ //BA.debugLineNum = 32;BA.debugLine="Sub CargarDoctores";
+ //BA.debugLineNum = 33;BA.debugLine="Dim ruta As String = File.DirInternal";
 _ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
-RDebugUtils.currentLine=2359298;
- //BA.debugLineNum = 2359298;BA.debugLine="Dim nombreArchivo As String = \"doctores.json\"";
+ //BA.debugLineNum = 34;BA.debugLine="Dim nombreArchivo As String = \"doctores.json\"";
 _nombrearchivo = "doctores.json";
-RDebugUtils.currentLine=2359300;
- //BA.debugLineNum = 2359300;BA.debugLine="If File.Exists(ruta, nombreArchivo) = False Then";
+ //BA.debugLineNum = 36;BA.debugLine="If File.Exists(ruta, nombreArchivo) = False Then";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_nombrearchivo)==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=2359301;
- //BA.debugLineNum = 2359301;BA.debugLine="ToastMessageShow(\"Archivo de doctores no encontr";
+ //BA.debugLineNum = 37;BA.debugLine="ToastMessageShow(\"Archivo de doctores no encontr";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Archivo de doctores no encontrado."),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=2359302;
- //BA.debugLineNum = 2359302;BA.debugLine="Return";
+ //BA.debugLineNum = 38;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=2359305;
- //BA.debugLineNum = 2359305;BA.debugLine="Dim parser As JSONParser";
+ //BA.debugLineNum = 41;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=2359306;
- //BA.debugLineNum = 2359306;BA.debugLine="parser.Initialize(File.ReadString(ruta, nombreArc";
+ //BA.debugLineNum = 42;BA.debugLine="parser.Initialize(File.ReadString(ruta, nombreArc";
 _parser.Initialize(anywheresoftware.b4a.keywords.Common.File.ReadString(_ruta,_nombrearchivo));
-RDebugUtils.currentLine=2359308;
- //BA.debugLineNum = 2359308;BA.debugLine="Dim root As Map = parser.NextObject";
+ //BA.debugLineNum = 44;BA.debugLine="Dim root As Map = parser.NextObject";
 _root = new anywheresoftware.b4a.objects.collections.Map();
 _root = _parser.NextObject();
-RDebugUtils.currentLine=2359309;
- //BA.debugLineNum = 2359309;BA.debugLine="doctoresList = root.Get(\"doctores\") ' List<Map>";
+ //BA.debugLineNum = 45;BA.debugLine="doctoresList = root.Get(\"doctores\") ' List<Map>";
 mostCurrent._doctoreslist = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_root.Get((Object)("doctores"))));
-RDebugUtils.currentLine=2359310;
- //BA.debugLineNum = 2359310;BA.debugLine="End Sub";
+ //BA.debugLineNum = 46;BA.debugLine="End Sub";
+return "";
+}
+public static anywheresoftware.b4a.objects.PanelWrapper  _createdoctoritem(anywheresoftware.b4a.objects.collections.Map _doctor) throws Exception{
+anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
+String _ruta = "";
+ //BA.debugLineNum = 146;BA.debugLine="Sub CreateDoctorItem(doctor As Map) As Panel";
+ //BA.debugLineNum = 147;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
+_p = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_p = mostCurrent._xui.CreatePanel(processBA,"");
+ //BA.debugLineNum = 148;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, ListaDoctores.AsV";
+_p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),mostCurrent._listadoctores._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (120)));
+ //BA.debugLineNum = 149;BA.debugLine="p.LoadLayout(\"VistaListaDoctores\")";
+_p.LoadLayout("VistaListaDoctores",mostCurrent.activityBA);
+ //BA.debugLineNum = 152;BA.debugLine="Lbl_nombre.Text = doctor.Get(\"nombre_completo\"";
+mostCurrent._lbl_nombre.setText(BA.ObjectToCharSequence(_doctor.Get((Object)("nombre_completo"))));
+ //BA.debugLineNum = 153;BA.debugLine="Lbl_especialidad.Text = doctor.Get(\"especialid";
+mostCurrent._lbl_especialidad.setText(BA.ObjectToCharSequence(_doctor.Get((Object)("especialidad"))));
+ //BA.debugLineNum = 155;BA.debugLine="Dim ruta As String = doctor.Get(\"foto_perfil\")";
+_ruta = BA.ObjectToString(_doctor.Get((Object)("foto_perfil")));
+ //BA.debugLineNum = 156;BA.debugLine="If File.Exists(File.DirAssets, ruta) Then";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta)) { 
+ //BA.debugLineNum = 157;BA.debugLine="IMG_Doc.Bitmap = LoadBitmap(File.DirAssets";
+mostCurrent._img_doc.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta).getObject()));
+ }else {
+ //BA.debugLineNum = 159;BA.debugLine="IMG_Doc.Bitmap = LoadBitmapSample(File.Dir";
+mostCurrent._img_doc.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmapSample(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"default.png",anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100))).getObject()));
+ };
+ //BA.debugLineNum = 163;BA.debugLine="p.Tag = doctor";
+_p.setTag((Object)(_doctor.getObject()));
+ //BA.debugLineNum = 164;BA.debugLine="AddClickEventToPanel(p)";
+_addclickeventtopanel(_p);
+ //BA.debugLineNum = 166;BA.debugLine="Return p";
+if (true) return (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_p.getObject()));
+ //BA.debugLineNum = 167;BA.debugLine="End Sub";
+return null;
+}
+public static Object  _doctorpanel_event(String _methodname,Object[] _args) throws Exception{
+anywheresoftware.b4a.objects.ConcreteViewWrapper _v = null;
+anywheresoftware.b4a.objects.PanelWrapper _panelclicked = null;
+ //BA.debugLineNum = 177;BA.debugLine="Sub DoctorPanel_Event (MethodName As String, Args(";
+ //BA.debugLineNum = 178;BA.debugLine="Dim v As View = Args(0)";
+_v = new anywheresoftware.b4a.objects.ConcreteViewWrapper();
+_v = (anywheresoftware.b4a.objects.ConcreteViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ConcreteViewWrapper(), (android.view.View)(_args[(int) (0)]));
+ //BA.debugLineNum = 179;BA.debugLine="Dim panelClicked As Panel = v";
+_panelclicked = new anywheresoftware.b4a.objects.PanelWrapper();
+_panelclicked = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_v.getObject()));
+ //BA.debugLineNum = 180;BA.debugLine="DoctorSeleccionado = panelClicked.Tag";
+mostCurrent._doctorseleccionado = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_panelclicked.getTag()));
+ //BA.debugLineNum = 181;BA.debugLine="ToastMessageShow(\"Doctor seleccionado: \" & Doc";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Doctor seleccionado: "+BA.ObjectToString(mostCurrent._doctorseleccionado.Get((Object)("nombre_completo")))),anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 182;BA.debugLine="Return Null";
+if (true) return anywheresoftware.b4a.keywords.Common.Null;
+ //BA.debugLineNum = 183;BA.debugLine="End Sub";
+return null;
+}
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 13;BA.debugLine="Private ListaDoctores As CustomListView";
+mostCurrent._listadoctores = new b4a.example3.customlistview();
+ //BA.debugLineNum = 14;BA.debugLine="Private Spiner_especialidad As Spinner";
+mostCurrent._spiner_especialidad = new anywheresoftware.b4a.objects.SpinnerWrapper();
+ //BA.debugLineNum = 15;BA.debugLine="Private xui As XUI";
+mostCurrent._xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+ //BA.debugLineNum = 16;BA.debugLine="Private doctoresList As List";
+mostCurrent._doctoreslist = new anywheresoftware.b4a.objects.collections.List();
+ //BA.debugLineNum = 17;BA.debugLine="Private Lbl_nombre As Label";
+mostCurrent._lbl_nombre = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 18;BA.debugLine="Private Lbl_especialidad As Label";
+mostCurrent._lbl_especialidad = new anywheresoftware.b4a.objects.LabelWrapper();
+ //BA.debugLineNum = 19;BA.debugLine="Private IMG_Doc As ImageView";
+mostCurrent._img_doc = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 20;BA.debugLine="Private DoctorSeleccionado As Map";
+mostCurrent._doctorseleccionado = new anywheresoftware.b4a.objects.collections.Map();
+ //BA.debugLineNum = 21;BA.debugLine="Dim FechaSeleccionada As String";
+mostCurrent._fechaseleccionada = "";
+ //BA.debugLineNum = 22;BA.debugLine="End Sub";
 return "";
 }
 public static String  _llenarspinner() throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "llenarspinner", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "llenarspinner", null));}
 anywheresoftware.b4a.objects.collections.Map _especialidadesset = null;
 anywheresoftware.b4a.objects.collections.Map _doctor = null;
 String _esp = "";
 String _key = "";
-RDebugUtils.currentLine=2424832;
- //BA.debugLineNum = 2424832;BA.debugLine="Sub LlenarSpinner";
-RDebugUtils.currentLine=2424833;
- //BA.debugLineNum = 2424833;BA.debugLine="Dim especialidadesSet As Map";
+ //BA.debugLineNum = 48;BA.debugLine="Sub LlenarSpinner";
+ //BA.debugLineNum = 49;BA.debugLine="Dim especialidadesSet As Map";
 _especialidadesset = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=2424834;
- //BA.debugLineNum = 2424834;BA.debugLine="especialidadesSet.Initialize";
+ //BA.debugLineNum = 50;BA.debugLine="especialidadesSet.Initialize";
 _especialidadesset.Initialize();
-RDebugUtils.currentLine=2424836;
- //BA.debugLineNum = 2424836;BA.debugLine="For Each doctor As Map In doctoresList";
+ //BA.debugLineNum = 52;BA.debugLine="For Each doctor As Map In doctoresList";
 _doctor = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group3 = mostCurrent._doctoreslist;
@@ -458,19 +599,15 @@ final int groupLen3 = group3.getSize()
 ;
 for (; index3 < groupLen3;index3++){
 _doctor = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group3.Get(index3)));
-RDebugUtils.currentLine=2424837;
- //BA.debugLineNum = 2424837;BA.debugLine="Dim esp As String = doctor.Get(\"especialidad\")";
+ //BA.debugLineNum = 53;BA.debugLine="Dim esp As String = doctor.Get(\"especialidad\")";
 _esp = BA.ObjectToString(_doctor.Get((Object)("especialidad")));
-RDebugUtils.currentLine=2424838;
- //BA.debugLineNum = 2424838;BA.debugLine="especialidadesSet.Put(esp, \"\")";
+ //BA.debugLineNum = 54;BA.debugLine="especialidadesSet.Put(esp, \"\")";
 _especialidadesset.Put((Object)(_esp),(Object)(""));
  }
 };
-RDebugUtils.currentLine=2424841;
- //BA.debugLineNum = 2424841;BA.debugLine="Spiner_especialidad.Clear";
+ //BA.debugLineNum = 57;BA.debugLine="Spiner_especialidad.Clear";
 mostCurrent._spiner_especialidad.Clear();
-RDebugUtils.currentLine=2424842;
- //BA.debugLineNum = 2424842;BA.debugLine="For Each key As String In especialidadesSet.Keys";
+ //BA.debugLineNum = 58;BA.debugLine="For Each key As String In especialidadesSet.Keys";
 {
 final anywheresoftware.b4a.BA.IterableList group8 = _especialidadesset.Keys();
 final int groupLen8 = group8.getSize()
@@ -478,271 +615,19 @@ final int groupLen8 = group8.getSize()
 ;
 for (; index8 < groupLen8;index8++){
 _key = BA.ObjectToString(group8.Get(index8));
-RDebugUtils.currentLine=2424843;
- //BA.debugLineNum = 2424843;BA.debugLine="Spiner_especialidad.Add(key)";
+ //BA.debugLineNum = 59;BA.debugLine="Spiner_especialidad.Add(key)";
 mostCurrent._spiner_especialidad.Add(_key);
  }
 };
-RDebugUtils.currentLine=2424845;
- //BA.debugLineNum = 2424845;BA.debugLine="End Sub";
+ //BA.debugLineNum = 61;BA.debugLine="End Sub";
 return "";
-}
-public static String  _addclickeventtopanel(anywheresoftware.b4a.objects.B4XViewWrapper _p) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "addclickeventtopanel", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "addclickeventtopanel", new Object[] {_p}));}
-anywheresoftware.b4j.object.JavaObject _jo = null;
-String _eventname = "";
-Object _pe = null;
-RDebugUtils.currentLine=2949120;
- //BA.debugLineNum = 2949120;BA.debugLine="Sub AddClickEventToPanel(p As B4XView)";
-RDebugUtils.currentLine=2949121;
- //BA.debugLineNum = 2949121;BA.debugLine="Dim jo As JavaObject = p";
-_jo = new anywheresoftware.b4j.object.JavaObject();
-_jo = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(_p.getObject()));
-RDebugUtils.currentLine=2949122;
- //BA.debugLineNum = 2949122;BA.debugLine="jo.RunMethod(\"setClickable\", Array(True))";
-_jo.RunMethod("setClickable",new Object[]{(Object)(anywheresoftware.b4a.keywords.Common.True)});
-RDebugUtils.currentLine=2949123;
- //BA.debugLineNum = 2949123;BA.debugLine="Dim eventName As String = \"DoctorPanel\"";
-_eventname = "DoctorPanel";
-RDebugUtils.currentLine=2949124;
- //BA.debugLineNum = 2949124;BA.debugLine="Dim pe As Object = jo.CreateEvent(\"android.vie";
-_pe = _jo.CreateEvent(processBA,"android.view.View.OnClickListener",_eventname,(Object)(anywheresoftware.b4a.keywords.Common.False));
-RDebugUtils.currentLine=2949125;
- //BA.debugLineNum = 2949125;BA.debugLine="jo.RunMethod(\"setOnClickListener\", Array(pe))";
-_jo.RunMethod("setOnClickListener",new Object[]{_pe});
-RDebugUtils.currentLine=2949126;
- //BA.debugLineNum = 2949126;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btn_elegirfecha_click() throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_elegirfecha_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_elegirfecha_click", null));}
-RDebugUtils.currentLine=2621440;
- //BA.debugLineNum = 2621440;BA.debugLine="Private Sub Btn_elegirFecha_Click";
-RDebugUtils.currentLine=2621441;
- //BA.debugLineNum = 2621441;BA.debugLine="ShowDatePickerDialog";
-_showdatepickerdialog();
-RDebugUtils.currentLine=2621442;
- //BA.debugLineNum = 2621442;BA.debugLine="End Sub";
-return "";
-}
-public static String  _showdatepickerdialog() throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "showdatepickerdialog", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "showdatepickerdialog", null));}
-anywheresoftware.b4j.object.JavaObject _jo = null;
-RDebugUtils.currentLine=2686976;
- //BA.debugLineNum = 2686976;BA.debugLine="Sub ShowDatePickerDialog";
-RDebugUtils.currentLine=2686977;
- //BA.debugLineNum = 2686977;BA.debugLine="Dim jo As JavaObject";
-_jo = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=2686978;
- //BA.debugLineNum = 2686978;BA.debugLine="jo.InitializeContext";
-_jo.InitializeContext(processBA);
-RDebugUtils.currentLine=2686979;
- //BA.debugLineNum = 2686979;BA.debugLine="jo.RunMethod(\"showDatePicker\", Null)";
-_jo.RunMethod("showDatePicker",(Object[])(anywheresoftware.b4a.keywords.Common.Null));
-RDebugUtils.currentLine=2686980;
- //BA.debugLineNum = 2686980;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btn_guardaratencion_click() throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_guardaratencion_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_guardaratencion_click", null));}
-String _rut = "";
-anywheresoftware.b4a.objects.collections.Map _atencion = null;
-String _ruta = "";
-String _archivo = "";
-anywheresoftware.b4a.objects.collections.List _listaatenciones = null;
-anywheresoftware.b4a.objects.collections.JSONParser _parser = null;
-anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator _generador = null;
-RDebugUtils.currentLine=2818048;
- //BA.debugLineNum = 2818048;BA.debugLine="Sub Btn_guardarAtencion_Click";
-RDebugUtils.currentLine=2818049;
- //BA.debugLineNum = 2818049;BA.debugLine="If DoctorSeleccionado.IsInitialized = False Then";
-if (mostCurrent._doctorseleccionado.IsInitialized()==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=2818050;
- //BA.debugLineNum = 2818050;BA.debugLine="ToastMessageShow(\"Selecciona un doctor.\", True)";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Selecciona un doctor."),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=2818051;
- //BA.debugLineNum = 2818051;BA.debugLine="Return";
-if (true) return "";
- };
-RDebugUtils.currentLine=2818053;
- //BA.debugLineNum = 2818053;BA.debugLine="If FechaSeleccionada = \"\" Then";
-if ((mostCurrent._fechaseleccionada).equals("")) { 
-RDebugUtils.currentLine=2818054;
- //BA.debugLineNum = 2818054;BA.debugLine="ToastMessageShow(\"Selecciona una fecha.\", True)";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Selecciona una fecha."),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=2818055;
- //BA.debugLineNum = 2818055;BA.debugLine="Return";
-if (true) return "";
- };
-RDebugUtils.currentLine=2818057;
- //BA.debugLineNum = 2818057;BA.debugLine="Dim Rut As String = Main.UsuarioActivo.Rut";
-_rut = mostCurrent._main._usuarioactivo /*b4a.example.main._usuario*/ .Rut /*String*/ ;
-RDebugUtils.currentLine=2818058;
- //BA.debugLineNum = 2818058;BA.debugLine="Dim atencion As Map";
-_atencion = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=2818059;
- //BA.debugLineNum = 2818059;BA.debugLine="atencion.Initialize";
-_atencion.Initialize();
-RDebugUtils.currentLine=2818060;
- //BA.debugLineNum = 2818060;BA.debugLine="atencion.Put(\"rut_paciente\", Rut)";
-_atencion.Put((Object)("rut_paciente"),(Object)(_rut));
-RDebugUtils.currentLine=2818061;
- //BA.debugLineNum = 2818061;BA.debugLine="atencion.Put(\"nombre_medico\", DoctorSeleccionado.";
-_atencion.Put((Object)("nombre_medico"),mostCurrent._doctorseleccionado.Get((Object)("nombre_completo")));
-RDebugUtils.currentLine=2818062;
- //BA.debugLineNum = 2818062;BA.debugLine="atencion.Put(\"especialidad\", DoctorSeleccionado.G";
-_atencion.Put((Object)("especialidad"),mostCurrent._doctorseleccionado.Get((Object)("especialidad")));
-RDebugUtils.currentLine=2818063;
- //BA.debugLineNum = 2818063;BA.debugLine="atencion.Put(\"fecha_atencion\", FechaSeleccionada)";
-_atencion.Put((Object)("fecha_atencion"),(Object)(mostCurrent._fechaseleccionada));
-RDebugUtils.currentLine=2818065;
- //BA.debugLineNum = 2818065;BA.debugLine="Dim ruta As String = File.DirInternal";
-_ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
-RDebugUtils.currentLine=2818066;
- //BA.debugLineNum = 2818066;BA.debugLine="Dim archivo As String = \"atenciones.json\"";
-_archivo = "atenciones.json";
-RDebugUtils.currentLine=2818068;
- //BA.debugLineNum = 2818068;BA.debugLine="Dim listaAtenciones As List";
-_listaatenciones = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=2818069;
- //BA.debugLineNum = 2818069;BA.debugLine="If File.Exists(ruta, archivo) Then";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_archivo)) { 
-RDebugUtils.currentLine=2818070;
- //BA.debugLineNum = 2818070;BA.debugLine="Dim parser As JSONParser";
-_parser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=2818071;
- //BA.debugLineNum = 2818071;BA.debugLine="parser.Initialize(File.ReadString(ruta, archivo)";
-_parser.Initialize(anywheresoftware.b4a.keywords.Common.File.ReadString(_ruta,_archivo));
-RDebugUtils.currentLine=2818072;
- //BA.debugLineNum = 2818072;BA.debugLine="listaAtenciones = parser.NextArray";
-_listaatenciones = _parser.NextArray();
- }else {
-RDebugUtils.currentLine=2818074;
- //BA.debugLineNum = 2818074;BA.debugLine="listaAtenciones.Initialize";
-_listaatenciones.Initialize();
- };
-RDebugUtils.currentLine=2818077;
- //BA.debugLineNum = 2818077;BA.debugLine="listaAtenciones.Add(atencion)";
-_listaatenciones.Add((Object)(_atencion.getObject()));
-RDebugUtils.currentLine=2818079;
- //BA.debugLineNum = 2818079;BA.debugLine="Dim generador As JSONGenerator";
-_generador = new anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator();
-RDebugUtils.currentLine=2818080;
- //BA.debugLineNum = 2818080;BA.debugLine="generador.Initialize2(listaAtenciones)";
-_generador.Initialize2(_listaatenciones);
-RDebugUtils.currentLine=2818081;
- //BA.debugLineNum = 2818081;BA.debugLine="File.WriteString(ruta, archivo, generador.ToStrin";
-anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_archivo,_generador.ToString());
-RDebugUtils.currentLine=2818082;
- //BA.debugLineNum = 2818082;BA.debugLine="ToastMessageShow(\"Atención guardada correctamente";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Atención guardada correctamente"),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=2818083;
- //BA.debugLineNum = 2818083;BA.debugLine="Activity.Finish";
-mostCurrent._activity.Finish();
-RDebugUtils.currentLine=2818084;
- //BA.debugLineNum = 2818084;BA.debugLine="End Sub";
-return "";
-}
-public static anywheresoftware.b4a.objects.PanelWrapper  _createdoctoritem(anywheresoftware.b4a.objects.collections.Map _doctor) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "createdoctoritem", false))
-	 {return ((anywheresoftware.b4a.objects.PanelWrapper) Debug.delegate(mostCurrent.activityBA, "createdoctoritem", new Object[] {_doctor}));}
-anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
-String _ruta = "";
-RDebugUtils.currentLine=2883584;
- //BA.debugLineNum = 2883584;BA.debugLine="Sub CreateDoctorItem(doctor As Map) As Panel";
-RDebugUtils.currentLine=2883585;
- //BA.debugLineNum = 2883585;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
-_p = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_p = mostCurrent._xui.CreatePanel(processBA,"");
-RDebugUtils.currentLine=2883586;
- //BA.debugLineNum = 2883586;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, ListaDoctores.AsV";
-_p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),mostCurrent._listadoctores._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (120)));
-RDebugUtils.currentLine=2883587;
- //BA.debugLineNum = 2883587;BA.debugLine="p.LoadLayout(\"VistaListaDoctores\")";
-_p.LoadLayout("VistaListaDoctores",mostCurrent.activityBA);
-RDebugUtils.currentLine=2883590;
- //BA.debugLineNum = 2883590;BA.debugLine="Lbl_nombre.Text = doctor.Get(\"nombre_completo\"";
-mostCurrent._lbl_nombre.setText(BA.ObjectToCharSequence(_doctor.Get((Object)("nombre_completo"))));
-RDebugUtils.currentLine=2883591;
- //BA.debugLineNum = 2883591;BA.debugLine="Lbl_especialidad.Text = doctor.Get(\"especialid";
-mostCurrent._lbl_especialidad.setText(BA.ObjectToCharSequence(_doctor.Get((Object)("especialidad"))));
-RDebugUtils.currentLine=2883593;
- //BA.debugLineNum = 2883593;BA.debugLine="Dim ruta As String = doctor.Get(\"foto_perfil\")";
-_ruta = BA.ObjectToString(_doctor.Get((Object)("foto_perfil")));
-RDebugUtils.currentLine=2883594;
- //BA.debugLineNum = 2883594;BA.debugLine="If File.Exists(File.DirAssets, ruta) Then";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta)) { 
-RDebugUtils.currentLine=2883595;
- //BA.debugLineNum = 2883595;BA.debugLine="IMG_Doc.Bitmap = LoadBitmap(File.DirAssets";
-mostCurrent._img_doc.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta).getObject()));
- }else {
-RDebugUtils.currentLine=2883597;
- //BA.debugLineNum = 2883597;BA.debugLine="IMG_Doc.Bitmap = LoadBitmapSample(File.Dir";
-mostCurrent._img_doc.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmapSample(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"default.png",anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (100))).getObject()));
- };
-RDebugUtils.currentLine=2883601;
- //BA.debugLineNum = 2883601;BA.debugLine="p.Tag = doctor";
-_p.setTag((Object)(_doctor.getObject()));
-RDebugUtils.currentLine=2883602;
- //BA.debugLineNum = 2883602;BA.debugLine="AddClickEventToPanel(p)";
-_addclickeventtopanel(_p);
-RDebugUtils.currentLine=2883604;
- //BA.debugLineNum = 2883604;BA.debugLine="Return p";
-if (true) return (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_p.getObject()));
-RDebugUtils.currentLine=2883605;
- //BA.debugLineNum = 2883605;BA.debugLine="End Sub";
-return null;
-}
-public static Object  _doctorpanel_event(String _methodname,Object[] _args) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "doctorpanel_event", false))
-	 {return ((Object) Debug.delegate(mostCurrent.activityBA, "doctorpanel_event", new Object[] {_methodname,_args}));}
-anywheresoftware.b4a.objects.ConcreteViewWrapper _v = null;
-anywheresoftware.b4a.objects.PanelWrapper _panelclicked = null;
-RDebugUtils.currentLine=3014656;
- //BA.debugLineNum = 3014656;BA.debugLine="Sub DoctorPanel_Event (MethodName As String, Args(";
-RDebugUtils.currentLine=3014657;
- //BA.debugLineNum = 3014657;BA.debugLine="Dim v As View = Args(0)";
-_v = new anywheresoftware.b4a.objects.ConcreteViewWrapper();
-_v = (anywheresoftware.b4a.objects.ConcreteViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ConcreteViewWrapper(), (android.view.View)(_args[(int) (0)]));
-RDebugUtils.currentLine=3014658;
- //BA.debugLineNum = 3014658;BA.debugLine="Dim panelClicked As Panel = v";
-_panelclicked = new anywheresoftware.b4a.objects.PanelWrapper();
-_panelclicked = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_v.getObject()));
-RDebugUtils.currentLine=3014659;
- //BA.debugLineNum = 3014659;BA.debugLine="DoctorSeleccionado = panelClicked.Tag";
-mostCurrent._doctorseleccionado = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_panelclicked.getTag()));
-RDebugUtils.currentLine=3014660;
- //BA.debugLineNum = 3014660;BA.debugLine="ToastMessageShow(\"Doctor seleccionado: \" & Doc";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Doctor seleccionado: "+BA.ObjectToString(mostCurrent._doctorseleccionado.Get((Object)("nombre_completo")))),anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=3014661;
- //BA.debugLineNum = 3014661;BA.debugLine="Return Null";
-if (true) return anywheresoftware.b4a.keywords.Common.Null;
-RDebugUtils.currentLine=3014662;
- //BA.debugLineNum = 3014662;BA.debugLine="End Sub";
-return null;
 }
 public static String  _mostrardoctoresporespecialidad(String _especialidad) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "mostrardoctoresporespecialidad", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "mostrardoctoresporespecialidad", new Object[] {_especialidad}));}
 anywheresoftware.b4a.objects.collections.Map _doctor = null;
-RDebugUtils.currentLine=2555904;
- //BA.debugLineNum = 2555904;BA.debugLine="Sub MostrarDoctoresPorEspecialidad(especialidad As";
-RDebugUtils.currentLine=2555905;
- //BA.debugLineNum = 2555905;BA.debugLine="ListaDoctores.Clear";
+ //BA.debugLineNum = 67;BA.debugLine="Sub MostrarDoctoresPorEspecialidad(especialidad As";
+ //BA.debugLineNum = 68;BA.debugLine="ListaDoctores.Clear";
 mostCurrent._listadoctores._clear();
-RDebugUtils.currentLine=2555907;
- //BA.debugLineNum = 2555907;BA.debugLine="For Each doctor As Map In doctoresList";
+ //BA.debugLineNum = 70;BA.debugLine="For Each doctor As Map In doctoresList";
 _doctor = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group2 = mostCurrent._doctoreslist;
@@ -751,46 +636,47 @@ final int groupLen2 = group2.getSize()
 ;
 for (; index2 < groupLen2;index2++){
 _doctor = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group2.Get(index2)));
-RDebugUtils.currentLine=2555908;
- //BA.debugLineNum = 2555908;BA.debugLine="If doctor.Get(\"especialidad\") = especialidad The";
+ //BA.debugLineNum = 71;BA.debugLine="If doctor.Get(\"especialidad\") = especialidad The";
 if ((_doctor.Get((Object)("especialidad"))).equals((Object)(_especialidad))) { 
-RDebugUtils.currentLine=2555909;
- //BA.debugLineNum = 2555909;BA.debugLine="ListaDoctores.Add(CreateDoctorItem(doctor), \"\")";
+ //BA.debugLineNum = 72;BA.debugLine="ListaDoctores.Add(CreateDoctorItem(doctor), \"\")";
 mostCurrent._listadoctores._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_createdoctoritem(_doctor).getObject())),(Object)(""));
  };
  }
 };
-RDebugUtils.currentLine=2555912;
- //BA.debugLineNum = 2555912;BA.debugLine="End Sub";
+ //BA.debugLineNum = 75;BA.debugLine="End Sub";
+return "";
+}
+public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 10;BA.debugLine="End Sub";
 return "";
 }
 public static String  _recibirfecha(String _fecha) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "recibirfecha", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "recibirfecha", new Object[] {_fecha}));}
-RDebugUtils.currentLine=2752512;
- //BA.debugLineNum = 2752512;BA.debugLine="Sub RecibirFecha(fecha As String)";
-RDebugUtils.currentLine=2752513;
- //BA.debugLineNum = 2752513;BA.debugLine="FechaSeleccionada = fecha";
+ //BA.debugLineNum = 85;BA.debugLine="Sub RecibirFecha(fecha As String)";
+ //BA.debugLineNum = 86;BA.debugLine="FechaSeleccionada = fecha";
 mostCurrent._fechaseleccionada = _fecha;
-RDebugUtils.currentLine=2752514;
- //BA.debugLineNum = 2752514;BA.debugLine="Log(\"Fecha: \" & FechaSeleccionada)";
-anywheresoftware.b4a.keywords.Common.LogImpl("12752514","Fecha: "+mostCurrent._fechaseleccionada,0);
-RDebugUtils.currentLine=2752515;
- //BA.debugLineNum = 2752515;BA.debugLine="End Sub";
+ //BA.debugLineNum = 87;BA.debugLine="Log(\"Fecha: \" & FechaSeleccionada)";
+anywheresoftware.b4a.keywords.Common.LogImpl("02818050","Fecha: "+mostCurrent._fechaseleccionada,0);
+ //BA.debugLineNum = 88;BA.debugLine="End Sub";
+return "";
+}
+public static String  _showdatepickerdialog() throws Exception{
+anywheresoftware.b4j.object.JavaObject _jo = null;
+ //BA.debugLineNum = 80;BA.debugLine="Sub ShowDatePickerDialog";
+ //BA.debugLineNum = 81;BA.debugLine="Dim jo As JavaObject";
+_jo = new anywheresoftware.b4j.object.JavaObject();
+ //BA.debugLineNum = 82;BA.debugLine="jo.InitializeContext";
+_jo.InitializeContext(processBA);
+ //BA.debugLineNum = 83;BA.debugLine="jo.RunMethod(\"showDatePicker\", Null)";
+_jo.RunMethod("showDatePicker",(Object[])(anywheresoftware.b4a.keywords.Common.Null));
+ //BA.debugLineNum = 84;BA.debugLine="End Sub";
 return "";
 }
 public static String  _spiner_especialidad_itemclick(int _position,Object _value) throws Exception{
-RDebugUtils.currentModule="modulo_seleccion";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "spiner_especialidad_itemclick", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spiner_especialidad_itemclick", new Object[] {_position,_value}));}
-RDebugUtils.currentLine=2490368;
- //BA.debugLineNum = 2490368;BA.debugLine="Sub Spiner_especialidad_ItemClick (Position As Int";
-RDebugUtils.currentLine=2490369;
- //BA.debugLineNum = 2490369;BA.debugLine="MostrarDoctoresPorEspecialidad(Value)";
+ //BA.debugLineNum = 63;BA.debugLine="Sub Spiner_especialidad_ItemClick (Position As Int";
+ //BA.debugLineNum = 64;BA.debugLine="MostrarDoctoresPorEspecialidad(Value)";
 _mostrardoctoresporespecialidad(BA.ObjectToString(_value));
-RDebugUtils.currentLine=2490370;
- //BA.debugLineNum = 2490370;BA.debugLine="End Sub";
+ //BA.debugLineNum = 65;BA.debugLine="End Sub";
 return "";
 }
 

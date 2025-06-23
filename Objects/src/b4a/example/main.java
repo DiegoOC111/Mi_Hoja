@@ -34,7 +34,7 @@ public class main extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.main");
+			processBA = new BA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.main");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,20 +335,22 @@ public class main extends Activity implements B4AActivity{
             
     }
 
+public anywheresoftware.b4a.keywords.Common __c = null;
+public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
+public static b4a.example.main._usuario _usuarioactivo = null;
+public anywheresoftware.b4a.objects.AutoCompleteEditTextWrapper _txt_rut = null;
+public anywheresoftware.b4a.objects.AutoCompleteEditTextWrapper _txt_password = null;
+public b4a.example.dateutils _dateutils = null;
+public b4a.example.menu _menu = null;
+public b4a.example.registrar _registrar = null;
+public b4a.example.modulo_seleccion _modulo_seleccion = null;
+public b4a.example.modulogestion _modulogestion = null;
+public b4a.example.calendario _calendario = null;
+public b4a.example.verexamenes _verexamenes = null;
+public b4a.example.starter _starter = null;
+public b4a.example.b4xcollections _b4xcollections = null;
+public b4a.example.xuiviewsutils _xuiviewsutils = null;
 
-
-public static void initializeProcessGlobals() {
-    
-    if (main.processGlobalsRun == false) {
-	    main.processGlobalsRun = true;
-		try {
-		        b4a.example.dateutils._process_globals();
-		
-        } catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-    }
-}
 public static boolean isAnyActivityVisible() {
     boolean vis = false;
 vis = vis | (main.mostCurrent != null);
@@ -359,102 +361,6 @@ vis = vis | (modulogestion.mostCurrent != null);
 vis = vis | (calendario.mostCurrent != null);
 vis = vis | (verexamenes.mostCurrent != null);
 return vis;}
-
-private static BA killProgramHelper(BA ba) {
-    if (ba == null)
-        return null;
-    anywheresoftware.b4a.BA.SharedProcessBA sharedProcessBA = ba.sharedProcessBA;
-    if (sharedProcessBA == null || sharedProcessBA.activityBA == null)
-        return null;
-    return sharedProcessBA.activityBA.get();
-}
-public static void killProgram() {
-     {
-            Activity __a = null;
-            if (main.previousOne != null) {
-				__a = main.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(main.mostCurrent == null ? null : main.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
-            if (menu.previousOne != null) {
-				__a = menu.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(menu.mostCurrent == null ? null : menu.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
-            if (registrar.previousOne != null) {
-				__a = registrar.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(registrar.mostCurrent == null ? null : registrar.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
-            if (modulo_seleccion.previousOne != null) {
-				__a = modulo_seleccion.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(modulo_seleccion.mostCurrent == null ? null : modulo_seleccion.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
-            if (modulogestion.previousOne != null) {
-				__a = modulogestion.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(modulogestion.mostCurrent == null ? null : modulogestion.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
- {
-            Activity __a = null;
-            if (calendario.previousOne != null) {
-				__a = calendario.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(calendario.mostCurrent == null ? null : calendario.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
-BA.applicationContext.stopService(new android.content.Intent(BA.applicationContext, starter.class));
- {
-            Activity __a = null;
-            if (verexamenes.previousOne != null) {
-				__a = verexamenes.previousOne.get();
-			}
-            else {
-                BA ba = killProgramHelper(verexamenes.mostCurrent == null ? null : verexamenes.mostCurrent.processBA);
-                if (ba != null) __a = ba.activity;
-            }
-            if (__a != null)
-				__a.finish();}
-
-}
 public static class _usuario{
 public boolean IsInitialized;
 public String Rut;
@@ -468,131 +374,55 @@ Contrasena = "";
 		public String toString() {
 			return BA.TypeToString(this, false);
 		}}
-public anywheresoftware.b4a.keywords.Common __c = null;
-public static anywheresoftware.b4a.objects.B4XViewWrapper.XUI _xui = null;
-public static b4a.example.main._usuario _usuarioactivo = null;
-public anywheresoftware.b4a.objects.AutoCompleteEditTextWrapper _txt_rut = null;
-public anywheresoftware.b4a.objects.AutoCompleteEditTextWrapper _txt_password = null;
-public b4a.example.dateutils _dateutils = null;
-public b4a.example.menu _menu = null;
-public b4a.example.registrar _registrar = null;
-public b4a.example.modulo_seleccion _modulo_seleccion = null;
-public b4a.example.modulogestion _modulogestion = null;
-public b4a.example.calendario _calendario = null;
-public b4a.example.starter _starter = null;
-public b4a.example.verexamenes _verexamenes = null;
-public b4a.example.b4xcollections _b4xcollections = null;
-public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=196608;
- //BA.debugLineNum = 196608;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=196609;
- //BA.debugLineNum = 196609;BA.debugLine="Activity.LoadLayout(\"Layout\")";
+ //BA.debugLineNum = 45;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 46;BA.debugLine="Activity.LoadLayout(\"Layout\")";
 mostCurrent._activity.LoadLayout("Layout",mostCurrent.activityBA);
-RDebugUtils.currentLine=196610;
- //BA.debugLineNum = 196610;BA.debugLine="CrearArchivoDoctores";
+ //BA.debugLineNum = 47;BA.debugLine="CrearArchivoDoctores";
 _creararchivodoctores();
-RDebugUtils.currentLine=196611;
- //BA.debugLineNum = 196611;BA.debugLine="End Sub";
-return "";
-}
-public static String  _creararchivodoctores() throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "creararchivodoctores", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "creararchivodoctores", null));}
-String _nombrearchivo = "";
-String _ruta = "";
-String _contenido = "";
-RDebugUtils.currentLine=589824;
- //BA.debugLineNum = 589824;BA.debugLine="Sub CrearArchivoDoctores";
-RDebugUtils.currentLine=589825;
- //BA.debugLineNum = 589825;BA.debugLine="Dim nombreArchivo As String = \"doctores.json\"";
-_nombrearchivo = "doctores.json";
-RDebugUtils.currentLine=589826;
- //BA.debugLineNum = 589826;BA.debugLine="Dim ruta As String = File.DirInternal";
-_ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
-RDebugUtils.currentLine=589835;
- //BA.debugLineNum = 589835;BA.debugLine="Dim contenido As String = $\"{   \"doctores\": [";
-_contenido = ("{\n"+"  \"doctores\": [\n"+"    {\n"+"      \"nombre_completo\": \"Dra. Valentina Ríos Martínez\",\n"+"      \"especialidad\": \"Cardiología Pediátrica\",\n"+"      \"foto_perfil\": \"valentina_rios.png\"\n"+"    },\n"+"    {\n"+"      \"nombre_completo\": \"Dr. Sebastián Torres Guzmán\",\n"+"      \"especialidad\": \"Pediatría General\",\n"+"      \"foto_perfil\": \"sebastian_torres.png\"\n"+"    },\n"+"    {\n"+"      \"nombre_completo\": \"Dra. Camila Herrera Soto\",\n"+"      \"especialidad\": \"Dermatología Pediátrica\",\n"+"      \"foto_perfil\": \"camila_herrera.png\"\n"+"    },\n"+"    {\n"+"      \"nombre_completo\": \"Dr. Ignacio Fernández Vidal\",\n"+"      \"especialidad\": \"Neurología Pediátrica\",\n"+"      \"foto_perfil\": \"ignacio_fernandez.png\"\n"+"    }\n"+"  ]\n"+"}");
-RDebugUtils.currentLine=589861;
- //BA.debugLineNum = 589861;BA.debugLine="File.WriteString(ruta, nombreArchivo, contenido)";
-anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_nombrearchivo,_contenido);
-RDebugUtils.currentLine=589862;
- //BA.debugLineNum = 589862;BA.debugLine="Log(\"Archivo creado correctamente en: \" & ruta)";
-anywheresoftware.b4a.keywords.Common.LogImpl("1589862","Archivo creado correctamente en: "+_ruta,0);
-RDebugUtils.currentLine=589863;
- //BA.debugLineNum = 589863;BA.debugLine="End Sub";
+ //BA.debugLineNum = 48;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="main";
-RDebugUtils.currentLine=327680;
- //BA.debugLineNum = 327680;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=327682;
- //BA.debugLineNum = 327682;BA.debugLine="End Sub";
+ //BA.debugLineNum = 54;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 56;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=262144;
- //BA.debugLineNum = 262144;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=262146;
- //BA.debugLineNum = 262146;BA.debugLine="End Sub";
+ //BA.debugLineNum = 50;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 52;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_crear_click() throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_crear_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_crear_click", null));}
-RDebugUtils.currentLine=458752;
- //BA.debugLineNum = 458752;BA.debugLine="Private Sub Btn_Crear_Click";
-RDebugUtils.currentLine=458753;
- //BA.debugLineNum = 458753;BA.debugLine="StartActivity(Registrar)";
+ //BA.debugLineNum = 62;BA.debugLine="Private Sub Btn_Crear_Click";
+ //BA.debugLineNum = 63;BA.debugLine="StartActivity(Registrar)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._registrar.getObject()));
-RDebugUtils.currentLine=458754;
- //BA.debugLineNum = 458754;BA.debugLine="End Sub";
+ //BA.debugLineNum = 64;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_iniciar_click() throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_iniciar_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_iniciar_click", null));}
 String _rut = "";
 String _clave = "";
 anywheresoftware.b4a.objects.collections.List _usuarios = null;
 anywheresoftware.b4a.objects.collections.Map _u = null;
-RDebugUtils.currentLine=524288;
- //BA.debugLineNum = 524288;BA.debugLine="Private Sub Btn_iniciar_Click";
-RDebugUtils.currentLine=524289;
- //BA.debugLineNum = 524289;BA.debugLine="Dim rut As String = Txt_Rut.Text";
+ //BA.debugLineNum = 66;BA.debugLine="Private Sub Btn_iniciar_Click";
+ //BA.debugLineNum = 67;BA.debugLine="Dim rut As String = Txt_Rut.Text";
 _rut = mostCurrent._txt_rut.getText();
-RDebugUtils.currentLine=524290;
- //BA.debugLineNum = 524290;BA.debugLine="Dim clave As String = Txt_password.Text";
+ //BA.debugLineNum = 68;BA.debugLine="Dim clave As String = Txt_password.Text";
 _clave = mostCurrent._txt_password.getText();
-RDebugUtils.currentLine=524293;
- //BA.debugLineNum = 524293;BA.debugLine="If rut = \"\" Or clave = \"\" Then";
+ //BA.debugLineNum = 71;BA.debugLine="If rut = \"\" Or clave = \"\" Then";
 if ((_rut).equals("") || (_clave).equals("")) { 
-RDebugUtils.currentLine=524294;
- //BA.debugLineNum = 524294;BA.debugLine="xui.MsgboxAsync(\"Debes ingresar RUT y contraseña";
+ //BA.debugLineNum = 72;BA.debugLine="xui.MsgboxAsync(\"Debes ingresar RUT y contraseña";
 _xui.MsgboxAsync(processBA,BA.ObjectToCharSequence("Debes ingresar RUT y contraseña"),BA.ObjectToCharSequence("Error"));
-RDebugUtils.currentLine=524295;
- //BA.debugLineNum = 524295;BA.debugLine="Return";
+ //BA.debugLineNum = 73;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=524298;
- //BA.debugLineNum = 524298;BA.debugLine="rut = rut.ToUpperCase.Replace(\".\", \"\")";
+ //BA.debugLineNum = 76;BA.debugLine="rut = rut.ToUpperCase.Replace(\".\", \"\")";
 _rut = _rut.toUpperCase().replace(".","");
-RDebugUtils.currentLine=524301;
- //BA.debugLineNum = 524301;BA.debugLine="Dim usuarios As List = CargarUsuarios";
+ //BA.debugLineNum = 79;BA.debugLine="Dim usuarios As List = CargarUsuarios";
 _usuarios = new anywheresoftware.b4a.objects.collections.List();
 _usuarios = _cargarusuarios();
-RDebugUtils.currentLine=524304;
- //BA.debugLineNum = 524304;BA.debugLine="For Each u As Map In usuarios";
+ //BA.debugLineNum = 82;BA.debugLine="For Each u As Map In usuarios";
 _u = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group9 = _usuarios;
@@ -601,83 +431,116 @@ final int groupLen9 = group9.getSize()
 ;
 for (; index9 < groupLen9;index9++){
 _u = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group9.Get(index9)));
-RDebugUtils.currentLine=524305;
- //BA.debugLineNum = 524305;BA.debugLine="If u.Get(\"Rut\") = rut And u.Get(\"Contrasena\") =";
+ //BA.debugLineNum = 83;BA.debugLine="If u.Get(\"Rut\") = rut And u.Get(\"Contrasena\") =";
 if ((_u.Get((Object)("Rut"))).equals((Object)(_rut)) && (_u.Get((Object)("Contrasena"))).equals((Object)(_clave))) { 
-RDebugUtils.currentLine=524306;
- //BA.debugLineNum = 524306;BA.debugLine="UsuarioActivo.Contrasena = clave";
+ //BA.debugLineNum = 84;BA.debugLine="UsuarioActivo.Contrasena = clave";
 _usuarioactivo.Contrasena /*String*/  = _clave;
-RDebugUtils.currentLine=524307;
- //BA.debugLineNum = 524307;BA.debugLine="UsuarioActivo.Rut = rut";
+ //BA.debugLineNum = 85;BA.debugLine="UsuarioActivo.Rut = rut";
 _usuarioactivo.Rut /*String*/  = _rut;
-RDebugUtils.currentLine=524308;
- //BA.debugLineNum = 524308;BA.debugLine="xui.MsgboxAsync(\"Inicio de sesión exitoso\", \"Bi";
+ //BA.debugLineNum = 86;BA.debugLine="xui.MsgboxAsync(\"Inicio de sesión exitoso\", \"Bi";
 _xui.MsgboxAsync(processBA,BA.ObjectToCharSequence("Inicio de sesión exitoso"),BA.ObjectToCharSequence("Bienvenido"));
-RDebugUtils.currentLine=524310;
- //BA.debugLineNum = 524310;BA.debugLine="StartActivity(Menu)";
+ //BA.debugLineNum = 88;BA.debugLine="StartActivity(Menu)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._menu.getObject()));
-RDebugUtils.currentLine=524311;
- //BA.debugLineNum = 524311;BA.debugLine="Return";
+ //BA.debugLineNum = 89;BA.debugLine="Return";
 if (true) return "";
  };
  }
 };
-RDebugUtils.currentLine=524316;
- //BA.debugLineNum = 524316;BA.debugLine="xui.MsgboxAsync(\"RUT o contraseña incorrectos\", \"";
+ //BA.debugLineNum = 94;BA.debugLine="xui.MsgboxAsync(\"RUT o contraseña incorrectos\", \"";
 _xui.MsgboxAsync(processBA,BA.ObjectToCharSequence("RUT o contraseña incorrectos"),BA.ObjectToCharSequence("Error"));
-RDebugUtils.currentLine=524317;
- //BA.debugLineNum = 524317;BA.debugLine="End Sub";
+ //BA.debugLineNum = 95;BA.debugLine="End Sub";
+return "";
+}
+public static String  _button1_click() throws Exception{
+ //BA.debugLineNum = 58;BA.debugLine="Sub Button1_Click";
+ //BA.debugLineNum = 59;BA.debugLine="xui.MsgboxAsync(\"Hello world!\", \"B4X\")";
+_xui.MsgboxAsync(processBA,BA.ObjectToCharSequence("Hello world!"),BA.ObjectToCharSequence("B4X"));
+ //BA.debugLineNum = 60;BA.debugLine="End Sub";
 return "";
 }
 public static anywheresoftware.b4a.objects.collections.List  _cargarusuarios() throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "cargarusuarios", false))
-	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(mostCurrent.activityBA, "cargarusuarios", null));}
 anywheresoftware.b4a.objects.collections.List _lista = null;
 String _json = "";
 anywheresoftware.b4a.objects.collections.JSONParser _jp = null;
-RDebugUtils.currentLine=131072;
- //BA.debugLineNum = 131072;BA.debugLine="Sub CargarUsuarios() As List";
-RDebugUtils.currentLine=131073;
- //BA.debugLineNum = 131073;BA.debugLine="Dim Lista As List";
+ //BA.debugLineNum = 32;BA.debugLine="Sub CargarUsuarios() As List";
+ //BA.debugLineNum = 33;BA.debugLine="Dim Lista As List";
 _lista = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=131074;
- //BA.debugLineNum = 131074;BA.debugLine="Lista.Initialize";
+ //BA.debugLineNum = 34;BA.debugLine="Lista.Initialize";
 _lista.Initialize();
-RDebugUtils.currentLine=131076;
- //BA.debugLineNum = 131076;BA.debugLine="If File.Exists(File.DirInternal, \"usuarios.json\")";
+ //BA.debugLineNum = 36;BA.debugLine="If File.Exists(File.DirInternal, \"usuarios.json\")";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"usuarios.json")) { 
-RDebugUtils.currentLine=131077;
- //BA.debugLineNum = 131077;BA.debugLine="Dim json As String = File.ReadString(File.DirInt";
+ //BA.debugLineNum = 37;BA.debugLine="Dim json As String = File.ReadString(File.DirInt";
 _json = anywheresoftware.b4a.keywords.Common.File.ReadString(anywheresoftware.b4a.keywords.Common.File.getDirInternal(),"usuarios.json");
-RDebugUtils.currentLine=131078;
- //BA.debugLineNum = 131078;BA.debugLine="Dim jp As JSONParser";
+ //BA.debugLineNum = 38;BA.debugLine="Dim jp As JSONParser";
 _jp = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=131079;
- //BA.debugLineNum = 131079;BA.debugLine="jp.Initialize(json)";
+ //BA.debugLineNum = 39;BA.debugLine="jp.Initialize(json)";
 _jp.Initialize(_json);
-RDebugUtils.currentLine=131080;
- //BA.debugLineNum = 131080;BA.debugLine="Lista = jp.NextArray";
+ //BA.debugLineNum = 40;BA.debugLine="Lista = jp.NextArray";
 _lista = _jp.NextArray();
  };
-RDebugUtils.currentLine=131083;
- //BA.debugLineNum = 131083;BA.debugLine="Return Lista";
+ //BA.debugLineNum = 43;BA.debugLine="Return Lista";
 if (true) return _lista;
-RDebugUtils.currentLine=131084;
- //BA.debugLineNum = 131084;BA.debugLine="End Sub";
+ //BA.debugLineNum = 44;BA.debugLine="End Sub";
 return null;
 }
-public static String  _button1_click() throws Exception{
-RDebugUtils.currentModule="main";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "button1_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "button1_click", null));}
-RDebugUtils.currentLine=393216;
- //BA.debugLineNum = 393216;BA.debugLine="Sub Button1_Click";
-RDebugUtils.currentLine=393217;
- //BA.debugLineNum = 393217;BA.debugLine="xui.MsgboxAsync(\"Hello world!\", \"B4X\")";
-_xui.MsgboxAsync(processBA,BA.ObjectToCharSequence("Hello world!"),BA.ObjectToCharSequence("B4X"));
-RDebugUtils.currentLine=393218;
- //BA.debugLineNum = 393218;BA.debugLine="End Sub";
+public static String  _creararchivodoctores() throws Exception{
+String _nombrearchivo = "";
+String _ruta = "";
+String _contenido = "";
+ //BA.debugLineNum = 96;BA.debugLine="Sub CrearArchivoDoctores";
+ //BA.debugLineNum = 97;BA.debugLine="Dim nombreArchivo As String = \"doctores.json\"";
+_nombrearchivo = "doctores.json";
+ //BA.debugLineNum = 98;BA.debugLine="Dim ruta As String = File.DirInternal";
+_ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
+ //BA.debugLineNum = 107;BA.debugLine="Dim contenido As String = $\"{   \"doctores\": [";
+_contenido = ("{\n"+"  \"doctores\": [\n"+"    {\n"+"      \"nombre_completo\": \"Dra. Valentina Ríos Martínez\",\n"+"      \"especialidad\": \"Cardiología Pediátrica\",\n"+"      \"foto_perfil\": \"valentina_rios.png\"\n"+"    },\n"+"    {\n"+"      \"nombre_completo\": \"Dr. Sebastián Torres Guzmán\",\n"+"      \"especialidad\": \"Pediatría General\",\n"+"      \"foto_perfil\": \"sebastian_torres.png\"\n"+"    },\n"+"    {\n"+"      \"nombre_completo\": \"Dra. Camila Herrera Soto\",\n"+"      \"especialidad\": \"Dermatología Pediátrica\",\n"+"      \"foto_perfil\": \"camila_herrera.png\"\n"+"    },\n"+"    {\n"+"      \"nombre_completo\": \"Dr. Ignacio Fernández Vidal\",\n"+"      \"especialidad\": \"Neurología Pediátrica\",\n"+"      \"foto_perfil\": \"ignacio_fernandez.png\"\n"+"    }\n"+"  ]\n"+"}");
+ //BA.debugLineNum = 133;BA.debugLine="File.WriteString(ruta, nombreArchivo, contenido)";
+anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_nombrearchivo,_contenido);
+ //BA.debugLineNum = 134;BA.debugLine="Log(\"Archivo creado correctamente en: \" & ruta)";
+anywheresoftware.b4a.keywords.Common.LogImpl("0589862","Archivo creado correctamente en: "+_ruta,0);
+ //BA.debugLineNum = 135;BA.debugLine="End Sub";
+return "";
+}
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 27;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 29;BA.debugLine="Private Txt_Rut As AutoCompleteEditText";
+mostCurrent._txt_rut = new anywheresoftware.b4a.objects.AutoCompleteEditTextWrapper();
+ //BA.debugLineNum = 30;BA.debugLine="Private Txt_password As AutoCompleteEditText";
+mostCurrent._txt_password = new anywheresoftware.b4a.objects.AutoCompleteEditTextWrapper();
+ //BA.debugLineNum = 31;BA.debugLine="End Sub";
+return "";
+}
+
+public static void initializeProcessGlobals() {
+    
+    if (main.processGlobalsRun == false) {
+	    main.processGlobalsRun = true;
+		try {
+		        b4a.example.dateutils._process_globals();
+main._process_globals();
+menu._process_globals();
+registrar._process_globals();
+modulo_seleccion._process_globals();
+modulogestion._process_globals();
+calendario._process_globals();
+verexamenes._process_globals();
+starter._process_globals();
+b4xcollections._process_globals();
+xuiviewsutils._process_globals();
+		
+        } catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+    }
+}public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 18;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 21;BA.debugLine="Private xui As XUI";
+_xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+ //BA.debugLineNum = 22;BA.debugLine="Type Usuario(Rut As String, Contrasena As String)";
+;
+ //BA.debugLineNum = 23;BA.debugLine="Public UsuarioActivo As Usuario";
+_usuarioactivo = new b4a.example.main._usuario();
+ //BA.debugLineNum = 25;BA.debugLine="End Sub";
 return "";
 }
 }

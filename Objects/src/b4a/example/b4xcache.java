@@ -10,7 +10,7 @@ public class b4xcache extends B4AClass.ImplB4AClass implements BA.SubDelegator{
     private static java.util.HashMap<String, java.lang.reflect.Method> htSubs;
     private void innerInitialize(BA _ba) throws Exception {
         if (ba == null) {
-            ba = new anywheresoftware.b4a.ShellBA(_ba, this, htSubs, "b4a.example.b4xcache");
+            ba = new BA(_ba, this, htSubs, "b4a.example.b4xcache");
             if (htSubs == null) {
                 ba.loadHtSubs(this.getClass());
                 htSubs = ba.htSubs;
@@ -23,13 +23,22 @@ public class b4xcache extends B4AClass.ImplB4AClass implements BA.SubDelegator{
             ba.raiseEvent2(null, true, "class_globals", false);
     }
 
- 
-    public void  innerInitializeHelper(anywheresoftware.b4a.BA _ba) throws Exception{
-        innerInitialize(_ba);
-    }
-    public Object callSub(String sub, Object sender, Object[] args) throws Exception {
-        return BA.SubDelegator.SubNotFound;
-    }
+ public anywheresoftware.b4a.keywords.Common __c = null;
+public b4a.example.b4xorderedmap _data = null;
+public int _mmaxsize = 0;
+public float _removethreshold = 0f;
+public int _eternalcounts = 0;
+public b4a.example.dateutils _dateutils = null;
+public b4a.example.main _main = null;
+public b4a.example.menu _menu = null;
+public b4a.example.registrar _registrar = null;
+public b4a.example.modulo_seleccion _modulo_seleccion = null;
+public b4a.example.modulogestion _modulogestion = null;
+public b4a.example.calendario _calendario = null;
+public b4a.example.verexamenes _verexamenes = null;
+public b4a.example.starter _starter = null;
+public b4a.example.b4xcollections _b4xcollections = null;
+public b4a.example.xuiviewsutils _xuiviewsutils = null;
 public static class _b4xcacheitem{
 public boolean IsInitialized;
 public Object Value;
@@ -47,315 +56,152 @@ Eternal = false;
 		public String toString() {
 			return BA.TypeToString(this, false);
 		}}
-public anywheresoftware.b4a.keywords.Common __c = null;
-public b4a.example.b4xorderedmap _data = null;
-public int _mmaxsize = 0;
-public float _removethreshold = 0f;
-public int _eternalcounts = 0;
-public b4a.example.dateutils _dateutils = null;
-public b4a.example.main _main = null;
-public b4a.example.menu _menu = null;
-public b4a.example.registrar _registrar = null;
-public b4a.example.modulo_seleccion _modulo_seleccion = null;
-public b4a.example.modulogestion _modulogestion = null;
-public b4a.example.calendario _calendario = null;
-public b4a.example.starter _starter = null;
-public b4a.example.verexamenes _verexamenes = null;
-public b4a.example.b4xcollections _b4xcollections = null;
-public b4a.example.xuiviewsutils _xuiviewsutils = null;
-public String  _class_globals(b4a.example.b4xcache __ref) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-RDebugUtils.currentLine=6488064;
- //BA.debugLineNum = 6488064;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=6488065;
- //BA.debugLineNum = 6488065;BA.debugLine="Type B4XCacheItem (Value As Object, LastAccessedT";
+public String  _class_globals() throws Exception{
+ //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
+ //BA.debugLineNum = 2;BA.debugLine="Type B4XCacheItem (Value As Object, LastAccessedT";
 ;
-RDebugUtils.currentLine=6488066;
- //BA.debugLineNum = 6488066;BA.debugLine="Private Data As B4XOrderedMap";
+ //BA.debugLineNum = 3;BA.debugLine="Private Data As B4XOrderedMap";
 _data = new b4a.example.b4xorderedmap();
-RDebugUtils.currentLine=6488067;
- //BA.debugLineNum = 6488067;BA.debugLine="Private mMaxSize As Int = 100";
+ //BA.debugLineNum = 4;BA.debugLine="Private mMaxSize As Int = 100";
 _mmaxsize = (int) (100);
-RDebugUtils.currentLine=6488068;
- //BA.debugLineNum = 6488068;BA.debugLine="Private RemoveThreshold As Float = 0.3";
+ //BA.debugLineNum = 5;BA.debugLine="Private RemoveThreshold As Float = 0.3";
 _removethreshold = (float) (0.3);
-RDebugUtils.currentLine=6488069;
- //BA.debugLineNum = 6488069;BA.debugLine="Private EternalCounts As Int";
+ //BA.debugLineNum = 6;BA.debugLine="Private EternalCounts As Int";
 _eternalcounts = 0;
-RDebugUtils.currentLine=6488070;
- //BA.debugLineNum = 6488070;BA.debugLine="End Sub";
+ //BA.debugLineNum = 7;BA.debugLine="End Sub";
 return "";
 }
-public boolean  _containskey(b4a.example.b4xcache __ref,String _key) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "containskey", true))
-	 {return ((Boolean) Debug.delegate(ba, "containskey", new Object[] {_key}));}
-RDebugUtils.currentLine=7077888;
- //BA.debugLineNum = 7077888;BA.debugLine="Public Sub ContainsKey(Key As String) As Boolean";
-RDebugUtils.currentLine=7077889;
- //BA.debugLineNum = 7077889;BA.debugLine="Return Data.ContainsKey(Key)";
-if (true) return __ref._data /*b4a.example.b4xorderedmap*/ ._containskey /*boolean*/ (null,(Object)(_key));
-RDebugUtils.currentLine=7077890;
- //BA.debugLineNum = 7077890;BA.debugLine="End Sub";
+public boolean  _containskey(String _key) throws Exception{
+ //BA.debugLineNum = 66;BA.debugLine="Public Sub ContainsKey(Key As String) As Boolean";
+ //BA.debugLineNum = 67;BA.debugLine="Return Data.ContainsKey(Key)";
+if (true) return _data._containskey /*boolean*/ ((Object)(_key));
+ //BA.debugLineNum = 68;BA.debugLine="End Sub";
 return false;
 }
-public b4a.example.b4xcache._b4xcacheitem  _createb4xcacheitem(b4a.example.b4xcache __ref,Object _value,String _key) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "createb4xcacheitem", true))
-	 {return ((b4a.example.b4xcache._b4xcacheitem) Debug.delegate(ba, "createb4xcacheitem", new Object[] {_value,_key}));}
+public b4a.example.b4xcache._b4xcacheitem  _createb4xcacheitem(Object _value,String _key) throws Exception{
 b4a.example.b4xcache._b4xcacheitem _t1 = null;
-RDebugUtils.currentLine=7405568;
- //BA.debugLineNum = 7405568;BA.debugLine="Private Sub CreateB4XCacheItem (Value As Object, K";
-RDebugUtils.currentLine=7405569;
- //BA.debugLineNum = 7405569;BA.debugLine="Dim t1 As B4XCacheItem";
+ //BA.debugLineNum = 102;BA.debugLine="Private Sub CreateB4XCacheItem (Value As Object, K";
+ //BA.debugLineNum = 103;BA.debugLine="Dim t1 As B4XCacheItem";
 _t1 = new b4a.example.b4xcache._b4xcacheitem();
-RDebugUtils.currentLine=7405570;
- //BA.debugLineNum = 7405570;BA.debugLine="t1.Initialize";
+ //BA.debugLineNum = 104;BA.debugLine="t1.Initialize";
 _t1.Initialize();
-RDebugUtils.currentLine=7405571;
- //BA.debugLineNum = 7405571;BA.debugLine="t1.Value = Value";
+ //BA.debugLineNum = 105;BA.debugLine="t1.Value = Value";
 _t1.Value /*Object*/  = _value;
-RDebugUtils.currentLine=7405572;
- //BA.debugLineNum = 7405572;BA.debugLine="t1.LastAccessedTime = DateTime.Now";
+ //BA.debugLineNum = 106;BA.debugLine="t1.LastAccessedTime = DateTime.Now";
 _t1.LastAccessedTime /*long*/  = __c.DateTime.getNow();
-RDebugUtils.currentLine=7405573;
- //BA.debugLineNum = 7405573;BA.debugLine="t1.Key = Key";
+ //BA.debugLineNum = 107;BA.debugLine="t1.Key = Key";
 _t1.Key /*String*/  = _key;
-RDebugUtils.currentLine=7405574;
- //BA.debugLineNum = 7405574;BA.debugLine="Return t1";
+ //BA.debugLineNum = 108;BA.debugLine="Return t1";
 if (true) return _t1;
-RDebugUtils.currentLine=7405575;
- //BA.debugLineNum = 7405575;BA.debugLine="End Sub";
+ //BA.debugLineNum = 109;BA.debugLine="End Sub";
 return null;
 }
-public Object  _get(b4a.example.b4xcache __ref,String _key) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "get", true))
-	 {return ((Object) Debug.delegate(ba, "get", new Object[] {_key}));}
+public Object  _get(String _key) throws Exception{
 b4a.example.b4xcache._b4xcacheitem _ci = null;
-RDebugUtils.currentLine=6750208;
- //BA.debugLineNum = 6750208;BA.debugLine="Public Sub Get (Key As String) As Object";
-RDebugUtils.currentLine=6750209;
- //BA.debugLineNum = 6750209;BA.debugLine="Dim ci As B4XCacheItem = Data.Get(Key)";
-_ci = (b4a.example.b4xcache._b4xcacheitem)(__ref._data /*b4a.example.b4xorderedmap*/ ._get /*Object*/ (null,(Object)(_key)));
-RDebugUtils.currentLine=6750210;
- //BA.debugLineNum = 6750210;BA.debugLine="If ci <> Null Then";
+ //BA.debugLineNum = 24;BA.debugLine="Public Sub Get (Key As String) As Object";
+ //BA.debugLineNum = 25;BA.debugLine="Dim ci As B4XCacheItem = Data.Get(Key)";
+_ci = (b4a.example.b4xcache._b4xcacheitem)(_data._get /*Object*/ ((Object)(_key)));
+ //BA.debugLineNum = 26;BA.debugLine="If ci <> Null Then";
 if (_ci!= null) { 
-RDebugUtils.currentLine=6750211;
- //BA.debugLineNum = 6750211;BA.debugLine="If ci.Eternal = False Then ci.LastAccessedTime =";
+ //BA.debugLineNum = 27;BA.debugLine="If ci.Eternal = False Then ci.LastAccessedTime =";
 if (_ci.Eternal /*boolean*/ ==__c.False) { 
 _ci.LastAccessedTime /*long*/  = __c.DateTime.getNow();};
-RDebugUtils.currentLine=6750212;
- //BA.debugLineNum = 6750212;BA.debugLine="Return ci.Value";
+ //BA.debugLineNum = 28;BA.debugLine="Return ci.Value";
 if (true) return _ci.Value /*Object*/ ;
  };
-RDebugUtils.currentLine=6750214;
- //BA.debugLineNum = 6750214;BA.debugLine="Return Null";
+ //BA.debugLineNum = 30;BA.debugLine="Return Null";
 if (true) return __c.Null;
-RDebugUtils.currentLine=6750215;
- //BA.debugLineNum = 6750215;BA.debugLine="End Sub";
+ //BA.debugLineNum = 31;BA.debugLine="End Sub";
 return null;
 }
-public int  _getmaxsize(b4a.example.b4xcache __ref) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "getmaxsize", true))
-	 {return ((Integer) Debug.delegate(ba, "getmaxsize", null));}
-RDebugUtils.currentLine=6684672;
- //BA.debugLineNum = 6684672;BA.debugLine="Public Sub getMaxSize As Int";
-RDebugUtils.currentLine=6684673;
- //BA.debugLineNum = 6684673;BA.debugLine="Return mMaxSize";
-if (true) return __ref._mmaxsize /*int*/ ;
-RDebugUtils.currentLine=6684674;
- //BA.debugLineNum = 6684674;BA.debugLine="End Sub";
+public int  _getmaxsize() throws Exception{
+ //BA.debugLineNum = 19;BA.debugLine="Public Sub getMaxSize As Int";
+ //BA.debugLineNum = 20;BA.debugLine="Return mMaxSize";
+if (true) return _mmaxsize;
+ //BA.debugLineNum = 21;BA.debugLine="End Sub";
 return 0;
 }
-public String  _initialize(b4a.example.b4xcache __ref,anywheresoftware.b4a.BA _ba) throws Exception{
-__ref = this;
+public String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
 innerInitialize(_ba);
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "initialize", true))
-	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=6553600;
- //BA.debugLineNum = 6553600;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=6553601;
- //BA.debugLineNum = 6553601;BA.debugLine="Data.Initialize";
-__ref._data /*b4a.example.b4xorderedmap*/ ._initialize /*String*/ (null,ba);
-RDebugUtils.currentLine=6553602;
- //BA.debugLineNum = 6553602;BA.debugLine="End Sub";
+ //BA.debugLineNum = 9;BA.debugLine="Public Sub Initialize";
+ //BA.debugLineNum = 10;BA.debugLine="Data.Initialize";
+_data._initialize /*String*/ (ba);
+ //BA.debugLineNum = 11;BA.debugLine="End Sub";
 return "";
 }
-public boolean  _iseternal(b4a.example.b4xcache __ref,String _key) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "iseternal", true))
-	 {return ((Boolean) Debug.delegate(ba, "iseternal", new Object[] {_key}));}
+public boolean  _iseternal(String _key) throws Exception{
 b4a.example.b4xcache._b4xcacheitem _ci = null;
-RDebugUtils.currentLine=7012352;
- //BA.debugLineNum = 7012352;BA.debugLine="Private Sub IsEternal(Key As String) As Boolean";
-RDebugUtils.currentLine=7012353;
- //BA.debugLineNum = 7012353;BA.debugLine="Dim ci As B4XCacheItem = Data.Get(Key)";
-_ci = (b4a.example.b4xcache._b4xcacheitem)(__ref._data /*b4a.example.b4xorderedmap*/ ._get /*Object*/ (null,(Object)(_key)));
-RDebugUtils.currentLine=7012354;
- //BA.debugLineNum = 7012354;BA.debugLine="Return IIf(ci = Null, False, ci.Eternal)";
+ //BA.debugLineNum = 60;BA.debugLine="Private Sub IsEternal(Key As String) As Boolean";
+ //BA.debugLineNum = 61;BA.debugLine="Dim ci As B4XCacheItem = Data.Get(Key)";
+_ci = (b4a.example.b4xcache._b4xcacheitem)(_data._get /*Object*/ ((Object)(_key)));
+ //BA.debugLineNum = 62;BA.debugLine="Return IIf(ci = Null, False, ci.Eternal)";
 if (true) return BA.ObjectToBoolean(((_ci== null) ? ((Object)(__c.False)) : ((Object)(_ci.Eternal /*boolean*/ ))));
-RDebugUtils.currentLine=7012355;
- //BA.debugLineNum = 7012355;BA.debugLine="End Sub";
+ //BA.debugLineNum = 63;BA.debugLine="End Sub";
 return false;
 }
-public anywheresoftware.b4a.objects.collections.List  _keys(b4a.example.b4xcache __ref) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "keys", true))
-	 {return ((anywheresoftware.b4a.objects.collections.List) Debug.delegate(ba, "keys", null));}
-RDebugUtils.currentLine=7340032;
- //BA.debugLineNum = 7340032;BA.debugLine="Public Sub Keys As List";
-RDebugUtils.currentLine=7340033;
- //BA.debugLineNum = 7340033;BA.debugLine="Return Data.Keys";
-if (true) return __ref._data /*b4a.example.b4xorderedmap*/ ._getkeys /*anywheresoftware.b4a.objects.collections.List*/ (null);
-RDebugUtils.currentLine=7340034;
- //BA.debugLineNum = 7340034;BA.debugLine="End Sub";
+public anywheresoftware.b4a.objects.collections.List  _keys() throws Exception{
+ //BA.debugLineNum = 98;BA.debugLine="Public Sub Keys As List";
+ //BA.debugLineNum = 99;BA.debugLine="Return Data.Keys";
+if (true) return _data._getkeys /*anywheresoftware.b4a.objects.collections.List*/ ();
+ //BA.debugLineNum = 100;BA.debugLine="End Sub";
 return null;
 }
-public Object  _put(b4a.example.b4xcache __ref,String _key,Object _value) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "put", true))
-	 {return ((Object) Debug.delegate(ba, "put", new Object[] {_key,_value}));}
-RDebugUtils.currentLine=6815744;
- //BA.debugLineNum = 6815744;BA.debugLine="Public Sub Put (Key As String, Value As Object) As";
-RDebugUtils.currentLine=6815745;
- //BA.debugLineNum = 6815745;BA.debugLine="If IsEternal(Key) Then EternalCounts = EternalCou";
-if (__ref._iseternal /*boolean*/ (null,_key)) { 
-__ref._eternalcounts /*int*/  = (int) (__ref._eternalcounts /*int*/ -1);};
-RDebugUtils.currentLine=6815746;
- //BA.debugLineNum = 6815746;BA.debugLine="Data.Put(Key, CreateB4XCacheItem(Value, Key))";
-__ref._data /*b4a.example.b4xorderedmap*/ ._put /*String*/ (null,(Object)(_key),(Object)(__ref._createb4xcacheitem /*b4a.example.b4xcache._b4xcacheitem*/ (null,_value,_key)));
-RDebugUtils.currentLine=6815747;
- //BA.debugLineNum = 6815747;BA.debugLine="TrimIfOversize";
-__ref._trimifoversize /*String*/ (null);
-RDebugUtils.currentLine=6815748;
- //BA.debugLineNum = 6815748;BA.debugLine="Return Value";
+public Object  _put(String _key,Object _value) throws Exception{
+ //BA.debugLineNum = 35;BA.debugLine="Public Sub Put (Key As String, Value As Object) As";
+ //BA.debugLineNum = 36;BA.debugLine="If IsEternal(Key) Then EternalCounts = EternalCou";
+if (_iseternal(_key)) { 
+_eternalcounts = (int) (_eternalcounts-1);};
+ //BA.debugLineNum = 37;BA.debugLine="Data.Put(Key, CreateB4XCacheItem(Value, Key))";
+_data._put /*String*/ ((Object)(_key),(Object)(_createb4xcacheitem(_value,_key)));
+ //BA.debugLineNum = 38;BA.debugLine="TrimIfOversize";
+_trimifoversize();
+ //BA.debugLineNum = 39;BA.debugLine="Return Value";
 if (true) return _value;
-RDebugUtils.currentLine=6815749;
- //BA.debugLineNum = 6815749;BA.debugLine="End Sub";
+ //BA.debugLineNum = 40;BA.debugLine="End Sub";
 return null;
 }
-public String  _trimifoversize(b4a.example.b4xcache __ref) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "trimifoversize", true))
-	 {return ((String) Debug.delegate(ba, "trimifoversize", null));}
-anywheresoftware.b4a.objects.collections.List _values = null;
-int _numberofitemstoremove = 0;
-int _i = 0;
-RDebugUtils.currentLine=7143424;
- //BA.debugLineNum = 7143424;BA.debugLine="Private Sub TrimIfOversize";
-RDebugUtils.currentLine=7143425;
- //BA.debugLineNum = 7143425;BA.debugLine="If Data.Size - EternalCounts > mMaxSize Then";
-if (__ref._data /*b4a.example.b4xorderedmap*/ ._getsize /*int*/ (null)-__ref._eternalcounts /*int*/ >__ref._mmaxsize /*int*/ ) { 
-RDebugUtils.currentLine=7143426;
- //BA.debugLineNum = 7143426;BA.debugLine="Dim values As List = Data.Values";
-_values = new anywheresoftware.b4a.objects.collections.List();
-_values = __ref._data /*b4a.example.b4xorderedmap*/ ._getvalues /*anywheresoftware.b4a.objects.collections.List*/ (null);
-RDebugUtils.currentLine=7143427;
- //BA.debugLineNum = 7143427;BA.debugLine="values.SortType(\"LastAccessedTime\", True)";
-_values.SortType("LastAccessedTime",__c.True);
-RDebugUtils.currentLine=7143428;
- //BA.debugLineNum = 7143428;BA.debugLine="Dim NumberOfItemsToRemove As Int = Ceil(mMaxSize";
-_numberofitemstoremove = (int) (__c.Ceil(__ref._mmaxsize /*int*/ *__ref._removethreshold /*float*/ ));
-RDebugUtils.currentLine=7143429;
- //BA.debugLineNum = 7143429;BA.debugLine="For i = 0 To NumberOfItemsToRemove";
-{
-final int step5 = 1;
-final int limit5 = _numberofitemstoremove;
-_i = (int) (0) ;
-for (;_i <= limit5 ;_i = _i + step5 ) {
-RDebugUtils.currentLine=7143430;
- //BA.debugLineNum = 7143430;BA.debugLine="Data.Remove(values.Get(i).As(B4XCacheItem).Key)";
-__ref._data /*b4a.example.b4xorderedmap*/ ._remove /*String*/ (null,(Object)(((b4a.example.b4xcache._b4xcacheitem)(_values.Get(_i))).Key /*String*/ ));
- }
-};
- };
-RDebugUtils.currentLine=7143433;
- //BA.debugLineNum = 7143433;BA.debugLine="End Sub";
-return "";
-}
-public Object  _puteternal(b4a.example.b4xcache __ref,String _key,Object _value) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "puteternal", true))
-	 {return ((Object) Debug.delegate(ba, "puteternal", new Object[] {_key,_value}));}
+public Object  _puteternal(String _key,Object _value) throws Exception{
 b4a.example.b4xcache._b4xcacheitem _ci = null;
-RDebugUtils.currentLine=6881280;
- //BA.debugLineNum = 6881280;BA.debugLine="Public Sub PutEternal (Key As String, Value As Obj";
-RDebugUtils.currentLine=6881281;
- //BA.debugLineNum = 6881281;BA.debugLine="If IsEternal(Key) Then EternalCounts = EternalCou";
-if (__ref._iseternal /*boolean*/ (null,_key)) { 
-__ref._eternalcounts /*int*/  = (int) (__ref._eternalcounts /*int*/ -1);};
-RDebugUtils.currentLine=6881282;
- //BA.debugLineNum = 6881282;BA.debugLine="Dim ci As B4XCacheItem = CreateB4XCacheItem(Value";
-_ci = __ref._createb4xcacheitem /*b4a.example.b4xcache._b4xcacheitem*/ (null,_value,_key);
-RDebugUtils.currentLine=6881283;
- //BA.debugLineNum = 6881283;BA.debugLine="ci.Eternal = True";
+ //BA.debugLineNum = 44;BA.debugLine="Public Sub PutEternal (Key As String, Value As Obj";
+ //BA.debugLineNum = 45;BA.debugLine="If IsEternal(Key) Then EternalCounts = EternalCou";
+if (_iseternal(_key)) { 
+_eternalcounts = (int) (_eternalcounts-1);};
+ //BA.debugLineNum = 46;BA.debugLine="Dim ci As B4XCacheItem = CreateB4XCacheItem(Value";
+_ci = _createb4xcacheitem(_value,_key);
+ //BA.debugLineNum = 47;BA.debugLine="ci.Eternal = True";
 _ci.Eternal /*boolean*/  = __c.True;
-RDebugUtils.currentLine=6881284;
- //BA.debugLineNum = 6881284;BA.debugLine="ci.LastAccessedTime = 9223372036854775807";
+ //BA.debugLineNum = 48;BA.debugLine="ci.LastAccessedTime = 9223372036854775807";
 _ci.LastAccessedTime /*long*/  = (long) (9223372036854775807L);
-RDebugUtils.currentLine=6881285;
- //BA.debugLineNum = 6881285;BA.debugLine="EternalCounts = EternalCounts + 1";
-__ref._eternalcounts /*int*/  = (int) (__ref._eternalcounts /*int*/ +1);
-RDebugUtils.currentLine=6881286;
- //BA.debugLineNum = 6881286;BA.debugLine="Data.Put(Key, ci)";
-__ref._data /*b4a.example.b4xorderedmap*/ ._put /*String*/ (null,(Object)(_key),(Object)(_ci));
-RDebugUtils.currentLine=6881287;
- //BA.debugLineNum = 6881287;BA.debugLine="Return Value";
+ //BA.debugLineNum = 49;BA.debugLine="EternalCounts = EternalCounts + 1";
+_eternalcounts = (int) (_eternalcounts+1);
+ //BA.debugLineNum = 50;BA.debugLine="Data.Put(Key, ci)";
+_data._put /*String*/ ((Object)(_key),(Object)(_ci));
+ //BA.debugLineNum = 51;BA.debugLine="Return Value";
 if (true) return _value;
-RDebugUtils.currentLine=6881288;
- //BA.debugLineNum = 6881288;BA.debugLine="End Sub";
+ //BA.debugLineNum = 52;BA.debugLine="End Sub";
 return null;
 }
-public String  _remove(b4a.example.b4xcache __ref,String _key) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "remove", true))
-	 {return ((String) Debug.delegate(ba, "remove", new Object[] {_key}));}
-RDebugUtils.currentLine=6946816;
- //BA.debugLineNum = 6946816;BA.debugLine="Public Sub Remove (Key As String)";
-RDebugUtils.currentLine=6946817;
- //BA.debugLineNum = 6946817;BA.debugLine="If IsEternal(Key) Then EternalCounts = EternalCou";
-if (__ref._iseternal /*boolean*/ (null,_key)) { 
-__ref._eternalcounts /*int*/  = (int) (__ref._eternalcounts /*int*/ -1);};
-RDebugUtils.currentLine=6946818;
- //BA.debugLineNum = 6946818;BA.debugLine="Data.Remove(Key)";
-__ref._data /*b4a.example.b4xorderedmap*/ ._remove /*String*/ (null,(Object)(_key));
-RDebugUtils.currentLine=6946819;
- //BA.debugLineNum = 6946819;BA.debugLine="End Sub";
+public String  _remove(String _key) throws Exception{
+ //BA.debugLineNum = 55;BA.debugLine="Public Sub Remove (Key As String)";
+ //BA.debugLineNum = 56;BA.debugLine="If IsEternal(Key) Then EternalCounts = EternalCou";
+if (_iseternal(_key)) { 
+_eternalcounts = (int) (_eternalcounts-1);};
+ //BA.debugLineNum = 57;BA.debugLine="Data.Remove(Key)";
+_data._remove /*String*/ ((Object)(_key));
+ //BA.debugLineNum = 58;BA.debugLine="End Sub";
 return "";
 }
-public String  _removeolditems(b4a.example.b4xcache __ref,long _agems) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "removeolditems", true))
-	 {return ((String) Debug.delegate(ba, "removeolditems", new Object[] {_agems}));}
+public String  _removeolditems(long _agems) throws Exception{
 anywheresoftware.b4a.objects.collections.List _values = null;
 long _level = 0L;
 b4a.example.b4xcache._b4xcacheitem _ci = null;
-RDebugUtils.currentLine=7208960;
- //BA.debugLineNum = 7208960;BA.debugLine="Public Sub RemoveOldItems (AgeMs As Long)";
-RDebugUtils.currentLine=7208961;
- //BA.debugLineNum = 7208961;BA.debugLine="Dim values As List = Data.Values";
+ //BA.debugLineNum = 82;BA.debugLine="Public Sub RemoveOldItems (AgeMs As Long)";
+ //BA.debugLineNum = 83;BA.debugLine="Dim values As List = Data.Values";
 _values = new anywheresoftware.b4a.objects.collections.List();
-_values = __ref._data /*b4a.example.b4xorderedmap*/ ._getvalues /*anywheresoftware.b4a.objects.collections.List*/ (null);
-RDebugUtils.currentLine=7208962;
- //BA.debugLineNum = 7208962;BA.debugLine="Dim level As Long = DateTime.Now - AgeMs";
+_values = _data._getvalues /*anywheresoftware.b4a.objects.collections.List*/ ();
+ //BA.debugLineNum = 84;BA.debugLine="Dim level As Long = DateTime.Now - AgeMs";
 _level = (long) (__c.DateTime.getNow()-_agems);
-RDebugUtils.currentLine=7208963;
- //BA.debugLineNum = 7208963;BA.debugLine="For Each ci As B4XCacheItem In values";
+ //BA.debugLineNum = 85;BA.debugLine="For Each ci As B4XCacheItem In values";
 {
 final anywheresoftware.b4a.BA.IterableList group3 = _values;
 final int groupLen3 = group3.getSize()
@@ -363,48 +209,62 @@ final int groupLen3 = group3.getSize()
 ;
 for (; index3 < groupLen3;index3++){
 _ci = (b4a.example.b4xcache._b4xcacheitem)(group3.Get(index3));
-RDebugUtils.currentLine=7208964;
- //BA.debugLineNum = 7208964;BA.debugLine="If ci.LastAccessedTime <= level Then";
+ //BA.debugLineNum = 86;BA.debugLine="If ci.LastAccessedTime <= level Then";
 if (_ci.LastAccessedTime /*long*/ <=_level) { 
-RDebugUtils.currentLine=7208965;
- //BA.debugLineNum = 7208965;BA.debugLine="Data.Remove(ci.Key)";
-__ref._data /*b4a.example.b4xorderedmap*/ ._remove /*String*/ (null,(Object)(_ci.Key /*String*/ ));
+ //BA.debugLineNum = 87;BA.debugLine="Data.Remove(ci.Key)";
+_data._remove /*String*/ ((Object)(_ci.Key /*String*/ ));
  };
  }
 };
-RDebugUtils.currentLine=7208968;
- //BA.debugLineNum = 7208968;BA.debugLine="End Sub";
+ //BA.debugLineNum = 90;BA.debugLine="End Sub";
 return "";
 }
-public String  _setmaxsize(b4a.example.b4xcache __ref,int _s) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "setmaxsize", true))
-	 {return ((String) Debug.delegate(ba, "setmaxsize", new Object[] {_s}));}
-RDebugUtils.currentLine=6619136;
- //BA.debugLineNum = 6619136;BA.debugLine="Public Sub setMaxSize(s As Int)";
-RDebugUtils.currentLine=6619137;
- //BA.debugLineNum = 6619137;BA.debugLine="mMaxSize = s";
-__ref._mmaxsize /*int*/  = _s;
-RDebugUtils.currentLine=6619138;
- //BA.debugLineNum = 6619138;BA.debugLine="TrimIfOversize";
-__ref._trimifoversize /*String*/ (null);
-RDebugUtils.currentLine=6619139;
- //BA.debugLineNum = 6619139;BA.debugLine="End Sub";
+public String  _setmaxsize(int _s) throws Exception{
+ //BA.debugLineNum = 14;BA.debugLine="Public Sub setMaxSize(s As Int)";
+ //BA.debugLineNum = 15;BA.debugLine="mMaxSize = s";
+_mmaxsize = _s;
+ //BA.debugLineNum = 16;BA.debugLine="TrimIfOversize";
+_trimifoversize();
+ //BA.debugLineNum = 17;BA.debugLine="End Sub";
 return "";
 }
-public int  _size(b4a.example.b4xcache __ref) throws Exception{
-__ref = this;
-RDebugUtils.currentModule="b4xcache";
-if (Debug.shouldDelegate(ba, "size", true))
-	 {return ((Integer) Debug.delegate(ba, "size", null));}
-RDebugUtils.currentLine=7274496;
- //BA.debugLineNum = 7274496;BA.debugLine="Public Sub Size As Int";
-RDebugUtils.currentLine=7274497;
- //BA.debugLineNum = 7274497;BA.debugLine="Return Data.Size";
-if (true) return __ref._data /*b4a.example.b4xorderedmap*/ ._getsize /*int*/ (null);
-RDebugUtils.currentLine=7274498;
- //BA.debugLineNum = 7274498;BA.debugLine="End Sub";
+public int  _size() throws Exception{
+ //BA.debugLineNum = 93;BA.debugLine="Public Sub Size As Int";
+ //BA.debugLineNum = 94;BA.debugLine="Return Data.Size";
+if (true) return _data._getsize /*int*/ ();
+ //BA.debugLineNum = 95;BA.debugLine="End Sub";
 return 0;
+}
+public String  _trimifoversize() throws Exception{
+anywheresoftware.b4a.objects.collections.List _values = null;
+int _numberofitemstoremove = 0;
+int _i = 0;
+ //BA.debugLineNum = 70;BA.debugLine="Private Sub TrimIfOversize";
+ //BA.debugLineNum = 71;BA.debugLine="If Data.Size - EternalCounts > mMaxSize Then";
+if (_data._getsize /*int*/ ()-_eternalcounts>_mmaxsize) { 
+ //BA.debugLineNum = 72;BA.debugLine="Dim values As List = Data.Values";
+_values = new anywheresoftware.b4a.objects.collections.List();
+_values = _data._getvalues /*anywheresoftware.b4a.objects.collections.List*/ ();
+ //BA.debugLineNum = 73;BA.debugLine="values.SortType(\"LastAccessedTime\", True)";
+_values.SortType("LastAccessedTime",__c.True);
+ //BA.debugLineNum = 74;BA.debugLine="Dim NumberOfItemsToRemove As Int = Ceil(mMaxSize";
+_numberofitemstoremove = (int) (__c.Ceil(_mmaxsize*_removethreshold));
+ //BA.debugLineNum = 75;BA.debugLine="For i = 0 To NumberOfItemsToRemove";
+{
+final int step5 = 1;
+final int limit5 = _numberofitemstoremove;
+_i = (int) (0) ;
+for (;_i <= limit5 ;_i = _i + step5 ) {
+ //BA.debugLineNum = 76;BA.debugLine="Data.Remove(values.Get(i).As(B4XCacheItem).Key)";
+_data._remove /*String*/ ((Object)(((b4a.example.b4xcache._b4xcacheitem)(_values.Get(_i))).Key /*String*/ ));
+ }
+};
+ };
+ //BA.debugLineNum = 79;BA.debugLine="End Sub";
+return "";
+}
+public Object callSub(String sub, Object sender, Object[] args) throws Exception {
+BA.senderHolder.set(sender);
+return BA.SubDelegator.SubNotFound;
 }
 }

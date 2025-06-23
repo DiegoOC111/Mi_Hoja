@@ -34,7 +34,7 @@ public class verexamenes extends Activity implements B4AActivity{
 		super.onCreate(savedInstanceState);
         mostCurrent = this;
 		if (processBA == null) {
-			processBA = new anywheresoftware.b4a.ShellBA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.verexamenes");
+			processBA = new BA(this.getApplicationContext(), null, null, "b4a.example", "b4a.example.verexamenes");
 			processBA.loadHtSubs(this.getClass());
 	        float deviceScale = getApplicationContext().getResources().getDisplayMetrics().density;
 	        BALayout.setDeviceScale(deviceScale);
@@ -335,15 +335,6 @@ public class verexamenes extends Activity implements B4AActivity{
             
     }
 
-
-
-public static void initializeProcessGlobals() {
-             try {
-                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-}
 public anywheresoftware.b4a.keywords.Common __c = null;
 public anywheresoftware.b4a.objects.collections.List _listaexamenes = null;
 public anywheresoftware.b4a.objects.ImageViewWrapper _imageviewer = null;
@@ -362,139 +353,101 @@ public b4a.example.calendario _calendario = null;
 public b4a.example.starter _starter = null;
 public b4a.example.b4xcollections _b4xcollections = null;
 public b4a.example.xuiviewsutils _xuiviewsutils = null;
+
+public static void initializeProcessGlobals() {
+             try {
+                Class.forName(BA.applicationContext.getPackageName() + ".main").getMethod("initializeProcessGlobals").invoke(null, null);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+}
 public static String  _activity_create(boolean _firsttime) throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=35258368;
- //BA.debugLineNum = 35258368;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=35258370;
- //BA.debugLineNum = 35258370;BA.debugLine="Activity.LoadLayout(\"VistaExamenes\")";
+ //BA.debugLineNum = 47;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 49;BA.debugLine="Activity.LoadLayout(\"VistaExamenes\")";
 mostCurrent._activity.LoadLayout("VistaExamenes",mostCurrent.activityBA);
-RDebugUtils.currentLine=35258371;
- //BA.debugLineNum = 35258371;BA.debugLine="CrearArchivoExamenesSiNoExiste";
+ //BA.debugLineNum = 50;BA.debugLine="CrearArchivoExamenesSiNoExiste";
 _creararchivoexamenessinoexiste();
-RDebugUtils.currentLine=35258372;
- //BA.debugLineNum = 35258372;BA.debugLine="CargarExamenes";
+ //BA.debugLineNum = 51;BA.debugLine="CargarExamenes";
 _cargarexamenes();
-RDebugUtils.currentLine=35258373;
- //BA.debugLineNum = 35258373;BA.debugLine="End Sub";
+ //BA.debugLineNum = 52;BA.debugLine="End Sub";
 return "";
 }
-public static String  _creararchivoexamenessinoexiste() throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "creararchivoexamenessinoexiste", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "creararchivoexamenessinoexiste", null));}
+public static String  _activity_pause(boolean _userclosed) throws Exception{
+ //BA.debugLineNum = 101;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 103;BA.debugLine="End Sub";
+return "";
+}
+public static String  _activity_resume() throws Exception{
+ //BA.debugLineNum = 97;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 99;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btn_cerrar_click() throws Exception{
+ //BA.debugLineNum = 106;BA.debugLine="Private Sub Btn_cerrar_Click";
+ //BA.debugLineNum = 107;BA.debugLine="PanelEXA.Visible  = False";
+mostCurrent._panelexa.setVisible(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 108;BA.debugLine="MainPanel.Visible = True";
+mostCurrent._mainpanel.setVisible(anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 109;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btn_ver_click() throws Exception{
+anywheresoftware.b4a.objects.ButtonWrapper _btn = null;
 String _ruta = "";
-String _archivo = "";
-anywheresoftware.b4a.objects.collections.List _examenes = null;
-int _i = 0;
-anywheresoftware.b4a.objects.collections.Map _ex = null;
-anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator _gen = null;
-RDebugUtils.currentLine=35454976;
- //BA.debugLineNum = 35454976;BA.debugLine="Sub CrearArchivoExamenesSiNoExiste";
-RDebugUtils.currentLine=35454977;
- //BA.debugLineNum = 35454977;BA.debugLine="Dim ruta As String = File.DirInternal";
-_ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
-RDebugUtils.currentLine=35454978;
- //BA.debugLineNum = 35454978;BA.debugLine="Dim archivo As String = \"examenes.json\"";
-_archivo = "examenes.json";
-RDebugUtils.currentLine=35454980;
- //BA.debugLineNum = 35454980;BA.debugLine="If File.Exists(ruta, archivo) Then Return ' Ya ex";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_archivo)) { 
-if (true) return "";};
-RDebugUtils.currentLine=35454982;
- //BA.debugLineNum = 35454982;BA.debugLine="Dim examenes As List";
-_examenes = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=35454983;
- //BA.debugLineNum = 35454983;BA.debugLine="examenes.Initialize";
-_examenes.Initialize();
-RDebugUtils.currentLine=35454985;
- //BA.debugLineNum = 35454985;BA.debugLine="For i = 1 To 3";
-{
-final int step6 = 1;
-final int limit6 = (int) (3);
-_i = (int) (1) ;
-for (;_i <= limit6 ;_i = _i + step6 ) {
-RDebugUtils.currentLine=35454986;
- //BA.debugLineNum = 35454986;BA.debugLine="Dim ex As Map";
-_ex = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=35454987;
- //BA.debugLineNum = 35454987;BA.debugLine="ex.Initialize";
-_ex.Initialize();
-RDebugUtils.currentLine=35454988;
- //BA.debugLineNum = 35454988;BA.debugLine="ex.Put(\"NombreDelProcedimiento\", \"Radiografía Tó";
-_ex.Put((Object)("NombreDelProcedimiento"),(Object)("Radiografía Tórax "+BA.NumberToString(_i)));
-RDebugUtils.currentLine=35454989;
- //BA.debugLineNum = 35454989;BA.debugLine="ex.Put(\"RutaImagen\", \"imagen\" & i & \".jpg\")";
-_ex.Put((Object)("RutaImagen"),(Object)("imagen"+BA.NumberToString(_i)+".jpg"));
-RDebugUtils.currentLine=35454990;
- //BA.debugLineNum = 35454990;BA.debugLine="ex.Put(\"FechaRealizado\", \"15/06/2025\")";
-_ex.Put((Object)("FechaRealizado"),(Object)("15/06/2025"));
-RDebugUtils.currentLine=35454991;
- //BA.debugLineNum = 35454991;BA.debugLine="ex.Put(\"Rut\", Main.UsuarioActivo.Rut)";
-_ex.Put((Object)("Rut"),(Object)(mostCurrent._main._usuarioactivo /*b4a.example.main._usuario*/ .Rut /*String*/ ));
-RDebugUtils.currentLine=35454992;
- //BA.debugLineNum = 35454992;BA.debugLine="examenes.Add(ex)";
-_examenes.Add((Object)(_ex.getObject()));
- }
-};
-RDebugUtils.currentLine=35454995;
- //BA.debugLineNum = 35454995;BA.debugLine="Dim gen As JSONGenerator";
-_gen = new anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator();
-RDebugUtils.currentLine=35454996;
- //BA.debugLineNum = 35454996;BA.debugLine="gen.Initialize2(examenes)";
-_gen.Initialize2(_examenes);
-RDebugUtils.currentLine=35454997;
- //BA.debugLineNum = 35454997;BA.debugLine="File.WriteString(ruta, archivo, gen.ToString)";
-anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_archivo,_gen.ToString());
-RDebugUtils.currentLine=35454998;
- //BA.debugLineNum = 35454998;BA.debugLine="End Sub";
+ //BA.debugLineNum = 111;BA.debugLine="Private Sub Btn_Ver_Click";
+ //BA.debugLineNum = 112;BA.debugLine="Dim btn As Button = Sender";
+_btn = new anywheresoftware.b4a.objects.ButtonWrapper();
+_btn = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA)));
+ //BA.debugLineNum = 113;BA.debugLine="Dim ruta As String = btn.Tag";
+_ruta = BA.ObjectToString(_btn.getTag());
+ //BA.debugLineNum = 115;BA.debugLine="If File.Exists(File.DirAssets, ruta) Then";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta)) { 
+ //BA.debugLineNum = 116;BA.debugLine="PanelEXA.Visible = True";
+mostCurrent._panelexa.setVisible(anywheresoftware.b4a.keywords.Common.True);
+ //BA.debugLineNum = 118;BA.debugLine="MainPanel.Visible = False";
+mostCurrent._mainpanel.setVisible(anywheresoftware.b4a.keywords.Common.False);
+ //BA.debugLineNum = 120;BA.debugLine="ImageViewer.Bitmap = LoadBitmap(File.DirAssets,";
+mostCurrent._imageviewer.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta).getObject()));
+ }else {
+ //BA.debugLineNum = 122;BA.debugLine="ToastMessageShow(\"Imagen no encontrada: \" & ruta";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Imagen no encontrada: "+_ruta),anywheresoftware.b4a.keywords.Common.True);
+ };
+ //BA.debugLineNum = 124;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnver_click() throws Exception{
+ //BA.debugLineNum = 93;BA.debugLine="Sub BtnVer_Click";
+ //BA.debugLineNum = 95;BA.debugLine="End Sub";
 return "";
 }
 public static String  _cargarexamenes() throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "cargarexamenes", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "cargarexamenes", null));}
 String _ruta = "";
 String _archivo = "";
 anywheresoftware.b4a.objects.collections.JSONParser _parser = null;
 anywheresoftware.b4a.objects.collections.Map _examen = null;
-RDebugUtils.currentLine=35520512;
- //BA.debugLineNum = 35520512;BA.debugLine="Sub CargarExamenes";
-RDebugUtils.currentLine=35520513;
- //BA.debugLineNum = 35520513;BA.debugLine="listaExamenes.Initialize";
+ //BA.debugLineNum = 54;BA.debugLine="Sub CargarExamenes";
+ //BA.debugLineNum = 55;BA.debugLine="listaExamenes.Initialize";
 mostCurrent._listaexamenes.Initialize();
-RDebugUtils.currentLine=35520514;
- //BA.debugLineNum = 35520514;BA.debugLine="Dim ruta As String = File.DirInternal";
+ //BA.debugLineNum = 56;BA.debugLine="Dim ruta As String = File.DirInternal";
 _ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
-RDebugUtils.currentLine=35520515;
- //BA.debugLineNum = 35520515;BA.debugLine="Dim archivo As String = \"examenes.json\"";
+ //BA.debugLineNum = 57;BA.debugLine="Dim archivo As String = \"examenes.json\"";
 _archivo = "examenes.json";
-RDebugUtils.currentLine=35520517;
- //BA.debugLineNum = 35520517;BA.debugLine="If File.Exists(ruta, archivo) = False Then";
+ //BA.debugLineNum = 59;BA.debugLine="If File.Exists(ruta, archivo) = False Then";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_archivo)==anywheresoftware.b4a.keywords.Common.False) { 
-RDebugUtils.currentLine=35520518;
- //BA.debugLineNum = 35520518;BA.debugLine="ToastMessageShow(\"No se encontró el archivo de e";
+ //BA.debugLineNum = 60;BA.debugLine="ToastMessageShow(\"No se encontró el archivo de e";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("No se encontró el archivo de exámenes."),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=35520519;
- //BA.debugLineNum = 35520519;BA.debugLine="Return";
+ //BA.debugLineNum = 61;BA.debugLine="Return";
 if (true) return "";
  };
-RDebugUtils.currentLine=35520522;
- //BA.debugLineNum = 35520522;BA.debugLine="Dim parser As JSONParser";
+ //BA.debugLineNum = 64;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=35520523;
- //BA.debugLineNum = 35520523;BA.debugLine="parser.Initialize(File.ReadString(ruta, archivo))";
+ //BA.debugLineNum = 65;BA.debugLine="parser.Initialize(File.ReadString(ruta, archivo))";
 _parser.Initialize(anywheresoftware.b4a.keywords.Common.File.ReadString(_ruta,_archivo));
-RDebugUtils.currentLine=35520524;
- //BA.debugLineNum = 35520524;BA.debugLine="listaExamenes = parser.NextArray";
+ //BA.debugLineNum = 66;BA.debugLine="listaExamenes = parser.NextArray";
 mostCurrent._listaexamenes = _parser.NextArray();
-RDebugUtils.currentLine=35520526;
- //BA.debugLineNum = 35520526;BA.debugLine="CLV_Examenes.Clear";
+ //BA.debugLineNum = 68;BA.debugLine="CLV_Examenes.Clear";
 mostCurrent._clv_examenes._clear();
-RDebugUtils.currentLine=35520528;
- //BA.debugLineNum = 35520528;BA.debugLine="For Each examen As Map In listaExamenes";
+ //BA.debugLineNum = 70;BA.debugLine="For Each examen As Map In listaExamenes";
 _examen = new anywheresoftware.b4a.objects.collections.Map();
 {
 final anywheresoftware.b4a.BA.IterableList group12 = mostCurrent._listaexamenes;
@@ -503,150 +456,125 @@ final int groupLen12 = group12.getSize()
 ;
 for (; index12 < groupLen12;index12++){
 _examen = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(group12.Get(index12)));
-RDebugUtils.currentLine=35520529;
- //BA.debugLineNum = 35520529;BA.debugLine="If examen.Get(\"Rut\") = Main.UsuarioActivo.Rut Th";
+ //BA.debugLineNum = 71;BA.debugLine="If examen.Get(\"Rut\") = Main.UsuarioActivo.Rut Th";
 if ((_examen.Get((Object)("Rut"))).equals((Object)(mostCurrent._main._usuarioactivo /*b4a.example.main._usuario*/ .Rut /*String*/ ))) { 
-RDebugUtils.currentLine=35520530;
- //BA.debugLineNum = 35520530;BA.debugLine="CLV_Examenes.Add(CreateItemExamen(examen), \"\")";
+ //BA.debugLineNum = 72;BA.debugLine="CLV_Examenes.Add(CreateItemExamen(examen), \"\")";
 mostCurrent._clv_examenes._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_createitemexamen(_examen).getObject())),(Object)(""));
  };
  }
 };
-RDebugUtils.currentLine=35520533;
- //BA.debugLineNum = 35520533;BA.debugLine="End Sub";
+ //BA.debugLineNum = 75;BA.debugLine="End Sub";
 return "";
 }
-public static String  _activity_pause(boolean _userclosed) throws Exception{
-RDebugUtils.currentModule="verexamenes";
-RDebugUtils.currentLine=35389440;
- //BA.debugLineNum = 35389440;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=35389442;
- //BA.debugLineNum = 35389442;BA.debugLine="End Sub";
-return "";
-}
-public static String  _activity_resume() throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=35323904;
- //BA.debugLineNum = 35323904;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=35323906;
- //BA.debugLineNum = 35323906;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btn_cerrar_click() throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_cerrar_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_cerrar_click", null));}
-RDebugUtils.currentLine=35717120;
- //BA.debugLineNum = 35717120;BA.debugLine="Private Sub Btn_cerrar_Click";
-RDebugUtils.currentLine=35717121;
- //BA.debugLineNum = 35717121;BA.debugLine="PanelEXA.Visible  = False";
-mostCurrent._panelexa.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=35717122;
- //BA.debugLineNum = 35717122;BA.debugLine="MainPanel.Visible = True";
-mostCurrent._mainpanel.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=35717123;
- //BA.debugLineNum = 35717123;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btn_ver_click() throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btn_ver_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btn_ver_click", null));}
-anywheresoftware.b4a.objects.ButtonWrapper _btn = null;
+public static String  _creararchivoexamenessinoexiste() throws Exception{
 String _ruta = "";
-RDebugUtils.currentLine=35979264;
- //BA.debugLineNum = 35979264;BA.debugLine="Private Sub Btn_Ver_Click";
-RDebugUtils.currentLine=35979265;
- //BA.debugLineNum = 35979265;BA.debugLine="Dim btn As Button = Sender";
-_btn = new anywheresoftware.b4a.objects.ButtonWrapper();
-_btn = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA)));
-RDebugUtils.currentLine=35979266;
- //BA.debugLineNum = 35979266;BA.debugLine="Dim ruta As String = btn.Tag";
-_ruta = BA.ObjectToString(_btn.getTag());
-RDebugUtils.currentLine=35979268;
- //BA.debugLineNum = 35979268;BA.debugLine="If File.Exists(File.DirAssets, ruta) Then";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta)) { 
-RDebugUtils.currentLine=35979269;
- //BA.debugLineNum = 35979269;BA.debugLine="PanelEXA.Visible = True";
-mostCurrent._panelexa.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=35979271;
- //BA.debugLineNum = 35979271;BA.debugLine="MainPanel.Visible = False";
-mostCurrent._mainpanel.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=35979273;
- //BA.debugLineNum = 35979273;BA.debugLine="ImageViewer.Bitmap = LoadBitmap(File.DirAssets,";
-mostCurrent._imageviewer.setBitmap((android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmap(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),_ruta).getObject()));
- }else {
-RDebugUtils.currentLine=35979275;
- //BA.debugLineNum = 35979275;BA.debugLine="ToastMessageShow(\"Imagen no encontrada: \" & ruta";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Imagen no encontrada: "+_ruta),anywheresoftware.b4a.keywords.Common.True);
- };
-RDebugUtils.currentLine=35979277;
- //BA.debugLineNum = 35979277;BA.debugLine="End Sub";
-return "";
-}
-public static String  _btnver_click() throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "btnver_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnver_click", null));}
-RDebugUtils.currentLine=35651584;
- //BA.debugLineNum = 35651584;BA.debugLine="Sub BtnVer_Click";
-RDebugUtils.currentLine=35651586;
- //BA.debugLineNum = 35651586;BA.debugLine="End Sub";
+String _archivo = "";
+anywheresoftware.b4a.objects.collections.List _examenes = null;
+int _i = 0;
+anywheresoftware.b4a.objects.collections.Map _ex = null;
+anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator _gen = null;
+ //BA.debugLineNum = 23;BA.debugLine="Sub CrearArchivoExamenesSiNoExiste";
+ //BA.debugLineNum = 24;BA.debugLine="Dim ruta As String = File.DirInternal";
+_ruta = anywheresoftware.b4a.keywords.Common.File.getDirInternal();
+ //BA.debugLineNum = 25;BA.debugLine="Dim archivo As String = \"examenes.json\"";
+_archivo = "examenes.json";
+ //BA.debugLineNum = 27;BA.debugLine="If File.Exists(ruta, archivo) Then Return ' Ya ex";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(_ruta,_archivo)) { 
+if (true) return "";};
+ //BA.debugLineNum = 29;BA.debugLine="Dim examenes As List";
+_examenes = new anywheresoftware.b4a.objects.collections.List();
+ //BA.debugLineNum = 30;BA.debugLine="examenes.Initialize";
+_examenes.Initialize();
+ //BA.debugLineNum = 32;BA.debugLine="For i = 1 To 3";
+{
+final int step6 = 1;
+final int limit6 = (int) (3);
+_i = (int) (1) ;
+for (;_i <= limit6 ;_i = _i + step6 ) {
+ //BA.debugLineNum = 33;BA.debugLine="Dim ex As Map";
+_ex = new anywheresoftware.b4a.objects.collections.Map();
+ //BA.debugLineNum = 34;BA.debugLine="ex.Initialize";
+_ex.Initialize();
+ //BA.debugLineNum = 35;BA.debugLine="ex.Put(\"NombreDelProcedimiento\", \"Radiografía Tó";
+_ex.Put((Object)("NombreDelProcedimiento"),(Object)("Radiografía Tórax "+BA.NumberToString(_i)));
+ //BA.debugLineNum = 36;BA.debugLine="ex.Put(\"RutaImagen\", \"imagen\" & i & \".jpg\")";
+_ex.Put((Object)("RutaImagen"),(Object)("imagen"+BA.NumberToString(_i)+".jpg"));
+ //BA.debugLineNum = 37;BA.debugLine="ex.Put(\"FechaRealizado\", \"15/06/2025\")";
+_ex.Put((Object)("FechaRealizado"),(Object)("15/06/2025"));
+ //BA.debugLineNum = 38;BA.debugLine="ex.Put(\"Rut\", Main.UsuarioActivo.Rut)";
+_ex.Put((Object)("Rut"),(Object)(mostCurrent._main._usuarioactivo /*b4a.example.main._usuario*/ .Rut /*String*/ ));
+ //BA.debugLineNum = 39;BA.debugLine="examenes.Add(ex)";
+_examenes.Add((Object)(_ex.getObject()));
+ }
+};
+ //BA.debugLineNum = 42;BA.debugLine="Dim gen As JSONGenerator";
+_gen = new anywheresoftware.b4a.objects.collections.JSONParser.JSONGenerator();
+ //BA.debugLineNum = 43;BA.debugLine="gen.Initialize2(examenes)";
+_gen.Initialize2(_examenes);
+ //BA.debugLineNum = 44;BA.debugLine="File.WriteString(ruta, archivo, gen.ToString)";
+anywheresoftware.b4a.keywords.Common.File.WriteString(_ruta,_archivo,_gen.ToString());
+ //BA.debugLineNum = 45;BA.debugLine="End Sub";
 return "";
 }
 public static anywheresoftware.b4a.objects.PanelWrapper  _createitemexamen(anywheresoftware.b4a.objects.collections.Map _examen) throws Exception{
-RDebugUtils.currentModule="verexamenes";
-if (Debug.shouldDelegate(mostCurrent.activityBA, "createitemexamen", false))
-	 {return ((anywheresoftware.b4a.objects.PanelWrapper) Debug.delegate(mostCurrent.activityBA, "createitemexamen", new Object[] {_examen}));}
 anywheresoftware.b4a.objects.B4XViewWrapper _p = null;
 anywheresoftware.b4a.objects.PanelWrapper _pan = null;
 anywheresoftware.b4a.objects.LabelWrapper _lblproc = null;
 anywheresoftware.b4a.objects.LabelWrapper _lblfecha = null;
 anywheresoftware.b4a.objects.ButtonWrapper _btnver = null;
-RDebugUtils.currentLine=35586048;
- //BA.debugLineNum = 35586048;BA.debugLine="Sub CreateItemExamen(examen As Map) As Panel";
-RDebugUtils.currentLine=35586049;
- //BA.debugLineNum = 35586049;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
+ //BA.debugLineNum = 77;BA.debugLine="Sub CreateItemExamen(examen As Map) As Panel";
+ //BA.debugLineNum = 78;BA.debugLine="Dim p As B4XView = xui.CreatePanel(\"\")";
 _p = new anywheresoftware.b4a.objects.B4XViewWrapper();
 _p = mostCurrent._xui.CreatePanel(processBA,"");
-RDebugUtils.currentLine=35586050;
- //BA.debugLineNum = 35586050;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, CLV_Examenes.AsView.";
+ //BA.debugLineNum = 79;BA.debugLine="p.SetLayoutAnimated(0, 0, 0, CLV_Examenes.AsView.";
 _p.SetLayoutAnimated((int) (0),(int) (0),(int) (0),mostCurrent._clv_examenes._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (120)));
-RDebugUtils.currentLine=35586051;
- //BA.debugLineNum = 35586051;BA.debugLine="p.LoadLayout(\"VistaExamen\") ' este es tu layout c";
+ //BA.debugLineNum = 80;BA.debugLine="p.LoadLayout(\"VistaExamen\") ' este es tu layout c";
 _p.LoadLayout("VistaExamen",mostCurrent.activityBA);
-RDebugUtils.currentLine=35586052;
- //BA.debugLineNum = 35586052;BA.debugLine="Dim PAn As Panel = p.GetView(0)";
+ //BA.debugLineNum = 81;BA.debugLine="Dim PAn As Panel = p.GetView(0)";
 _pan = new anywheresoftware.b4a.objects.PanelWrapper();
 _pan = (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_p.GetView((int) (0)).getObject()));
-RDebugUtils.currentLine=35586053;
- //BA.debugLineNum = 35586053;BA.debugLine="Dim LblProc As Label = PAn.GetView(0) ' o usa Pan";
+ //BA.debugLineNum = 82;BA.debugLine="Dim LblProc As Label = PAn.GetView(0) ' o usa Pan";
 _lblproc = new anywheresoftware.b4a.objects.LabelWrapper();
 _lblproc = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(_pan.GetView((int) (0)).getObject()));
-RDebugUtils.currentLine=35586054;
- //BA.debugLineNum = 35586054;BA.debugLine="Dim LblFecha As Label = PAn.GetView(1)";
+ //BA.debugLineNum = 83;BA.debugLine="Dim LblFecha As Label = PAn.GetView(1)";
 _lblfecha = new anywheresoftware.b4a.objects.LabelWrapper();
 _lblfecha = (anywheresoftware.b4a.objects.LabelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.LabelWrapper(), (android.widget.TextView)(_pan.GetView((int) (1)).getObject()));
-RDebugUtils.currentLine=35586055;
- //BA.debugLineNum = 35586055;BA.debugLine="Dim BtnVer As Button = PAn.GetView(2)";
+ //BA.debugLineNum = 84;BA.debugLine="Dim BtnVer As Button = PAn.GetView(2)";
 _btnver = new anywheresoftware.b4a.objects.ButtonWrapper();
 _btnver = (anywheresoftware.b4a.objects.ButtonWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ButtonWrapper(), (android.widget.Button)(_pan.GetView((int) (2)).getObject()));
-RDebugUtils.currentLine=35586057;
- //BA.debugLineNum = 35586057;BA.debugLine="LblProc.Text = examen.Get(\"NombreDelProcedimiento";
+ //BA.debugLineNum = 86;BA.debugLine="LblProc.Text = examen.Get(\"NombreDelProcedimiento";
 _lblproc.setText(BA.ObjectToCharSequence(_examen.Get((Object)("NombreDelProcedimiento"))));
-RDebugUtils.currentLine=35586058;
- //BA.debugLineNum = 35586058;BA.debugLine="LblFecha.Text = examen.Get(\"FechaRealizado\")";
+ //BA.debugLineNum = 87;BA.debugLine="LblFecha.Text = examen.Get(\"FechaRealizado\")";
 _lblfecha.setText(BA.ObjectToCharSequence(_examen.Get((Object)("FechaRealizado"))));
-RDebugUtils.currentLine=35586060;
- //BA.debugLineNum = 35586060;BA.debugLine="BtnVer.Tag = examen.Get(\"RutaImagen\")";
+ //BA.debugLineNum = 89;BA.debugLine="BtnVer.Tag = examen.Get(\"RutaImagen\")";
 _btnver.setTag(_examen.Get((Object)("RutaImagen")));
-RDebugUtils.currentLine=35586062;
- //BA.debugLineNum = 35586062;BA.debugLine="Return p";
+ //BA.debugLineNum = 91;BA.debugLine="Return p";
 if (true) return (anywheresoftware.b4a.objects.PanelWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.PanelWrapper(), (android.view.ViewGroup)(_p.getObject()));
-RDebugUtils.currentLine=35586063;
- //BA.debugLineNum = 35586063;BA.debugLine="End Sub";
+ //BA.debugLineNum = 92;BA.debugLine="End Sub";
 return null;
+}
+public static String  _globals() throws Exception{
+ //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 15;BA.debugLine="Private listaExamenes As List";
+mostCurrent._listaexamenes = new anywheresoftware.b4a.objects.collections.List();
+ //BA.debugLineNum = 16;BA.debugLine="Private ImageViewer As ImageView";
+mostCurrent._imageviewer = new anywheresoftware.b4a.objects.ImageViewWrapper();
+ //BA.debugLineNum = 17;BA.debugLine="Private CLV_Examenes As CustomListView";
+mostCurrent._clv_examenes = new b4a.example3.customlistview();
+ //BA.debugLineNum = 18;BA.debugLine="Private Panel1 As Panel";
+mostCurrent._panel1 = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 19;BA.debugLine="Private xui As XUI";
+mostCurrent._xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+ //BA.debugLineNum = 20;BA.debugLine="Private MainPanel As Panel";
+mostCurrent._mainpanel = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 21;BA.debugLine="Private PanelEXA As Panel";
+mostCurrent._panelexa = new anywheresoftware.b4a.objects.PanelWrapper();
+ //BA.debugLineNum = 22;BA.debugLine="End Sub";
+return "";
+}
+public static String  _process_globals() throws Exception{
+ //BA.debugLineNum = 6;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 10;BA.debugLine="End Sub";
+return "";
 }
 }
